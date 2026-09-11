@@ -1,0 +1,11 @@
+{
+  "sample_name": "body_input_short",
+  "body_input": {
+    "height": 1765.0,
+    "chest": 940.0,
+    "waist": 800.0,
+    "hip": 920.0,
+    "shoulder_width": 435.0,
+    "arm_length": 548.0
+  }
+}

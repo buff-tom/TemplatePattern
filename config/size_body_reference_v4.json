@@ -1,0 +1,172 @@
+{
+  "version": 4.0,
+  "status": "v4_exec_6_body_input_size_reference_with_low_and_high_virtual_anchors",
+  "unit": "mm",
+  "source": {
+    "XS_S": "next_step.md",
+    "grading_steps": "grading_rule_matrix_v0_1.json",
+    "note": "M-XXXL are inferred by continuing the documented standard grading steps from XS/S."
+  },
+  "required_body_input": [
+    "height",
+    "chest",
+    "waist",
+    "hip",
+    "shoulder_width",
+    "arm_length"
+  ],
+  "sizes": {
+    "XS": {
+      "height": 1690.0,
+      "chest": 840.0,
+      "waist": 700.0,
+      "hip": 820.0,
+      "shoulder_width": 410.0,
+      "arm_length": 510.0,
+      "aliases": {
+        "shoulder": 410.0,
+        "full_arm_length": 510.0
+      }
+    },
+    "S": {
+      "height": 1720.0,
+      "chest": 880.0,
+      "waist": 740.0,
+      "hip": 860.0,
+      "shoulder_width": 420.0,
+      "arm_length": 525.0,
+      "aliases": {
+        "shoulder": 420.0,
+        "full_arm_length": 525.0
+      }
+    },
+    "M": {
+      "height": 1750.0,
+      "chest": 920.0,
+      "waist": 780.0,
+      "hip": 900.0,
+      "shoulder_width": 430.0,
+      "arm_length": 540.0,
+      "aliases": {
+        "shoulder": 430.0,
+        "full_arm_length": 540.0
+      }
+    },
+    "L": {
+      "height": 1780.0,
+      "chest": 960.0,
+      "waist": 820.0,
+      "hip": 940.0,
+      "shoulder_width": 440.0,
+      "arm_length": 555.0,
+      "aliases": {
+        "shoulder": 440.0,
+        "full_arm_length": 555.0
+      }
+    },
+    "XL": {
+      "height": 1810.0,
+      "chest": 1000.0,
+      "waist": 860.0,
+      "hip": 980.0,
+      "shoulder_width": 450.0,
+      "arm_length": 570.0,
+      "aliases": {
+        "shoulder": 450.0,
+        "full_arm_length": 570.0
+      }
+    },
+    "XXL": {
+      "height": 1840.0,
+      "chest": 1040.0,
+      "waist": 900.0,
+      "hip": 1020.0,
+      "shoulder_width": 460.0,
+      "arm_length": 585.0,
+      "aliases": {
+        "shoulder": 460.0,
+        "full_arm_length": 585.0
+      }
+    },
+    "XXXL": {
+      "height": 1870.0,
+      "chest": 1080.0,
+      "waist": 940.0,
+      "hip": 1060.0,
+      "shoulder_width": 470.0,
+      "arm_length": 600.0,
+      "aliases": {
+        "shoulder": 470.0,
+        "full_arm_length": 600.0
+      }
+    }
+  },
+  "virtual_anchors": {
+    "virtual_150_anchor": {
+      "height": 1500.0,
+      "chest": 780.0,
+      "waist": 640.0,
+      "hip": 760.0,
+      "shoulder_width": 380.0,
+      "arm_length": 480.0,
+      "shape_prior_size": "XS",
+      "aliases": {
+        "shoulder": 380.0,
+        "full_arm_length": 480.0
+      }
+    },
+    "virtual_160_anchor": {
+      "height": 1600.0,
+      "chest": 810.0,
+      "waist": 670.0,
+      "hip": 790.0,
+      "shoulder_width": 395.0,
+      "arm_length": 495.0,
+      "shape_prior_size": "XS",
+      "aliases": {
+        "shoulder": 395.0,
+        "full_arm_length": 495.0
+      }
+    },
+    "virtual_185_broad_anchor": {
+      "height": 1850.0,
+      "chest": 1120.0,
+      "waist": 980.0,
+      "hip": 1100.0,
+      "shoulder_width": 480.0,
+      "arm_length": 610.0,
+      "shape_prior_size": "XXXL",
+      "aliases": {
+        "shoulder": 480.0,
+        "full_arm_length": 610.0
+      }
+    },
+    "virtual_190_tall_anchor": {
+      "height": 1900.0,
+      "chest": 1080.0,
+      "waist": 940.0,
+      "hip": 1060.0,
+      "shoulder_width": 470.0,
+      "arm_length": 630.0,
+      "shape_prior_size": "XXXL",
+      "aliases": {
+        "shoulder": 470.0,
+        "full_arm_length": 630.0
+      }
+    },
+    "virtual_190_broad_anchor": {
+      "height": 1900.0,
+      "chest": 1160.0,
+      "waist": 1040.0,
+      "hip": 1150.0,
+      "shoulder_width": 500.0,
+      "arm_length": 630.0,
+      "shape_prior_size": "XXXL",
+      "aliases": {
+        "shoulder": 500.0,
+        "full_arm_length": 630.0
+      }
+    }
+  },
+  "source_script_version": "v4_exec_6"
+}

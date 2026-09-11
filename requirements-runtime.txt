@@ -1,0 +1,15 @@
+numpy==1.26.4
+scipy==1.13.1
+PyYAML==6.0.2
+svgwrite==1.4.3
+svgpathtools
+psutil
+matplotlib
+cairosvg==2.7.1
+trimesh
+pyrender==0.1.45
+PyOpenGL==3.1.0
+DracoPy==1.7.0
+libigl==2.5.1
+cgal==6.0.1.post202410241521
+nicegui==2.15.0

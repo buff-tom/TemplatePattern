@@ -1,0 +1,21 @@
+# Legacy Conda fallback. The Dockerfile and recommended local setup use uv.
+name: templatepattern
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - pyyaml=6.0.2
+  - svgwrite=1.4.3
+  - svgpathtools
+  - psutil
+  - matplotlib
+  - cairosvg=2.7.1
+  - trimesh
+  - pip:
+      - pyrender==0.1.45
+      - libigl==2.5.1
+      - cgal==6.0.1.post202410241521
+      - nicegui==2.15.0

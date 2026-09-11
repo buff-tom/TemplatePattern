@@ -1,0 +1,35 @@
+# Generated results, including accidentally nested output directories
+outputs/
+
+# Local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# User-supplied SMPL models (keep shared assets and templates tracked)
+/models/
+/smpl_model/
+basicmodel_*.pkl
+SMPL_*.pkl
+SMPL_*.npz
+
+# Local credentials, editor state and logs
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.swp
+*.swo

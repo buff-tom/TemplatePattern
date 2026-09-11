@@ -1,0 +1,8852 @@
+{
+  "garment_type": "shirt_short_sleeve",
+  "base_size": "XXXL",
+  "source_files": {
+    "canonical_template": "TemplatePattern/pattern/pattern_XXXL.svg",
+    "engineering_reference": "TemplatePattern/m_asia_00005_M_cut.svg",
+    "body_measurements": "SewingLDM/assets/body_examples/male/asia/XXXL.json",
+    "measure_logic_reference": "TemplatePattern/measure.jpg",
+    "promoted_from_multisize_template": "archive/multisize_research/multisize_templates/short_sleeve_shirt_template_XXXL.json",
+    "semantic_review": "multisize_semantic_review_v1/multisize_semantic_review_v1.json"
+  },
+  "pieces": [
+    {
+      "id": "front_body_right",
+      "source_name": "前右-XXXL",
+      "role": "front_body",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "paired",
+      "derived_from": null,
+      "boundary": [
+        [
+          1328.397,
+          2502.048
+        ],
+        [
+          1328.649,
+          2489.184
+        ],
+        [
+          1328.98,
+          2474.2
+        ],
+        [
+          1329.338,
+          2459.481
+        ],
+        [
+          1329.786,
+          2442.597
+        ],
+        [
+          1330.245,
+          2426.762
+        ],
+        [
+          1330.774,
+          2409.982
+        ],
+        [
+          1331.375,
+          2392.558
+        ],
+        [
+          1332.051,
+          2374.786
+        ],
+        [
+          1332.74,
+          2358.264
+        ],
+        [
+          1333.516,
+          2340.414
+        ],
+        [
+          1334.271,
+          2322.565
+        ],
+        [
+          1334.95,
+          2304.717
+        ],
+        [
+          1335.498,
+          2286.87
+        ],
+        [
+          1335.858,
+          2269.023
+        ],
+        [
+          1335.984,
+          2251.822
+        ],
+        [
+          1335.893,
+          2234.115
+        ],
+        [
+          1335.607,
+          2216.688
+        ],
+        [
+          1335.157,
+          2199.697
+        ],
+        [
+          1334.576,
+          2183.299
+        ],
+        [
+          1333.893,
+          2167.649
+        ],
+        [
+          1333.012,
+          2150.545
+        ],
+        [
+          1332.086,
+          2134.918
+        ],
+        [
+          1331.038,
+          2119.186
+        ],
+        [
+          1329.851,
+          2103.252
+        ],
+        [
+          1328.393,
+          2086.048
+        ],
+        [
+          1334.351,
+          2085.712
+        ],
+        [
+          1339.059,
+          2085.213
+        ],
+        [
+          1343.934,
+          2084.435
+        ],
+        [
+          1348.984,
+          2083.372
+        ],
+        [
+          1353.425,
+          2082.2
+        ],
+        [
+          1357.642,
+          2080.841
+        ],
+        [
+          1361.57,
+          2079.323
+        ],
+        [
+          1365.214,
+          2077.651
+        ],
+        [
+          1368.528,
+          2075.868
+        ],
+        [
+          1371.948,
+          2073.74
+        ],
+        [
+          1375.244,
+          2071.388
+        ],
+        [
+          1378.4,
+          2068.827
+        ],
+        [
+          1381.397,
+          2066.073
+        ],
+        [
+          1384.219,
+          2063.142
+        ],
+        [
+          1386.85,
+          2060.05
+        ],
+        [
+          1389.222,
+          2056.887
+        ],
+        [
+          1391.433,
+          2053.521
+        ],
+        [
+          1393.48,
+          2049.94
+        ],
+        [
+          1395.382,
+          2046.106
+        ],
+        [
+          1397.14,
+          2041.995
+        ],
+        [
+          1398.753,
+          2037.587
+        ],
+        [
+          1400.241,
+          2032.779
+        ],
+        [
+          1401.588,
+          2027.555
+        ],
+        [
+          1402.772,
+          2021.929
+        ],
+        [
+          1403.797,
+          2015.797
+        ],
+        [
+          1404.719,
+          2008.628
+        ],
+        [
+          1405.483,
+          2000.646
+        ],
+        [
+          1406.054,
+          1991.998
+        ],
+        [
+          1406.403,
+          1983.061
+        ],
+        [
+          1406.508,
+          1974.119
+        ],
+        [
+          1406.366,
+          1965.193
+        ],
+        [
+          1405.98,
+          1956.258
+        ],
+        [
+          1405.345,
+          1947.212
+        ],
+        [
+          1404.464,
+          1938.157
+        ],
+        [
+          1403.327,
+          1929.019
+        ],
+        [
+          1401.939,
+          1919.871
+        ],
+        [
+          1400.288,
+          1910.654
+        ],
+        [
+          1398.192,
+          1900.453
+        ],
+        [
+          1395.589,
+          1889.062
+        ],
+        [
+          1392.544,
+          1876.928
+        ],
+        [
+          1530.272,
+          1822.437
+        ],
+        [
+          1532.068,
+          1829.472
+        ],
+        [
+          1533.687,
+          1834.832
+        ],
+        [
+          1535.411,
+          1839.664
+        ],
+        [
+          1537.308,
+          1844.254
+        ],
+        [
+          1539.505,
+          1848.897
+        ],
+        [
+          1541.828,
+          1853.201
+        ],
+        [
+          1544.252,
+          1857.164
+        ],
+        [
+          1546.897,
+          1860.996
+        ],
+        [
+          1549.742,
+          1864.671
+        ],
+        [
+          1552.779,
+          1868.189
+        ],
+        [
+          1556.119,
+          1871.67
+        ],
+        [
+          1559.691,
+          1875.011
+        ],
+        [
+          1563.248,
+          1878.0
+        ],
+        [
+          1567.108,
+          1880.906
+        ],
+        [
+          1570.974,
+          1883.488
+        ],
+        [
+          1574.77,
+          1885.714
+        ],
+        [
+          1578.659,
+          1887.692
+        ],
+        [
+          1582.695,
+          1889.457
+        ],
+        [
+          1587.056,
+          1891.085
+        ],
+        [
+          1591.734,
+          1892.559
+        ],
+        [
+          1596.715,
+          1893.861
+        ],
+        [
+          1602.257,
+          1895.038
+        ],
+        [
+          1608.52,
+          1896.097
+        ],
+        [
+          1616.387,
+          1897.146
+        ],
+        [
+          1622.391,
+          1897.819
+        ],
+        [
+          1622.393,
+          2562.034
+        ],
+        [
+          1618.833,
+          2562.108
+        ],
+        [
+          1603.912,
+          2562.337
+        ],
+        [
+          1588.531,
+          2562.406
+        ],
+        [
+          1577.546,
+          2562.223
+        ],
+        [
+          1567.909,
+          2561.79
+        ],
+        [
+          1559.128,
+          2561.134
+        ],
+        [
+          1550.363,
+          2560.226
+        ],
+        [
+          1541.623,
+          2559.066
+        ],
+        [
+          1532.917,
+          2557.652
+        ],
+        [
+          1524.254,
+          2555.985
+        ],
+        [
+          1515.644,
+          2554.063
+        ],
+        [
+          1507.095,
+          2551.885
+        ],
+        [
+          1498.616,
+          2549.45
+        ],
+        [
+          1490.297,
+          2546.786
+        ],
+        [
+          1480.945,
+          2543.475
+        ],
+        [
+          1469.623,
+          2539.117
+        ],
+        [
+          1455.325,
+          2533.281
+        ],
+        [
+          1441.072,
+          2527.383
+        ],
+        [
+          1428.826,
+          2522.494
+        ],
+        [
+          1419.59,
+          2519.043
+        ],
+        [
+          1411.321,
+          2516.197
+        ],
+        [
+          1402.981,
+          2513.616
+        ],
+        [
+          1395.513,
+          2511.587
+        ],
+        [
+          1387.089,
+          2509.597
+        ],
+        [
+          1377.747,
+          2507.709
+        ],
+        [
+          1368.716,
+          2506.159
+        ],
+        [
+          1358.353,
+          2504.678
+        ],
+        [
+          1348.246,
+          2503.513
+        ],
+        [
+          1337.981,
+          2502.606
+        ],
+        [
+          1328.397,
+          2502.048
+        ]
+      ],
+      "edges": [
+        {
+          "id": "front_body_right.cf.01",
+          "start_index": 91,
+          "end_index": 92,
+          "polyline": [
+            [
+              1622.391,
+              1897.819
+            ],
+            [
+              1622.393,
+              2562.034
+            ]
+          ],
+          "length": 664.2150000030113,
+          "source_edge_id": "e0",
+          "source_semantic_label": "center_front",
+          "semantic_role": "cf",
+          "geometry_type": "line",
+          "start": "cf_top_right",
+          "end": "cf_bottom_right"
+        },
+        {
+          "id": "front_body_right.neckline.02",
+          "start_index": 66,
+          "end_index": 91,
+          "polyline": [
+            [
+              1530.272,
+              1822.437
+            ],
+            [
+              1532.068,
+              1829.472
+            ],
+            [
+              1533.687,
+              1834.832
+            ],
+            [
+              1535.411,
+              1839.664
+            ],
+            [
+              1537.308,
+              1844.254
+            ],
+            [
+              1539.505,
+              1848.897
+            ],
+            [
+              1541.828,
+              1853.201
+            ],
+            [
+              1544.252,
+              1857.164
+            ],
+            [
+              1546.897,
+              1860.996
+            ],
+            [
+              1549.742,
+              1864.671
+            ],
+            [
+              1552.779,
+              1868.189
+            ],
+            [
+              1556.119,
+              1871.67
+            ],
+            [
+              1559.691,
+              1875.011
+            ],
+            [
+              1563.248,
+              1878.0
+            ],
+            [
+              1567.108,
+              1880.906
+            ],
+            [
+              1570.974,
+              1883.488
+            ],
+            [
+              1574.77,
+              1885.714
+            ],
+            [
+              1578.659,
+              1887.692
+            ],
+            [
+              1582.695,
+              1889.457
+            ],
+            [
+              1587.056,
+              1891.085
+            ],
+            [
+              1591.734,
+              1892.559
+            ],
+            [
+              1596.715,
+              1893.861
+            ],
+            [
+              1602.257,
+              1895.038
+            ],
+            [
+              1608.52,
+              1896.097
+            ],
+            [
+              1616.387,
+              1897.146
+            ],
+            [
+              1622.391,
+              1897.819
+            ]
+          ],
+          "length": 129.2953268601353,
+          "source_edge_id": "e1",
+          "source_semantic_label": "front_right_neckline",
+          "semantic_role": "neckline",
+          "geometry_type": "boundary_curve",
+          "start": "front_neck_point_right",
+          "end": "cf_top_right"
+        },
+        {
+          "id": "front_body_right.shoulder.03",
+          "start_index": 65,
+          "end_index": 66,
+          "polyline": [
+            [
+              1392.544,
+              1876.928
+            ],
+            [
+              1530.272,
+              1822.437
+            ]
+          ],
+          "length": 148.11573537271445,
+          "source_edge_id": "e2",
+          "source_semantic_label": "right_shoulder",
+          "semantic_role": "shoulder",
+          "geometry_type": "line",
+          "start": "shoulder_tip_right",
+          "end": "front_neck_point_right"
+        },
+        {
+          "id": "front_body_right.armhole.04",
+          "start_index": 25,
+          "end_index": 65,
+          "polyline": [
+            [
+              1328.393,
+              2086.048
+            ],
+            [
+              1334.351,
+              2085.712
+            ],
+            [
+              1339.059,
+              2085.213
+            ],
+            [
+              1343.934,
+              2084.435
+            ],
+            [
+              1348.984,
+              2083.372
+            ],
+            [
+              1353.425,
+              2082.2
+            ],
+            [
+              1357.642,
+              2080.841
+            ],
+            [
+              1361.57,
+              2079.323
+            ],
+            [
+              1365.214,
+              2077.651
+            ],
+            [
+              1368.528,
+              2075.868
+            ],
+            [
+              1371.948,
+              2073.74
+            ],
+            [
+              1375.244,
+              2071.388
+            ],
+            [
+              1378.4,
+              2068.827
+            ],
+            [
+              1381.397,
+              2066.073
+            ],
+            [
+              1384.219,
+              2063.142
+            ],
+            [
+              1386.85,
+              2060.05
+            ],
+            [
+              1389.222,
+              2056.887
+            ],
+            [
+              1391.433,
+              2053.521
+            ],
+            [
+              1393.48,
+              2049.94
+            ],
+            [
+              1395.382,
+              2046.106
+            ],
+            [
+              1397.14,
+              2041.995
+            ],
+            [
+              1398.753,
+              2037.587
+            ],
+            [
+              1400.241,
+              2032.779
+            ],
+            [
+              1401.588,
+              2027.555
+            ],
+            [
+              1402.772,
+              2021.929
+            ],
+            [
+              1403.797,
+              2015.797
+            ],
+            [
+              1404.719,
+              2008.628
+            ],
+            [
+              1405.483,
+              2000.646
+            ],
+            [
+              1406.054,
+              1991.998
+            ],
+            [
+              1406.403,
+              1983.061
+            ],
+            [
+              1406.508,
+              1974.119
+            ],
+            [
+              1406.366,
+              1965.193
+            ],
+            [
+              1405.98,
+              1956.258
+            ],
+            [
+              1405.345,
+              1947.212
+            ],
+            [
+              1404.464,
+              1938.157
+            ],
+            [
+              1403.327,
+              1929.019
+            ],
+            [
+              1401.939,
+              1919.871
+            ],
+            [
+              1400.288,
+              1910.654
+            ],
+            [
+              1398.192,
+              1900.453
+            ],
+            [
+              1395.589,
+              1889.062
+            ],
+            [
+              1392.544,
+              1876.928
+            ]
+          ],
+          "length": 254.36139057612775,
+          "source_edge_id": "e3",
+          "source_semantic_label": "right_armhole",
+          "semantic_role": "armhole",
+          "geometry_type": "boundary_curve",
+          "start": "armhole_lower_right",
+          "end": "shoulder_tip_right"
+        },
+        {
+          "id": "front_body_right.side_seam.05",
+          "start_index": 0,
+          "end_index": 25,
+          "polyline": [
+            [
+              1328.397,
+              2502.048
+            ],
+            [
+              1328.649,
+              2489.184
+            ],
+            [
+              1328.98,
+              2474.2
+            ],
+            [
+              1329.338,
+              2459.481
+            ],
+            [
+              1329.786,
+              2442.597
+            ],
+            [
+              1330.245,
+              2426.762
+            ],
+            [
+              1330.774,
+              2409.982
+            ],
+            [
+              1331.375,
+              2392.558
+            ],
+            [
+              1332.051,
+              2374.786
+            ],
+            [
+              1332.74,
+              2358.264
+            ],
+            [
+              1333.516,
+              2340.414
+            ],
+            [
+              1334.271,
+              2322.565
+            ],
+            [
+              1334.95,
+              2304.717
+            ],
+            [
+              1335.498,
+              2286.87
+            ],
+            [
+              1335.858,
+              2269.023
+            ],
+            [
+              1335.984,
+              2251.822
+            ],
+            [
+              1335.893,
+              2234.115
+            ],
+            [
+              1335.607,
+              2216.688
+            ],
+            [
+              1335.157,
+              2199.697
+            ],
+            [
+              1334.576,
+              2183.299
+            ],
+            [
+              1333.893,
+              2167.649
+            ],
+            [
+              1333.012,
+              2150.545
+            ],
+            [
+              1332.086,
+              2134.918
+            ],
+            [
+              1331.038,
+              2119.186
+            ],
+            [
+              1329.851,
+              2103.252
+            ],
+            [
+              1328.393,
+              2086.048
+            ]
+          ],
+          "length": 416.35171648241055,
+          "source_edge_id": "e4",
+          "source_semantic_label": "side_seam_right",
+          "semantic_role": "side_seam",
+          "geometry_type": "boundary_curve",
+          "start": "side_hem_right",
+          "end": "armhole_lower_right",
+          "start_point": [
+            1328.397,
+            2502.048
+          ],
+          "end_point": [
+            1328.393,
+            2086.048
+          ]
+        },
+        {
+          "id": "front_body_right.hem.06",
+          "start_index": 92,
+          "end_index": 0,
+          "polyline": [
+            [
+              1622.393,
+              2562.034
+            ],
+            [
+              1618.833,
+              2562.108
+            ],
+            [
+              1603.912,
+              2562.337
+            ],
+            [
+              1588.531,
+              2562.406
+            ],
+            [
+              1577.546,
+              2562.223
+            ],
+            [
+              1567.909,
+              2561.79
+            ],
+            [
+              1559.128,
+              2561.134
+            ],
+            [
+              1550.363,
+              2560.226
+            ],
+            [
+              1541.623,
+              2559.066
+            ],
+            [
+              1532.917,
+              2557.652
+            ],
+            [
+              1524.254,
+              2555.985
+            ],
+            [
+              1515.644,
+              2554.063
+            ],
+            [
+              1507.095,
+              2551.885
+            ],
+            [
+              1498.616,
+              2549.45
+            ],
+            [
+              1490.297,
+              2546.786
+            ],
+            [
+              1480.945,
+              2543.475
+            ],
+            [
+              1469.623,
+              2539.117
+            ],
+            [
+              1455.325,
+              2533.281
+            ],
+            [
+              1441.072,
+              2527.383
+            ],
+            [
+              1428.826,
+              2522.494
+            ],
+            [
+              1419.59,
+              2519.043
+            ],
+            [
+              1411.321,
+              2516.197
+            ],
+            [
+              1402.981,
+              2513.616
+            ],
+            [
+              1395.513,
+              2511.587
+            ],
+            [
+              1387.089,
+              2509.597
+            ],
+            [
+              1377.747,
+              2507.709
+            ],
+            [
+              1368.716,
+              2506.159
+            ],
+            [
+              1358.353,
+              2504.678
+            ],
+            [
+              1348.246,
+              2503.513
+            ],
+            [
+              1337.981,
+              2502.606
+            ],
+            [
+              1328.397,
+              2502.048
+            ]
+          ],
+          "length": 302.8524656874249,
+          "source_edge_id": "e5",
+          "source_semantic_label": "hem",
+          "semantic_role": "hem",
+          "geometry_type": "boundary_curve",
+          "start": "cf_bottom_right",
+          "end": "side_hem_right"
+        }
+      ],
+      "semantic_edges": {
+        "cf": [
+          "front_body_right.cf.01"
+        ],
+        "neckline": [
+          "front_body_right.neckline.02"
+        ],
+        "shoulder": [
+          "front_body_right.shoulder.03"
+        ],
+        "armhole": [
+          "front_body_right.armhole.04"
+        ],
+        "side_seam": [
+          "front_body_right.side_seam.05"
+        ],
+        "hem": [
+          "front_body_right.hem.06"
+        ]
+      },
+      "control_points": {
+        "front_neck_point_right": [
+          1530.272,
+          1822.437
+        ],
+        "shoulder_tip_right": [
+          1392.544,
+          1876.928
+        ],
+        "armhole_upper_right": [
+          1392.544,
+          1876.928
+        ],
+        "armhole_lower_right": [
+          1328.393,
+          2086.048
+        ],
+        "side_waist_right": [
+          1334.2602559807272,
+          2322.819
+        ],
+        "side_hem_right": [
+          1328.397,
+          2502.048
+        ],
+        "cf_top_right": [
+          1622.391,
+          1897.819
+        ],
+        "cf_bottom_right": [
+          1622.393,
+          2562.034
+        ],
+        "cf_right_waist": [
+          1622.3922797061193,
+          2322.819
+        ],
+        "cf_right_hem": [
+          1622.393,
+          2502.048
+        ],
+        "cf_right_chest_width": [
+          1622.391,
+          1974.119
+        ],
+        "side_right_chest_width": [
+          1406.508,
+          1974.119
+        ],
+        "cf_right_chest": [
+          1622.392,
+          2086.048
+        ],
+        "front_right_garment_chest": [
+          1328.393,
+          2086.048
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "front_neck_point_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG66",
+          "semantic_role": "front_neck_point_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "shoulder_tip_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG65",
+          "semantic_role": "shoulder_tip_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync",
+          "also_semantic_roles": [
+            "armhole_upper_right"
+          ]
+        },
+        "armhole_upper_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG65",
+          "semantic_role": "armhole_upper_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "armhole_lower_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG25",
+          "semantic_role": "armhole_lower_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "side_waist_right": {
+          "point_type": "internal",
+          "source": "next_step.md nearest SVG point on updated side_seam_right to center_front",
+          "semantic_role": "side_waist_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "side_hem_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG0",
+          "semantic_role": "side_hem_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_top_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG91",
+          "semantic_role": "cf_top_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_bottom_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG92",
+          "semantic_role": "cf_bottom_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_right_waist": {
+          "point_type": "internal",
+          "source": "next_step.md center_front y-aligned to side_waist_right",
+          "semantic_role": "cf_right_waist",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_right_hem": {
+          "point_type": "internal",
+          "source": "next_step.md center_front y-aligned to side_hem_right",
+          "semantic_role": "cf_right_hem",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_right_chest_width": {
+          "point_type": "internal",
+          "source": "next_step.md center_front y-aligned to side_right_chest_width",
+          "semantic_role": "cf_right_chest_width",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "side_right_chest_width": {
+          "point_type": "internal",
+          "source": "next_step.md nearest SVG point on updated right_armhole to center_front",
+          "semantic_role": "side_right_chest_width",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "cf_right_chest": {
+          "point_type": "internal",
+          "source": "next_step.md center_front y-aligned to armhole_lower_right",
+          "semantic_role": "cf_right_chest",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "front_right_garment_chest": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG25",
+          "semantic_role": "front_right_garment_chest",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "front_right_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "front_body_left",
+      "source_name": "前左-XXXL",
+      "role": "front_body",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "paired",
+      "derived_from": null,
+      "boundary": [
+        [
+          2161.06,
+          2562.026
+        ],
+        [
+          2161.061,
+          1897.811
+        ],
+        [
+          2166.847,
+          1897.163
+        ],
+        [
+          2174.923,
+          1896.091
+        ],
+        [
+          2181.189,
+          1895.035
+        ],
+        [
+          2186.689,
+          1893.87
+        ],
+        [
+          2191.742,
+          1892.547
+        ],
+        [
+          2196.412,
+          1891.065
+        ],
+        [
+          2200.766,
+          1889.425
+        ],
+        [
+          2204.796,
+          1887.649
+        ],
+        [
+          2208.71,
+          1885.645
+        ],
+        [
+          2212.502,
+          1883.41
+        ],
+        [
+          2216.365,
+          1880.824
+        ],
+        [
+          2220.057,
+          1878.045
+        ],
+        [
+          2223.619,
+          1875.061
+        ],
+        [
+          2227.195,
+          1871.726
+        ],
+        [
+          2230.565,
+          1868.225
+        ],
+        [
+          2233.606,
+          1864.711
+        ],
+        [
+          2236.456,
+          1861.041
+        ],
+        [
+          2239.127,
+          1857.184
+        ],
+        [
+          2241.556,
+          1853.224
+        ],
+        [
+          2243.885,
+          1848.924
+        ],
+        [
+          2246.09,
+          1844.285
+        ],
+        [
+          2248.005,
+          1839.675
+        ],
+        [
+          2249.737,
+          1834.845
+        ],
+        [
+          2251.375,
+          1829.449
+        ],
+        [
+          2253.18,
+          1822.429
+        ],
+        [
+          2390.909,
+          1876.92
+        ],
+        [
+          2387.863,
+          1889.054
+        ],
+        [
+          2385.26,
+          1900.445
+        ],
+        [
+          2383.164,
+          1910.646
+        ],
+        [
+          2381.514,
+          1919.863
+        ],
+        [
+          2380.126,
+          1929.011
+        ],
+        [
+          2378.988,
+          1938.149
+        ],
+        [
+          2378.108,
+          1947.204
+        ],
+        [
+          2377.472,
+          1956.25
+        ],
+        [
+          2377.086,
+          1965.185
+        ],
+        [
+          2376.944,
+          1974.111
+        ],
+        [
+          2377.05,
+          1983.053
+        ],
+        [
+          2377.398,
+          1991.99
+        ],
+        [
+          2377.969,
+          2000.638
+        ],
+        [
+          2378.734,
+          2008.62
+        ],
+        [
+          2379.655,
+          2015.789
+        ],
+        [
+          2380.68,
+          2021.921
+        ],
+        [
+          2381.864,
+          2027.547
+        ],
+        [
+          2383.211,
+          2032.771
+        ],
+        [
+          2384.699,
+          2037.579
+        ],
+        [
+          2386.312,
+          2041.987
+        ],
+        [
+          2388.07,
+          2046.098
+        ],
+        [
+          2389.972,
+          2049.932
+        ],
+        [
+          2392.019,
+          2053.513
+        ],
+        [
+          2394.23,
+          2056.879
+        ],
+        [
+          2396.602,
+          2060.042
+        ],
+        [
+          2399.233,
+          2063.134
+        ],
+        [
+          2402.055,
+          2066.065
+        ],
+        [
+          2405.053,
+          2068.819
+        ],
+        [
+          2408.208,
+          2071.38
+        ],
+        [
+          2411.505,
+          2073.732
+        ],
+        [
+          2414.925,
+          2075.86
+        ],
+        [
+          2418.239,
+          2077.643
+        ],
+        [
+          2421.883,
+          2079.315
+        ],
+        [
+          2425.81,
+          2080.833
+        ],
+        [
+          2430.027,
+          2082.192
+        ],
+        [
+          2434.468,
+          2083.364
+        ],
+        [
+          2439.518,
+          2084.427
+        ],
+        [
+          2444.393,
+          2085.205
+        ],
+        [
+          2449.101,
+          2085.704
+        ],
+        [
+          2455.059,
+          2086.04
+        ],
+        [
+          2453.602,
+          2103.244
+        ],
+        [
+          2452.415,
+          2119.178
+        ],
+        [
+          2451.367,
+          2134.91
+        ],
+        [
+          2450.441,
+          2150.537
+        ],
+        [
+          2449.56,
+          2167.641
+        ],
+        [
+          2448.877,
+          2183.291
+        ],
+        [
+          2448.296,
+          2199.689
+        ],
+        [
+          2447.846,
+          2216.68
+        ],
+        [
+          2447.56,
+          2234.107
+        ],
+        [
+          2447.469,
+          2251.815
+        ],
+        [
+          2447.595,
+          2269.015
+        ],
+        [
+          2447.955,
+          2286.862
+        ],
+        [
+          2448.503,
+          2304.709
+        ],
+        [
+          2449.182,
+          2322.558
+        ],
+        [
+          2449.937,
+          2340.406
+        ],
+        [
+          2450.713,
+          2358.256
+        ],
+        [
+          2451.402,
+          2374.778
+        ],
+        [
+          2452.078,
+          2392.55
+        ],
+        [
+          2452.679,
+          2409.975
+        ],
+        [
+          2453.208,
+          2426.754
+        ],
+        [
+          2453.667,
+          2442.589
+        ],
+        [
+          2454.115,
+          2459.473
+        ],
+        [
+          2454.473,
+          2474.192
+        ],
+        [
+          2454.804,
+          2489.176
+        ],
+        [
+          2455.061,
+          2502.04
+        ],
+        [
+          2445.403,
+          2502.598
+        ],
+        [
+          2435.07,
+          2503.507
+        ],
+        [
+          2424.898,
+          2504.676
+        ],
+        [
+          2415.457,
+          2506.012
+        ],
+        [
+          2405.393,
+          2507.725
+        ],
+        [
+          2396.004,
+          2509.626
+        ],
+        [
+          2387.54,
+          2511.63
+        ],
+        [
+          2379.317,
+          2513.887
+        ],
+        [
+          2370.949,
+          2516.511
+        ],
+        [
+          2362.651,
+          2519.395
+        ],
+        [
+          2352.352,
+          2523.284
+        ],
+        [
+          2340.06,
+          2528.229
+        ],
+        [
+          2325.741,
+          2534.152
+        ],
+        [
+          2311.363,
+          2539.97
+        ],
+        [
+          2301.008,
+          2543.901
+        ],
+        [
+          2291.6,
+          2547.182
+        ],
+        [
+          2283.523,
+          2549.724
+        ],
+        [
+          2274.997,
+          2552.13
+        ],
+        [
+          2266.401,
+          2554.278
+        ],
+        [
+          2257.744,
+          2556.168
+        ],
+        [
+          2249.036,
+          2557.802
+        ],
+        [
+          2240.286,
+          2559.181
+        ],
+        [
+          2231.503,
+          2560.304
+        ],
+        [
+          2222.697,
+          2561.174
+        ],
+        [
+          2213.877,
+          2561.79
+        ],
+        [
+          2204.454,
+          2562.173
+        ],
+        [
+          2193.422,
+          2562.332
+        ],
+        [
+          2178.286,
+          2562.28
+        ],
+        [
+          2163.741,
+          2562.078
+        ],
+        [
+          2161.06,
+          2562.026
+        ]
+      ],
+      "edges": [
+        {
+          "id": "front_body_left.cf.01",
+          "start_index": 0,
+          "end_index": 1,
+          "polyline": [
+            [
+              2161.06,
+              2562.026
+            ],
+            [
+              2161.061,
+              1897.811
+            ]
+          ],
+          "length": 664.2150000007526,
+          "source_edge_id": "e0",
+          "source_semantic_label": "center_front",
+          "semantic_role": "cf",
+          "geometry_type": "line",
+          "start": "cf_bottom_left",
+          "end": "cf_top_left"
+        },
+        {
+          "id": "front_body_left.neckline.02",
+          "start_index": 2,
+          "end_index": 26,
+          "polyline": [
+            [
+              2166.847,
+              1897.163
+            ],
+            [
+              2174.923,
+              1896.091
+            ],
+            [
+              2181.189,
+              1895.035
+            ],
+            [
+              2186.689,
+              1893.87
+            ],
+            [
+              2191.742,
+              1892.547
+            ],
+            [
+              2196.412,
+              1891.065
+            ],
+            [
+              2200.766,
+              1889.425
+            ],
+            [
+              2204.796,
+              1887.649
+            ],
+            [
+              2208.71,
+              1885.645
+            ],
+            [
+              2212.502,
+              1883.41
+            ],
+            [
+              2216.365,
+              1880.824
+            ],
+            [
+              2220.057,
+              1878.045
+            ],
+            [
+              2223.619,
+              1875.061
+            ],
+            [
+              2227.195,
+              1871.726
+            ],
+            [
+              2230.565,
+              1868.225
+            ],
+            [
+              2233.606,
+              1864.711
+            ],
+            [
+              2236.456,
+              1861.041
+            ],
+            [
+              2239.127,
+              1857.184
+            ],
+            [
+              2241.556,
+              1853.224
+            ],
+            [
+              2243.885,
+              1848.924
+            ],
+            [
+              2246.09,
+              1844.285
+            ],
+            [
+              2248.005,
+              1839.675
+            ],
+            [
+              2249.737,
+              1834.845
+            ],
+            [
+              2251.375,
+              1829.449
+            ],
+            [
+              2253.18,
+              1822.429
+            ]
+          ],
+          "length": 123.43523488616704,
+          "source_edge_id": "e1",
+          "source_semantic_label": "front_left_neckline",
+          "semantic_role": "neckline",
+          "geometry_type": "boundary_curve",
+          "start": null,
+          "end": "front_neck_point_left"
+        },
+        {
+          "id": "front_body_left.shoulder.03",
+          "start_index": 26,
+          "end_index": 27,
+          "polyline": [
+            [
+              2253.18,
+              1822.429
+            ],
+            [
+              2390.909,
+              1876.92
+            ]
+          ],
+          "length": 148.11666524061386,
+          "source_edge_id": "e2",
+          "source_semantic_label": "left_shoulder",
+          "semantic_role": "shoulder",
+          "geometry_type": "line",
+          "start": "front_neck_point_left",
+          "end": "shoulder_tip_left"
+        },
+        {
+          "id": "front_body_left.armhole.04",
+          "start_index": 27,
+          "end_index": 67,
+          "polyline": [
+            [
+              2390.909,
+              1876.92
+            ],
+            [
+              2387.863,
+              1889.054
+            ],
+            [
+              2385.26,
+              1900.445
+            ],
+            [
+              2383.164,
+              1910.646
+            ],
+            [
+              2381.514,
+              1919.863
+            ],
+            [
+              2380.126,
+              1929.011
+            ],
+            [
+              2378.988,
+              1938.149
+            ],
+            [
+              2378.108,
+              1947.204
+            ],
+            [
+              2377.472,
+              1956.25
+            ],
+            [
+              2377.086,
+              1965.185
+            ],
+            [
+              2376.944,
+              1974.111
+            ],
+            [
+              2377.05,
+              1983.053
+            ],
+            [
+              2377.398,
+              1991.99
+            ],
+            [
+              2377.969,
+              2000.638
+            ],
+            [
+              2378.734,
+              2008.62
+            ],
+            [
+              2379.655,
+              2015.789
+            ],
+            [
+              2380.68,
+              2021.921
+            ],
+            [
+              2381.864,
+              2027.547
+            ],
+            [
+              2383.211,
+              2032.771
+            ],
+            [
+              2384.699,
+              2037.579
+            ],
+            [
+              2386.312,
+              2041.987
+            ],
+            [
+              2388.07,
+              2046.098
+            ],
+            [
+              2389.972,
+              2049.932
+            ],
+            [
+              2392.019,
+              2053.513
+            ],
+            [
+              2394.23,
+              2056.879
+            ],
+            [
+              2396.602,
+              2060.042
+            ],
+            [
+              2399.233,
+              2063.134
+            ],
+            [
+              2402.055,
+              2066.065
+            ],
+            [
+              2405.053,
+              2068.819
+            ],
+            [
+              2408.208,
+              2071.38
+            ],
+            [
+              2411.505,
+              2073.732
+            ],
+            [
+              2414.925,
+              2075.86
+            ],
+            [
+              2418.239,
+              2077.643
+            ],
+            [
+              2421.883,
+              2079.315
+            ],
+            [
+              2425.81,
+              2080.833
+            ],
+            [
+              2430.027,
+              2082.192
+            ],
+            [
+              2434.468,
+              2083.364
+            ],
+            [
+              2439.518,
+              2084.427
+            ],
+            [
+              2444.393,
+              2085.205
+            ],
+            [
+              2449.101,
+              2085.704
+            ],
+            [
+              2455.059,
+              2086.04
+            ]
+          ],
+          "length": 254.3613364692194,
+          "source_edge_id": "e3",
+          "source_semantic_label": "left_armhole",
+          "semantic_role": "armhole",
+          "geometry_type": "boundary_curve",
+          "start": "shoulder_tip_left",
+          "end": "armhole_lower_left"
+        },
+        {
+          "id": "front_body_left.side_seam.05",
+          "start_index": 67,
+          "end_index": 92,
+          "polyline": [
+            [
+              2455.059,
+              2086.04
+            ],
+            [
+              2453.602,
+              2103.244
+            ],
+            [
+              2452.415,
+              2119.178
+            ],
+            [
+              2451.367,
+              2134.91
+            ],
+            [
+              2450.441,
+              2150.537
+            ],
+            [
+              2449.56,
+              2167.641
+            ],
+            [
+              2448.877,
+              2183.291
+            ],
+            [
+              2448.296,
+              2199.689
+            ],
+            [
+              2447.846,
+              2216.68
+            ],
+            [
+              2447.56,
+              2234.107
+            ],
+            [
+              2447.469,
+              2251.815
+            ],
+            [
+              2447.595,
+              2269.015
+            ],
+            [
+              2447.955,
+              2286.862
+            ],
+            [
+              2448.503,
+              2304.709
+            ],
+            [
+              2449.182,
+              2322.558
+            ],
+            [
+              2449.937,
+              2340.406
+            ],
+            [
+              2450.713,
+              2358.256
+            ],
+            [
+              2451.402,
+              2374.778
+            ],
+            [
+              2452.078,
+              2392.55
+            ],
+            [
+              2452.679,
+              2409.975
+            ],
+            [
+              2453.208,
+              2426.754
+            ],
+            [
+              2453.667,
+              2442.589
+            ],
+            [
+              2454.115,
+              2459.473
+            ],
+            [
+              2454.473,
+              2474.192
+            ],
+            [
+              2454.804,
+              2489.176
+            ],
+            [
+              2455.061,
+              2502.04
+            ]
+          ],
+          "length": 416.3517310527953,
+          "source_edge_id": "e4",
+          "source_semantic_label": "side_seam_left",
+          "semantic_role": "side_seam",
+          "geometry_type": "boundary_curve",
+          "start": "armhole_lower_left",
+          "end": "side_hem_left",
+          "start_point": [
+            2455.059,
+            2086.04
+          ],
+          "end_point": [
+            2455.061,
+            2502.04
+          ]
+        },
+        {
+          "id": "front_body_left.hem.06",
+          "start_index": 92,
+          "end_index": 121,
+          "polyline": [
+            [
+              2455.061,
+              2502.04
+            ],
+            [
+              2445.403,
+              2502.598
+            ],
+            [
+              2435.07,
+              2503.507
+            ],
+            [
+              2424.898,
+              2504.676
+            ],
+            [
+              2415.457,
+              2506.012
+            ],
+            [
+              2405.393,
+              2507.725
+            ],
+            [
+              2396.004,
+              2509.626
+            ],
+            [
+              2387.54,
+              2511.63
+            ],
+            [
+              2379.317,
+              2513.887
+            ],
+            [
+              2370.949,
+              2516.511
+            ],
+            [
+              2362.651,
+              2519.395
+            ],
+            [
+              2352.352,
+              2523.284
+            ],
+            [
+              2340.06,
+              2528.229
+            ],
+            [
+              2325.741,
+              2534.152
+            ],
+            [
+              2311.363,
+              2539.97
+            ],
+            [
+              2301.008,
+              2543.901
+            ],
+            [
+              2291.6,
+              2547.182
+            ],
+            [
+              2283.523,
+              2549.724
+            ],
+            [
+              2274.997,
+              2552.13
+            ],
+            [
+              2266.401,
+              2554.278
+            ],
+            [
+              2257.744,
+              2556.168
+            ],
+            [
+              2249.036,
+              2557.802
+            ],
+            [
+              2240.286,
+              2559.181
+            ],
+            [
+              2231.503,
+              2560.304
+            ],
+            [
+              2222.697,
+              2561.174
+            ],
+            [
+              2213.877,
+              2561.79
+            ],
+            [
+              2204.454,
+              2562.173
+            ],
+            [
+              2193.422,
+              2562.332
+            ],
+            [
+              2178.286,
+              2562.28
+            ],
+            [
+              2163.741,
+              2562.078
+            ]
+          ],
+          "length": 300.1502103582437,
+          "source_edge_id": "e5",
+          "source_semantic_label": "hem",
+          "semantic_role": "hem",
+          "geometry_type": "boundary_curve",
+          "start": "side_hem_left",
+          "end": null
+        }
+      ],
+      "semantic_edges": {
+        "cf": [
+          "front_body_left.cf.01"
+        ],
+        "neckline": [
+          "front_body_left.neckline.02"
+        ],
+        "shoulder": [
+          "front_body_left.shoulder.03"
+        ],
+        "armhole": [
+          "front_body_left.armhole.04"
+        ],
+        "side_seam": [
+          "front_body_left.side_seam.05"
+        ],
+        "hem": [
+          "front_body_left.hem.06"
+        ]
+      },
+      "control_points": {
+        "front_neck_point_left": [
+          2253.18,
+          1822.429
+        ],
+        "shoulder_tip_left": [
+          2390.909,
+          1876.92
+        ],
+        "armhole_upper_left": [
+          2390.909,
+          1876.92
+        ],
+        "armhole_lower_left": [
+          2455.059,
+          2086.04
+        ],
+        "side_waist_left": [
+          2449.1927023195876,
+          2322.8109999999997
+        ],
+        "side_hem_left": [
+          2455.061,
+          2502.04
+        ],
+        "cf_top_left": [
+          2161.061,
+          1897.811
+        ],
+        "cf_bottom_left": [
+          2161.06,
+          2562.026
+        ],
+        "cf_left_waist": [
+          2161.06036014694,
+          2322.8109999999997
+        ],
+        "cf_left_hem": [
+          2161.06,
+          2502.04
+        ],
+        "cf_left_chest_width": [
+          2161.061,
+          1974.111
+        ],
+        "side_left_chest_width": [
+          2376.944,
+          1974.111
+        ],
+        "cf_left_chest": [
+          2161.061,
+          2085.704
+        ],
+        "front_left_garment_chest": [
+          2455.059,
+          2086.04
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "front_neck_point_left": {
+          "point_type": "boundary",
+          "source": "renamed from front neck semantic point",
+          "semantic_role": "front_neck_point_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "shoulder_tip_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG27",
+          "semantic_role": "shoulder_tip_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync",
+          "also_semantic_roles": [
+            "armhole_upper_left"
+          ]
+        },
+        "armhole_upper_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG27",
+          "semantic_role": "armhole_upper_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "armhole_lower_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG67",
+          "semantic_role": "armhole_lower_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        },
+        "side_waist_left": {
+          "point_type": "internal",
+          "source": "side seam waist tangent/intersection",
+          "semantic_role": "side_waist_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "side_hem_left": {
+          "point_type": "boundary",
+          "source": "next_step.md side_bottom",
+          "semantic_role": "side_hem_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_top_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG1",
+          "semantic_role": "cf_top_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_bottom_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG0",
+          "semantic_role": "cf_bottom_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_left_waist": {
+          "point_type": "internal",
+          "source": "next_step.md center_front aligned after SVG point update",
+          "semantic_role": "cf_left_waist",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_left_hem": {
+          "point_type": "internal",
+          "source": "next_step.md center_front aligned after SVG point update",
+          "semantic_role": "cf_left_hem",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_left_chest_width": {
+          "point_type": "internal",
+          "source": "next_step.md center_front aligned after SVG point update",
+          "semantic_role": "cf_left_chest_width",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "side_left_chest_width": {
+          "point_type": "internal",
+          "source": "next_step.md vertical tangent on e3",
+          "semantic_role": "side_left_chest_width",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cf_left_chest": {
+          "point_type": "internal",
+          "source": "next_step.md center_front aligned after SVG point update",
+          "semantic_role": "cf_left_chest",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "front_left_garment_chest": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG67",
+          "semantic_role": "front_left_garment_chest",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "next_step_2026_05_20_multisize_semantic_sync"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "front_left_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "back_body",
+      "source_name": "后下-XXXL",
+      "role": "back_body",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "self",
+      "derived_from": null,
+      "boundary": [
+        [
+          330.001,
+          2609.594
+        ],
+        [
+          323.847,
+          2609.711
+        ],
+        [
+          310.63,
+          2609.756
+        ],
+        [
+          296.871,
+          2609.56
+        ],
+        [
+          283.477,
+          2609.128
+        ],
+        [
+          270.384,
+          2608.452
+        ],
+        [
+          258.194,
+          2607.561
+        ],
+        [
+          247.468,
+          2606.528
+        ],
+        [
+          236.567,
+          2605.206
+        ],
+        [
+          225.703,
+          2603.588
+        ],
+        [
+          216.241,
+          2601.912
+        ],
+        [
+          206.831,
+          2599.977
+        ],
+        [
+          197.484,
+          2597.767
+        ],
+        [
+          188.21,
+          2595.268
+        ],
+        [
+          179.297,
+          2592.557
+        ],
+        [
+          168.882,
+          2589.047
+        ],
+        [
+          154.666,
+          2583.884
+        ],
+        [
+          140.493,
+          2578.626
+        ],
+        [
+          128.869,
+          2574.481
+        ],
+        [
+          119.78,
+          2571.478
+        ],
+        [
+          111.936,
+          2569.127
+        ],
+        [
+          102.705,
+          2566.719
+        ],
+        [
+          95.774,
+          2565.197
+        ],
+        [
+          87.892,
+          2563.728
+        ],
+        [
+          79.048,
+          2562.358
+        ],
+        [
+          69.763,
+          2561.195
+        ],
+        [
+          60.034,
+          2560.251
+        ],
+        [
+          50.003,
+          2559.594
+        ],
+        [
+          50.255,
+          2546.729
+        ],
+        [
+          50.586,
+          2531.746
+        ],
+        [
+          50.944,
+          2517.026
+        ],
+        [
+          51.392,
+          2500.142
+        ],
+        [
+          51.851,
+          2484.307
+        ],
+        [
+          52.38,
+          2467.528
+        ],
+        [
+          52.981,
+          2450.103
+        ],
+        [
+          53.657,
+          2432.332
+        ],
+        [
+          54.346,
+          2415.809
+        ],
+        [
+          55.122,
+          2397.96
+        ],
+        [
+          55.877,
+          2380.111
+        ],
+        [
+          56.556,
+          2362.263
+        ],
+        [
+          57.104,
+          2344.415
+        ],
+        [
+          57.464,
+          2326.569
+        ],
+        [
+          57.59,
+          2309.368
+        ],
+        [
+          57.499,
+          2291.66
+        ],
+        [
+          57.213,
+          2274.233
+        ],
+        [
+          56.763,
+          2257.243
+        ],
+        [
+          56.182,
+          2240.845
+        ],
+        [
+          55.499,
+          2225.195
+        ],
+        [
+          54.618,
+          2208.09
+        ],
+        [
+          53.692,
+          2192.464
+        ],
+        [
+          52.644,
+          2176.731
+        ],
+        [
+          51.457,
+          2160.798
+        ],
+        [
+          50.0,
+          2143.594
+        ],
+        [
+          56.195,
+          2141.078
+        ],
+        [
+          60.803,
+          2138.925
+        ],
+        [
+          65.388,
+          2136.515
+        ],
+        [
+          69.224,
+          2134.233
+        ],
+        [
+          72.788,
+          2131.821
+        ],
+        [
+          76.208,
+          2129.205
+        ],
+        [
+          79.577,
+          2126.312
+        ],
+        [
+          82.791,
+          2123.227
+        ],
+        [
+          85.959,
+          2119.836
+        ],
+        [
+          88.893,
+          2116.335
+        ],
+        [
+          91.726,
+          2112.567
+        ],
+        [
+          94.352,
+          2108.656
+        ],
+        [
+          96.775,
+          2104.602
+        ],
+        [
+          99.063,
+          2100.279
+        ],
+        [
+          101.176,
+          2095.744
+        ],
+        [
+          103.097,
+          2091.038
+        ],
+        [
+          104.864,
+          2086.054
+        ],
+        [
+          106.487,
+          2080.723
+        ],
+        [
+          107.91,
+          2075.186
+        ],
+        [
+          109.162,
+          2069.31
+        ],
+        [
+          110.299,
+          2062.693
+        ],
+        [
+          111.493,
+          2054.057
+        ],
+        [
+          112.756,
+          2043.085
+        ],
+        [
+          113.653,
+          2033.268
+        ],
+        [
+          114.254,
+          2024.079
+        ],
+        [
+          114.601,
+          2015.083
+        ],
+        [
+          114.696,
+          2006.278
+        ],
+        [
+          114.547,
+          1997.563
+        ],
+        [
+          114.168,
+          1989.188
+        ],
+        [
+          113.6,
+          1981.78
+        ],
+        [
+          112.724,
+          1974.038
+        ],
+        [
+          128.51,
+          1971.947
+        ],
+        [
+          144.004,
+          1970.041
+        ],
+        [
+          159.158,
+          1968.363
+        ],
+        [
+          174.388,
+          1966.863
+        ],
+        [
+          189.497,
+          1965.533
+        ],
+        [
+          204.754,
+          1964.351
+        ],
+        [
+          220.129,
+          1963.337
+        ],
+        [
+          235.41,
+          1962.523
+        ],
+        [
+          250.792,
+          1961.916
+        ],
+        [
+          266.091,
+          1961.538
+        ],
+        [
+          281.362,
+          1961.397
+        ],
+        [
+          296.664,
+          1961.445
+        ],
+        [
+          311.907,
+          1961.541
+        ],
+        [
+          326.887,
+          1961.588
+        ],
+        [
+          330.003,
+          1961.592
+        ],
+        [
+          333.116,
+          1961.588
+        ],
+        [
+          348.096,
+          1961.541
+        ],
+        [
+          363.339,
+          1961.445
+        ],
+        [
+          378.641,
+          1961.397
+        ],
+        [
+          393.912,
+          1961.538
+        ],
+        [
+          409.211,
+          1961.916
+        ],
+        [
+          424.592,
+          1962.523
+        ],
+        [
+          439.873,
+          1963.337
+        ],
+        [
+          455.249,
+          1964.351
+        ],
+        [
+          470.505,
+          1965.533
+        ],
+        [
+          485.615,
+          1966.863
+        ],
+        [
+          500.844,
+          1968.363
+        ],
+        [
+          515.999,
+          1970.041
+        ],
+        [
+          531.492,
+          1971.947
+        ],
+        [
+          547.275,
+          1974.061
+        ],
+        [
+          546.402,
+          1981.779
+        ],
+        [
+          545.834,
+          1989.188
+        ],
+        [
+          545.456,
+          1997.563
+        ],
+        [
+          545.307,
+          2006.278
+        ],
+        [
+          545.402,
+          2015.083
+        ],
+        [
+          545.748,
+          2024.079
+        ],
+        [
+          546.35,
+          2033.268
+        ],
+        [
+          547.247,
+          2043.085
+        ],
+        [
+          548.51,
+          2054.057
+        ],
+        [
+          549.704,
+          2062.693
+        ],
+        [
+          550.841,
+          2069.31
+        ],
+        [
+          552.092,
+          2075.186
+        ],
+        [
+          553.516,
+          2080.723
+        ],
+        [
+          555.138,
+          2086.054
+        ],
+        [
+          556.906,
+          2091.038
+        ],
+        [
+          558.827,
+          2095.744
+        ],
+        [
+          560.939,
+          2100.279
+        ],
+        [
+          563.228,
+          2104.602
+        ],
+        [
+          565.651,
+          2108.656
+        ],
+        [
+          568.277,
+          2112.567
+        ],
+        [
+          571.11,
+          2116.335
+        ],
+        [
+          574.044,
+          2119.836
+        ],
+        [
+          577.212,
+          2123.227
+        ],
+        [
+          580.426,
+          2126.312
+        ],
+        [
+          583.795,
+          2129.205
+        ],
+        [
+          587.214,
+          2131.821
+        ],
+        [
+          590.779,
+          2134.233
+        ],
+        [
+          594.615,
+          2136.515
+        ],
+        [
+          599.199,
+          2138.925
+        ],
+        [
+          603.808,
+          2141.078
+        ],
+        [
+          610.003,
+          2143.594
+        ],
+        [
+          608.546,
+          2160.798
+        ],
+        [
+          607.359,
+          2176.731
+        ],
+        [
+          606.311,
+          2192.464
+        ],
+        [
+          605.385,
+          2208.09
+        ],
+        [
+          604.504,
+          2225.195
+        ],
+        [
+          603.821,
+          2240.845
+        ],
+        [
+          603.239,
+          2257.243
+        ],
+        [
+          602.79,
+          2274.233
+        ],
+        [
+          602.504,
+          2291.66
+        ],
+        [
+          602.413,
+          2309.368
+        ],
+        [
+          602.539,
+          2326.569
+        ],
+        [
+          602.899,
+          2344.415
+        ],
+        [
+          603.446,
+          2362.263
+        ],
+        [
+          604.125,
+          2380.111
+        ],
+        [
+          604.881,
+          2397.96
+        ],
+        [
+          605.657,
+          2415.809
+        ],
+        [
+          606.346,
+          2432.332
+        ],
+        [
+          607.021,
+          2450.103
+        ],
+        [
+          607.623,
+          2467.528
+        ],
+        [
+          608.152,
+          2484.307
+        ],
+        [
+          608.611,
+          2500.142
+        ],
+        [
+          609.059,
+          2517.026
+        ],
+        [
+          609.417,
+          2531.746
+        ],
+        [
+          609.748,
+          2546.729
+        ],
+        [
+          610.0,
+          2559.594
+        ],
+        [
+          599.968,
+          2560.251
+        ],
+        [
+          590.24,
+          2561.195
+        ],
+        [
+          580.955,
+          2562.358
+        ],
+        [
+          572.11,
+          2563.728
+        ],
+        [
+          564.228,
+          2565.197
+        ],
+        [
+          557.298,
+          2566.719
+        ],
+        [
+          548.066,
+          2569.127
+        ],
+        [
+          540.223,
+          2571.478
+        ],
+        [
+          531.133,
+          2574.481
+        ],
+        [
+          519.51,
+          2578.626
+        ],
+        [
+          505.337,
+          2583.884
+        ],
+        [
+          491.12,
+          2589.047
+        ],
+        [
+          480.706,
+          2592.557
+        ],
+        [
+          471.793,
+          2595.268
+        ],
+        [
+          462.519,
+          2597.767
+        ],
+        [
+          453.171,
+          2599.977
+        ],
+        [
+          443.761,
+          2601.912
+        ],
+        [
+          434.3,
+          2603.588
+        ],
+        [
+          423.436,
+          2605.206
+        ],
+        [
+          412.535,
+          2606.528
+        ],
+        [
+          401.809,
+          2607.561
+        ],
+        [
+          389.619,
+          2608.452
+        ],
+        [
+          376.525,
+          2609.128
+        ],
+        [
+          363.131,
+          2609.56
+        ],
+        [
+          349.372,
+          2609.756
+        ],
+        [
+          336.156,
+          2609.711
+        ],
+        [
+          330.001,
+          2609.594
+        ]
+      ],
+      "edges": [
+        {
+          "id": "back_body.armhole_left_part.01",
+          "start_index": 52,
+          "end_index": 83,
+          "polyline": [
+            [
+              50.0,
+              2143.594
+            ],
+            [
+              56.195,
+              2141.078
+            ],
+            [
+              60.803,
+              2138.925
+            ],
+            [
+              65.388,
+              2136.515
+            ],
+            [
+              69.224,
+              2134.233
+            ],
+            [
+              72.788,
+              2131.821
+            ],
+            [
+              76.208,
+              2129.205
+            ],
+            [
+              79.577,
+              2126.312
+            ],
+            [
+              82.791,
+              2123.227
+            ],
+            [
+              85.959,
+              2119.836
+            ],
+            [
+              88.893,
+              2116.335
+            ],
+            [
+              91.726,
+              2112.567
+            ],
+            [
+              94.352,
+              2108.656
+            ],
+            [
+              96.775,
+              2104.602
+            ],
+            [
+              99.063,
+              2100.279
+            ],
+            [
+              101.176,
+              2095.744
+            ],
+            [
+              103.097,
+              2091.038
+            ],
+            [
+              104.864,
+              2086.054
+            ],
+            [
+              106.487,
+              2080.723
+            ],
+            [
+              107.91,
+              2075.186
+            ],
+            [
+              109.162,
+              2069.31
+            ],
+            [
+              110.299,
+              2062.693
+            ],
+            [
+              111.493,
+              2054.057
+            ],
+            [
+              112.756,
+              2043.085
+            ],
+            [
+              113.653,
+              2033.268
+            ],
+            [
+              114.254,
+              2024.079
+            ],
+            [
+              114.601,
+              2015.083
+            ],
+            [
+              114.696,
+              2006.278
+            ],
+            [
+              114.547,
+              1997.563
+            ],
+            [
+              114.168,
+              1989.188
+            ],
+            [
+              113.6,
+              1981.78
+            ],
+            [
+              112.724,
+              1974.038
+            ]
+          ],
+          "length": 195.5120594108479,
+          "source_edge_id": "e0",
+          "source_semantic_label": "armhole_left_part",
+          "semantic_role": "armhole_left_part",
+          "geometry_type": "boundary_curve",
+          "start": "armhole_lower_left",
+          "end": "yoke_join_left"
+        },
+        {
+          "id": "back_body.side_seam_left.02",
+          "start_index": 27,
+          "end_index": 52,
+          "polyline": [
+            [
+              50.003,
+              2559.594
+            ],
+            [
+              50.255,
+              2546.729
+            ],
+            [
+              50.586,
+              2531.746
+            ],
+            [
+              50.944,
+              2517.026
+            ],
+            [
+              51.392,
+              2500.142
+            ],
+            [
+              51.851,
+              2484.307
+            ],
+            [
+              52.38,
+              2467.528
+            ],
+            [
+              52.981,
+              2450.103
+            ],
+            [
+              53.657,
+              2432.332
+            ],
+            [
+              54.346,
+              2415.809
+            ],
+            [
+              55.122,
+              2397.96
+            ],
+            [
+              55.877,
+              2380.111
+            ],
+            [
+              56.556,
+              2362.263
+            ],
+            [
+              57.104,
+              2344.415
+            ],
+            [
+              57.464,
+              2326.569
+            ],
+            [
+              57.59,
+              2309.368
+            ],
+            [
+              57.499,
+              2291.66
+            ],
+            [
+              57.213,
+              2274.233
+            ],
+            [
+              56.763,
+              2257.243
+            ],
+            [
+              56.182,
+              2240.845
+            ],
+            [
+              55.499,
+              2225.195
+            ],
+            [
+              54.618,
+              2208.09
+            ],
+            [
+              53.692,
+              2192.464
+            ],
+            [
+              52.644,
+              2176.731
+            ],
+            [
+              51.457,
+              2160.798
+            ],
+            [
+              50.0,
+              2143.594
+            ]
+          ],
+          "length": 416.3516335719984,
+          "source_edge_id": "e1",
+          "source_semantic_label": "left_side_seam",
+          "semantic_role": "side_seam_left",
+          "geometry_type": "boundary_curve",
+          "start": "back_side_hem_left",
+          "end": "armhole_lower_left",
+          "start_point": [
+            50.003,
+            2559.594
+          ],
+          "end_point": [
+            50.0,
+            2143.594
+          ]
+        },
+        {
+          "id": "back_body.yoke_join.03",
+          "start_index": 83,
+          "end_index": 113,
+          "polyline": [
+            [
+              112.724,
+              1974.038
+            ],
+            [
+              128.51,
+              1971.947
+            ],
+            [
+              144.004,
+              1970.041
+            ],
+            [
+              159.158,
+              1968.363
+            ],
+            [
+              174.388,
+              1966.863
+            ],
+            [
+              189.497,
+              1965.533
+            ],
+            [
+              204.754,
+              1964.351
+            ],
+            [
+              220.129,
+              1963.337
+            ],
+            [
+              235.41,
+              1962.523
+            ],
+            [
+              250.792,
+              1961.916
+            ],
+            [
+              266.091,
+              1961.538
+            ],
+            [
+              281.362,
+              1961.397
+            ],
+            [
+              296.664,
+              1961.445
+            ],
+            [
+              311.907,
+              1961.541
+            ],
+            [
+              326.887,
+              1961.588
+            ],
+            [
+              330.003,
+              1961.592
+            ],
+            [
+              333.116,
+              1961.588
+            ],
+            [
+              348.096,
+              1961.541
+            ],
+            [
+              363.339,
+              1961.445
+            ],
+            [
+              378.641,
+              1961.397
+            ],
+            [
+              393.912,
+              1961.538
+            ],
+            [
+              409.211,
+              1961.916
+            ],
+            [
+              424.592,
+              1962.523
+            ],
+            [
+              439.873,
+              1963.337
+            ],
+            [
+              455.249,
+              1964.351
+            ],
+            [
+              470.505,
+              1965.533
+            ],
+            [
+              485.615,
+              1966.863
+            ],
+            [
+              500.844,
+              1968.363
+            ],
+            [
+              515.999,
+              1970.041
+            ],
+            [
+              531.492,
+              1971.947
+            ],
+            [
+              547.275,
+              1974.061
+            ]
+          ],
+          "length": 435.74994766301944,
+          "source_edge_id": "e2",
+          "source_semantic_label": "yoke_join",
+          "semantic_role": "yoke_join",
+          "geometry_type": "boundary_curve",
+          "start": "yoke_join_left",
+          "end": "yoke_join_right"
+        },
+        {
+          "id": "back_body.armhole_right_part.04",
+          "start_index": 113,
+          "end_index": 144,
+          "polyline": [
+            [
+              547.275,
+              1974.061
+            ],
+            [
+              546.402,
+              1981.779
+            ],
+            [
+              545.834,
+              1989.188
+            ],
+            [
+              545.456,
+              1997.563
+            ],
+            [
+              545.307,
+              2006.278
+            ],
+            [
+              545.402,
+              2015.083
+            ],
+            [
+              545.748,
+              2024.079
+            ],
+            [
+              546.35,
+              2033.268
+            ],
+            [
+              547.247,
+              2043.085
+            ],
+            [
+              548.51,
+              2054.057
+            ],
+            [
+              549.704,
+              2062.693
+            ],
+            [
+              550.841,
+              2069.31
+            ],
+            [
+              552.092,
+              2075.186
+            ],
+            [
+              553.516,
+              2080.723
+            ],
+            [
+              555.138,
+              2086.054
+            ],
+            [
+              556.906,
+              2091.038
+            ],
+            [
+              558.827,
+              2095.744
+            ],
+            [
+              560.939,
+              2100.279
+            ],
+            [
+              563.228,
+              2104.602
+            ],
+            [
+              565.651,
+              2108.656
+            ],
+            [
+              568.277,
+              2112.567
+            ],
+            [
+              571.11,
+              2116.335
+            ],
+            [
+              574.044,
+              2119.836
+            ],
+            [
+              577.212,
+              2123.227
+            ],
+            [
+              580.426,
+              2126.312
+            ],
+            [
+              583.795,
+              2129.205
+            ],
+            [
+              587.214,
+              2131.821
+            ],
+            [
+              590.779,
+              2134.233
+            ],
+            [
+              594.615,
+              2136.515
+            ],
+            [
+              599.199,
+              2138.925
+            ],
+            [
+              603.808,
+              2141.078
+            ],
+            [
+              610.003,
+              2143.594
+            ]
+          ],
+          "length": 195.4890372376289,
+          "source_edge_id": "e3",
+          "source_semantic_label": "armhole_right_part",
+          "semantic_role": "armhole_right_part",
+          "geometry_type": "boundary_curve",
+          "start": "yoke_join_right",
+          "end": "armhole_lower_right"
+        },
+        {
+          "id": "back_body.side_seam_right.05",
+          "start_index": 144,
+          "end_index": 169,
+          "polyline": [
+            [
+              610.003,
+              2143.594
+            ],
+            [
+              608.546,
+              2160.798
+            ],
+            [
+              607.359,
+              2176.731
+            ],
+            [
+              606.311,
+              2192.464
+            ],
+            [
+              605.385,
+              2208.09
+            ],
+            [
+              604.504,
+              2225.195
+            ],
+            [
+              603.821,
+              2240.845
+            ],
+            [
+              603.239,
+              2257.243
+            ],
+            [
+              602.79,
+              2274.233
+            ],
+            [
+              602.504,
+              2291.66
+            ],
+            [
+              602.413,
+              2309.368
+            ],
+            [
+              602.539,
+              2326.569
+            ],
+            [
+              602.899,
+              2344.415
+            ],
+            [
+              603.446,
+              2362.263
+            ],
+            [
+              604.125,
+              2380.111
+            ],
+            [
+              604.881,
+              2397.96
+            ],
+            [
+              605.657,
+              2415.809
+            ],
+            [
+              606.346,
+              2432.332
+            ],
+            [
+              607.021,
+              2450.103
+            ],
+            [
+              607.623,
+              2467.528
+            ],
+            [
+              608.152,
+              2484.307
+            ],
+            [
+              608.611,
+              2500.142
+            ],
+            [
+              609.059,
+              2517.026
+            ],
+            [
+              609.417,
+              2531.746
+            ],
+            [
+              609.748,
+              2546.729
+            ],
+            [
+              610.0,
+              2559.594
+            ]
+          ],
+          "length": 416.351650706916,
+          "source_edge_id": "e4",
+          "source_semantic_label": "right_side_seam",
+          "semantic_role": "side_seam_right",
+          "geometry_type": "boundary_curve",
+          "start": "armhole_lower_right",
+          "end": "back_side_hem_right",
+          "start_point": [
+            610.003,
+            2143.594
+          ],
+          "end_point": [
+            610.0,
+            2559.594
+          ]
+        },
+        {
+          "id": "back_body.back_hem.06",
+          "start_index": 169,
+          "end_index": 27,
+          "polyline": [
+            [
+              610.0,
+              2559.594
+            ],
+            [
+              599.968,
+              2560.251
+            ],
+            [
+              590.24,
+              2561.195
+            ],
+            [
+              580.955,
+              2562.358
+            ],
+            [
+              572.11,
+              2563.728
+            ],
+            [
+              564.228,
+              2565.197
+            ],
+            [
+              557.298,
+              2566.719
+            ],
+            [
+              548.066,
+              2569.127
+            ],
+            [
+              540.223,
+              2571.478
+            ],
+            [
+              531.133,
+              2574.481
+            ],
+            [
+              519.51,
+              2578.626
+            ],
+            [
+              505.337,
+              2583.884
+            ],
+            [
+              491.12,
+              2589.047
+            ],
+            [
+              480.706,
+              2592.557
+            ],
+            [
+              471.793,
+              2595.268
+            ],
+            [
+              462.519,
+              2597.767
+            ],
+            [
+              453.171,
+              2599.977
+            ],
+            [
+              443.761,
+              2601.912
+            ],
+            [
+              434.3,
+              2603.588
+            ],
+            [
+              423.436,
+              2605.206
+            ],
+            [
+              412.535,
+              2606.528
+            ],
+            [
+              401.809,
+              2607.561
+            ],
+            [
+              389.619,
+              2608.452
+            ],
+            [
+              376.525,
+              2609.128
+            ],
+            [
+              363.131,
+              2609.56
+            ],
+            [
+              349.372,
+              2609.756
+            ],
+            [
+              336.156,
+              2609.711
+            ],
+            [
+              330.001,
+              2609.594
+            ],
+            [
+              330.001,
+              2609.594
+            ],
+            [
+              323.847,
+              2609.711
+            ],
+            [
+              310.63,
+              2609.756
+            ],
+            [
+              296.871,
+              2609.56
+            ],
+            [
+              283.477,
+              2609.128
+            ],
+            [
+              270.384,
+              2608.452
+            ],
+            [
+              258.194,
+              2607.561
+            ],
+            [
+              247.468,
+              2606.528
+            ],
+            [
+              236.567,
+              2605.206
+            ],
+            [
+              225.703,
+              2603.588
+            ],
+            [
+              216.241,
+              2601.912
+            ],
+            [
+              206.831,
+              2599.977
+            ],
+            [
+              197.484,
+              2597.767
+            ],
+            [
+              188.21,
+              2595.268
+            ],
+            [
+              179.297,
+              2592.557
+            ],
+            [
+              168.882,
+              2589.047
+            ],
+            [
+              154.666,
+              2583.884
+            ],
+            [
+              140.493,
+              2578.626
+            ],
+            [
+              128.869,
+              2574.481
+            ],
+            [
+              119.78,
+              2571.478
+            ],
+            [
+              111.936,
+              2569.127
+            ],
+            [
+              102.705,
+              2566.719
+            ],
+            [
+              95.774,
+              2565.197
+            ],
+            [
+              87.892,
+              2563.728
+            ],
+            [
+              79.048,
+              2562.358
+            ],
+            [
+              69.763,
+              2561.195
+            ],
+            [
+              60.034,
+              2560.251
+            ],
+            [
+              50.003,
+              2559.594
+            ]
+          ],
+          "length": 572.9421550857459,
+          "source_edge_id": "e5",
+          "source_semantic_label": "hem",
+          "semantic_role": "back_hem",
+          "geometry_type": "boundary_curve",
+          "start": "back_side_hem_right",
+          "end": "back_side_hem_left"
+        }
+      ],
+      "semantic_edges": {
+        "armhole_left_part": [
+          "back_body.armhole_left_part.01"
+        ],
+        "side_seam_right": [
+          "back_body.side_seam_right.02"
+        ],
+        "yoke_join": [
+          "back_body.yoke_join.03"
+        ],
+        "armhole_right_part": [
+          "back_body.armhole_right_part.04"
+        ],
+        "side_seam_left": [
+          "back_body.side_seam_left.05"
+        ],
+        "back_hem": [
+          "back_body.back_hem.06"
+        ]
+      },
+      "control_points": {
+        "armhole_lower_left": [
+          50.0,
+          2143.594
+        ],
+        "yoke_join_left": [
+          112.724,
+          1974.038
+        ],
+        "yoke_join_right": [
+          547.275,
+          1974.061
+        ],
+        "armhole_lower_right": [
+          610.003,
+          2143.594
+        ],
+        "back_side_hem_left": [
+          50.003,
+          2559.594
+        ],
+        "back_side_hem_right": [
+          610.0,
+          2559.594
+        ],
+        "cb_bottom": [
+          330.0015,
+          2609.756
+        ],
+        "yoke_join_lower_center": [
+          330.003,
+          1961.592
+        ],
+        "left_side_waist": [
+          55.86687167482666,
+          2380.349570915417
+        ],
+        "right_side_waist": [
+          604.1351896595843,
+          2380.349570915417
+        ],
+        "back_chest_width_left": [
+          114.696,
+          2006.278
+        ],
+        "back_chest_width_right": [
+          545.307,
+          2006.278
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "armhole_lower_left": {
+          "point_type": "boundary",
+          "source": "left_side_seam -> left_armhole join",
+          "semantic_role": "armhole_lower_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "yoke_join_left": {
+          "point_type": "boundary",
+          "source": "left yoke_join endpoint",
+          "semantic_role": "yoke_join_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "yoke_join_right": {
+          "point_type": "boundary",
+          "source": "right yoke_join endpoint",
+          "semantic_role": "yoke_join_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "armhole_lower_right": {
+          "point_type": "boundary",
+          "source": "right_armhole -> right_side_seam join",
+          "semantic_role": "armhole_lower_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_side_hem_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG27",
+          "semantic_role": "back_side_hem_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_side_hem_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG169",
+          "semantic_role": "back_side_hem_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cb_bottom": {
+          "point_type": "internal",
+          "source": "hem internal center control",
+          "semantic_role": "cb_bottom",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "yoke_join_lower_center": {
+          "point_type": "internal",
+          "source": "yoke_join internal center control",
+          "semantic_role": "yoke_join_lower_center",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "left_side_waist": {
+          "point_type": "internal",
+          "source": "left side waist",
+          "semantic_role": "left_side_waist",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "right_side_waist": {
+          "point_type": "internal",
+          "source": "right side waist",
+          "semantic_role": "right_side_waist",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_chest_width_left": {
+          "point_type": "boundary",
+          "source": "next_step.md shortest SVG point on e0 to center_back axis",
+          "semantic_role": "back_chest_width_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_chest_width_right": {
+          "point_type": "boundary",
+          "source": "next_step.md shortest SVG point on e3 to center_back axis",
+          "semantic_role": "back_chest_width_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "back_lower_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "back_yoke",
+      "source_name": "后上-XXXL",
+      "role": "back_yoke",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "self",
+      "derived_from": null,
+      "boundary": [
+        [
+          331.689,
+          1537.51
+        ],
+        [
+          315.808,
+          1537.51
+        ],
+        [
+          300.227,
+          1537.51
+        ],
+        [
+          284.914,
+          1537.51
+        ],
+        [
+          269.633,
+          1537.51
+        ],
+        [
+          254.214,
+          1537.51
+        ],
+        [
+          238.932,
+          1537.51
+        ],
+        [
+          223.588,
+          1537.51
+        ],
+        [
+          208.307,
+          1537.51
+        ],
+        [
+          193.026,
+          1537.51
+        ],
+        [
+          177.745,
+          1537.51
+        ],
+        [
+          162.205,
+          1537.511
+        ],
+        [
+          146.924,
+          1537.511
+        ],
+        [
+          131.836,
+          1537.511
+        ],
+        [
+          116.819,
+          1537.511
+        ],
+        [
+          113.84,
+          1537.511
+        ],
+        [
+          113.267,
+          1526.482
+        ],
+        [
+          112.552,
+          1517.603
+        ],
+        [
+          111.647,
+          1509.556
+        ],
+        [
+          110.31,
+          1500.076
+        ],
+        [
+          108.596,
+          1489.72
+        ],
+        [
+          106.734,
+          1479.953
+        ],
+        [
+          104.699,
+          1470.601
+        ],
+        [
+          102.386,
+          1461.19
+        ],
+        [
+          101.69,
+          1458.481
+        ],
+        [
+          101.69,
+          1458.481
+        ],
+        [
+          97.435,
+          1447.628
+        ],
+        [
+          94.189,
+          1439.9
+        ],
+        [
+          234.719,
+          1393.057
+        ],
+        [
+          237.928,
+          1398.77
+        ],
+        [
+          241.176,
+          1404.021
+        ],
+        [
+          244.329,
+          1408.663
+        ],
+        [
+          247.219,
+          1412.505
+        ],
+        [
+          250.258,
+          1416.109
+        ],
+        [
+          253.263,
+          1419.257
+        ],
+        [
+          256.332,
+          1422.073
+        ],
+        [
+          259.17,
+          1424.338
+        ],
+        [
+          262.163,
+          1426.384
+        ],
+        [
+          264.987,
+          1428.004
+        ],
+        [
+          268.265,
+          1429.56
+        ],
+        [
+          271.65,
+          1430.873
+        ],
+        [
+          275.582,
+          1432.098
+        ],
+        [
+          279.802,
+          1433.117
+        ],
+        [
+          284.435,
+          1433.945
+        ],
+        [
+          289.478,
+          1434.57
+        ],
+        [
+          295.288,
+          1435.023
+        ],
+        [
+          303.055,
+          1435.344
+        ],
+        [
+          315.398,
+          1435.559
+        ],
+        [
+          329.089,
+          1435.544
+        ],
+        [
+          331.686,
+          1435.51
+        ],
+        [
+          334.286,
+          1435.544
+        ],
+        [
+          347.977,
+          1435.559
+        ],
+        [
+          360.32,
+          1435.344
+        ],
+        [
+          368.087,
+          1435.023
+        ],
+        [
+          373.897,
+          1434.57
+        ],
+        [
+          378.94,
+          1433.945
+        ],
+        [
+          383.573,
+          1433.117
+        ],
+        [
+          387.793,
+          1432.098
+        ],
+        [
+          391.725,
+          1430.873
+        ],
+        [
+          395.11,
+          1429.56
+        ],
+        [
+          398.388,
+          1428.004
+        ],
+        [
+          401.212,
+          1426.384
+        ],
+        [
+          404.205,
+          1424.338
+        ],
+        [
+          407.043,
+          1422.073
+        ],
+        [
+          410.112,
+          1419.257
+        ],
+        [
+          413.117,
+          1416.109
+        ],
+        [
+          416.156,
+          1412.505
+        ],
+        [
+          419.046,
+          1408.663
+        ],
+        [
+          422.199,
+          1404.021
+        ],
+        [
+          425.447,
+          1398.77
+        ],
+        [
+          428.656,
+          1393.057
+        ],
+        [
+          569.186,
+          1439.9
+        ],
+        [
+          565.94,
+          1447.628
+        ],
+        [
+          561.685,
+          1458.481
+        ],
+        [
+          561.685,
+          1458.511
+        ],
+        [
+          560.989,
+          1461.19
+        ],
+        [
+          558.676,
+          1470.601
+        ],
+        [
+          556.641,
+          1479.953
+        ],
+        [
+          554.779,
+          1489.72
+        ],
+        [
+          553.065,
+          1500.076
+        ],
+        [
+          551.728,
+          1509.556
+        ],
+        [
+          550.822,
+          1517.603
+        ],
+        [
+          550.108,
+          1526.482
+        ],
+        [
+          549.535,
+          1537.511
+        ],
+        [
+          546.556,
+          1537.511
+        ],
+        [
+          531.539,
+          1537.511
+        ],
+        [
+          516.451,
+          1537.511
+        ],
+        [
+          501.17,
+          1537.511
+        ],
+        [
+          485.63,
+          1537.51
+        ],
+        [
+          470.349,
+          1537.51
+        ],
+        [
+          455.068,
+          1537.51
+        ],
+        [
+          439.787,
+          1537.51
+        ],
+        [
+          424.443,
+          1537.51
+        ],
+        [
+          409.161,
+          1537.51
+        ],
+        [
+          393.742,
+          1537.51
+        ],
+        [
+          378.461,
+          1537.51
+        ],
+        [
+          363.148,
+          1537.51
+        ],
+        [
+          347.567,
+          1537.51
+        ],
+        [
+          331.689,
+          1537.51
+        ]
+      ],
+      "edges": [
+        {
+          "id": "back_yoke.armhole_right_part.01",
+          "start_index": 15,
+          "end_index": 27,
+          "polyline": [
+            [
+              113.84,
+              1537.511
+            ],
+            [
+              113.267,
+              1526.482
+            ],
+            [
+              112.552,
+              1517.603
+            ],
+            [
+              111.647,
+              1509.556
+            ],
+            [
+              110.31,
+              1500.076
+            ],
+            [
+              108.596,
+              1489.72
+            ],
+            [
+              106.734,
+              1479.953
+            ],
+            [
+              104.699,
+              1470.601
+            ],
+            [
+              102.386,
+              1461.19
+            ],
+            [
+              101.69,
+              1458.481
+            ],
+            [
+              101.69,
+              1458.481
+            ],
+            [
+              97.435,
+              1447.628
+            ],
+            [
+              94.189,
+              1439.9
+            ]
+          ],
+          "length": 100.1611838798118,
+          "source_edge_id": "e0",
+          "source_semantic_label": "left_armhole",
+          "semantic_role": "armhole_right_part",
+          "geometry_type": "boundary_curve",
+          "start": "yoke_join_left",
+          "end": "shoulder_tip_left"
+        },
+        {
+          "id": "back_yoke.shoulder_right.02",
+          "start_index": 27,
+          "end_index": 28,
+          "polyline": [
+            [
+              94.189,
+              1439.9
+            ],
+            [
+              234.719,
+              1393.057
+            ]
+          ],
+          "length": 148.131521118903,
+          "source_edge_id": "e1",
+          "source_semantic_label": "left_shoulder",
+          "semantic_role": "shoulder_right",
+          "geometry_type": "line",
+          "start": "shoulder_tip_left",
+          "end": "back_neck_point_left"
+        },
+        {
+          "id": "back_yoke.back_neckline.03",
+          "start_index": 28,
+          "end_index": 70,
+          "polyline": [
+            [
+              234.719,
+              1393.057
+            ],
+            [
+              237.928,
+              1398.77
+            ],
+            [
+              241.176,
+              1404.021
+            ],
+            [
+              244.329,
+              1408.663
+            ],
+            [
+              247.219,
+              1412.505
+            ],
+            [
+              250.258,
+              1416.109
+            ],
+            [
+              253.263,
+              1419.257
+            ],
+            [
+              256.332,
+              1422.073
+            ],
+            [
+              259.17,
+              1424.338
+            ],
+            [
+              262.163,
+              1426.384
+            ],
+            [
+              264.987,
+              1428.004
+            ],
+            [
+              268.265,
+              1429.56
+            ],
+            [
+              271.65,
+              1430.873
+            ],
+            [
+              275.582,
+              1432.098
+            ],
+            [
+              279.802,
+              1433.117
+            ],
+            [
+              284.435,
+              1433.945
+            ],
+            [
+              289.478,
+              1434.57
+            ],
+            [
+              295.288,
+              1435.023
+            ],
+            [
+              303.055,
+              1435.344
+            ],
+            [
+              315.398,
+              1435.559
+            ],
+            [
+              329.089,
+              1435.544
+            ],
+            [
+              331.686,
+              1435.51
+            ],
+            [
+              334.286,
+              1435.544
+            ],
+            [
+              347.977,
+              1435.559
+            ],
+            [
+              360.32,
+              1435.344
+            ],
+            [
+              368.087,
+              1435.023
+            ],
+            [
+              373.897,
+              1434.57
+            ],
+            [
+              378.94,
+              1433.945
+            ],
+            [
+              383.573,
+              1433.117
+            ],
+            [
+              387.793,
+              1432.098
+            ],
+            [
+              391.725,
+              1430.873
+            ],
+            [
+              395.11,
+              1429.56
+            ],
+            [
+              398.388,
+              1428.004
+            ],
+            [
+              401.212,
+              1426.384
+            ],
+            [
+              404.205,
+              1424.338
+            ],
+            [
+              407.043,
+              1422.073
+            ],
+            [
+              410.112,
+              1419.257
+            ],
+            [
+              413.117,
+              1416.109
+            ],
+            [
+              416.156,
+              1412.505
+            ],
+            [
+              419.046,
+              1408.663
+            ],
+            [
+              422.199,
+              1404.021
+            ],
+            [
+              425.447,
+              1398.77
+            ],
+            [
+              428.656,
+              1393.057
+            ]
+          ],
+          "length": 229.26506837219105,
+          "source_edge_id": "e2",
+          "source_semantic_label": "back_neckline",
+          "semantic_role": "back_neckline",
+          "geometry_type": "boundary_curve",
+          "start": "back_neck_point_left",
+          "end": "back_neck_point_right"
+        },
+        {
+          "id": "back_yoke.shoulder_left.04",
+          "start_index": 70,
+          "end_index": 71,
+          "polyline": [
+            [
+              428.656,
+              1393.057
+            ],
+            [
+              569.186,
+              1439.9
+            ]
+          ],
+          "length": 148.13152111890304,
+          "source_edge_id": "e3",
+          "source_semantic_label": "right_shoulder",
+          "semantic_role": "shoulder_left",
+          "geometry_type": "line",
+          "start": "back_neck_point_right",
+          "end": "shoulder_tip_right"
+        },
+        {
+          "id": "back_yoke.armhole_left_part.05",
+          "start_index": 71,
+          "end_index": 83,
+          "polyline": [
+            [
+              569.186,
+              1439.9
+            ],
+            [
+              565.94,
+              1447.628
+            ],
+            [
+              561.685,
+              1458.481
+            ],
+            [
+              561.685,
+              1458.511
+            ],
+            [
+              560.989,
+              1461.19
+            ],
+            [
+              558.676,
+              1470.601
+            ],
+            [
+              556.641,
+              1479.953
+            ],
+            [
+              554.779,
+              1489.72
+            ],
+            [
+              553.065,
+              1500.076
+            ],
+            [
+              551.728,
+              1509.556
+            ],
+            [
+              550.822,
+              1517.603
+            ],
+            [
+              550.108,
+              1526.482
+            ],
+            [
+              549.535,
+              1537.511
+            ]
+          ],
+          "length": 100.16216921638902,
+          "source_edge_id": "e4",
+          "source_semantic_label": "right_armhole",
+          "semantic_role": "armhole_left_part",
+          "geometry_type": "boundary_curve",
+          "start": "shoulder_tip_right",
+          "end": "yoke_join_right"
+        },
+        {
+          "id": "back_yoke.yoke_join.06",
+          "start_index": 83,
+          "end_index": 15,
+          "polyline": [
+            [
+              549.535,
+              1537.511
+            ],
+            [
+              546.556,
+              1537.511
+            ],
+            [
+              531.539,
+              1537.511
+            ],
+            [
+              516.451,
+              1537.511
+            ],
+            [
+              501.17,
+              1537.511
+            ],
+            [
+              485.63,
+              1537.51
+            ],
+            [
+              470.349,
+              1537.51
+            ],
+            [
+              455.068,
+              1537.51
+            ],
+            [
+              439.787,
+              1537.51
+            ],
+            [
+              424.443,
+              1537.51
+            ],
+            [
+              409.161,
+              1537.51
+            ],
+            [
+              393.742,
+              1537.51
+            ],
+            [
+              378.461,
+              1537.51
+            ],
+            [
+              363.148,
+              1537.51
+            ],
+            [
+              347.567,
+              1537.51
+            ],
+            [
+              331.689,
+              1537.51
+            ],
+            [
+              331.689,
+              1537.51
+            ],
+            [
+              315.808,
+              1537.51
+            ],
+            [
+              300.227,
+              1537.51
+            ],
+            [
+              284.914,
+              1537.51
+            ],
+            [
+              269.633,
+              1537.51
+            ],
+            [
+              254.214,
+              1537.51
+            ],
+            [
+              238.932,
+              1537.51
+            ],
+            [
+              223.588,
+              1537.51
+            ],
+            [
+              208.307,
+              1537.51
+            ],
+            [
+              193.026,
+              1537.51
+            ],
+            [
+              177.745,
+              1537.51
+            ],
+            [
+              162.205,
+              1537.511
+            ],
+            [
+              146.924,
+              1537.511
+            ],
+            [
+              131.836,
+              1537.511
+            ],
+            [
+              116.819,
+              1537.511
+            ],
+            [
+              113.84,
+              1537.511
+            ]
+          ],
+          "length": 435.69500006435004,
+          "source_edge_id": "e5",
+          "source_semantic_label": "yoke_join",
+          "semantic_role": "yoke_join",
+          "geometry_type": "boundary_curve",
+          "start": "yoke_join_right",
+          "end": "yoke_join_left"
+        }
+      ],
+      "semantic_edges": {
+        "armhole_right_part": [
+          "back_yoke.armhole_right_part.01"
+        ],
+        "shoulder_right": [
+          "back_yoke.shoulder_right.02"
+        ],
+        "back_neckline": [
+          "back_yoke.back_neckline.03"
+        ],
+        "shoulder_left": [
+          "back_yoke.shoulder_left.04"
+        ],
+        "armhole_left_part": [
+          "back_yoke.armhole_left_part.05"
+        ],
+        "yoke_join": [
+          "back_yoke.yoke_join.06"
+        ]
+      },
+      "control_points": {
+        "yoke_join_left": [
+          113.84,
+          1537.511
+        ],
+        "shoulder_tip_left": [
+          94.189,
+          1439.9
+        ],
+        "armhole_upper_left": [
+          94.189,
+          1439.9
+        ],
+        "back_neck_point_left": [
+          234.719,
+          1393.057
+        ],
+        "back_neck_center": [
+          331.686,
+          1435.51
+        ],
+        "cb_top": [
+          331.686,
+          1435.51
+        ],
+        "back_neck_point_right": [
+          428.656,
+          1393.057
+        ],
+        "shoulder_tip_right": [
+          569.186,
+          1439.9
+        ],
+        "armhole_upper_right": [
+          569.186,
+          1439.9
+        ],
+        "yoke_join_right": [
+          549.535,
+          1537.511
+        ],
+        "yoke_join_upper_center": [
+          331.689,
+          1537.51
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "yoke_join_left": {
+          "point_type": "boundary",
+          "source": "left yoke join endpoint",
+          "semantic_role": "yoke_join_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "shoulder_tip_left": {
+          "point_type": "boundary",
+          "source": "left shoulder/armhole join",
+          "semantic_role": "shoulder_tip_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1",
+          "also_semantic_roles": [
+            "armhole_upper_left"
+          ]
+        },
+        "armhole_upper_left": {
+          "point_type": "boundary",
+          "source": "left armhole upper",
+          "semantic_role": "armhole_upper_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_neck_point_left": {
+          "point_type": "boundary",
+          "source": "left back neck point",
+          "semantic_role": "back_neck_point_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_neck_center": {
+          "point_type": "internal",
+          "source": "back neckline internal center",
+          "semantic_role": "back_neck_center",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cb_top": {
+          "point_type": "internal",
+          "source": "cb_top / back_neck_center",
+          "semantic_role": "cb_top",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_neck_point_right": {
+          "point_type": "boundary",
+          "source": "right back neck point",
+          "semantic_role": "back_neck_point_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "shoulder_tip_right": {
+          "point_type": "boundary",
+          "source": "right shoulder/armhole join",
+          "semantic_role": "shoulder_tip_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1",
+          "also_semantic_roles": [
+            "armhole_upper_right"
+          ]
+        },
+        "armhole_upper_right": {
+          "point_type": "boundary",
+          "source": "right armhole upper",
+          "semantic_role": "armhole_upper_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "yoke_join_right": {
+          "point_type": "boundary",
+          "source": "right yoke join endpoint",
+          "semantic_role": "yoke_join_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "yoke_join_upper_center": {
+          "point_type": "internal",
+          "source": "yoke_join internal center",
+          "semantic_role": "yoke_join_upper_center",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "back_upper_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "collar_stand",
+      "source_name": "下领-XXXL",
+      "role": "collar_stand",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "self",
+      "derived_from": null,
+      "boundary": [
+        [
+          358.909,
+          1073.804
+        ],
+        [
+          343.284,
+          1073.812
+        ],
+        [
+          328.206,
+          1073.81
+        ],
+        [
+          313.076,
+          1073.797
+        ],
+        [
+          297.756,
+          1073.773
+        ],
+        [
+          282.263,
+          1073.743
+        ],
+        [
+          266.943,
+          1073.704
+        ],
+        [
+          251.72,
+          1073.651
+        ],
+        [
+          244.309,
+          1073.621
+        ],
+        [
+          244.309,
+          1073.621
+        ],
+        [
+          228.659,
+          1073.575
+        ],
+        [
+          212.979,
+          1073.325
+        ],
+        [
+          197.604,
+          1072.857
+        ],
+        [
+          184.168,
+          1072.205
+        ],
+        [
+          172.235,
+          1071.384
+        ],
+        [
+          160.95,
+          1070.357
+        ],
+        [
+          150.156,
+          1069.112
+        ],
+        [
+          139.557,
+          1067.626
+        ],
+        [
+          129.104,
+          1065.896
+        ],
+        [
+          117.11,
+          1063.619
+        ],
+        [
+          115.281,
+          1063.251
+        ],
+        [
+          117.419,
+          1054.675
+        ],
+        [
+          118.368,
+          1051.457
+        ],
+        [
+          119.252,
+          1049.195
+        ],
+        [
+          120.193,
+          1047.392
+        ],
+        [
+          121.244,
+          1045.889
+        ],
+        [
+          122.42,
+          1044.644
+        ],
+        [
+          123.874,
+          1043.497
+        ],
+        [
+          125.651,
+          1042.45
+        ],
+        [
+          127.749,
+          1041.546
+        ],
+        [
+          130.141,
+          1040.824
+        ],
+        [
+          132.772,
+          1040.32
+        ],
+        [
+          135.492,
+          1040.068
+        ],
+        [
+          139.261,
+          1040.058
+        ],
+        [
+          139.261,
+          1040.058
+        ],
+        [
+          143.869,
+          1040.109
+        ],
+        [
+          158.976,
+          1040.276
+        ],
+        [
+          174.246,
+          1040.448
+        ],
+        [
+          189.679,
+          1040.624
+        ],
+        [
+          204.867,
+          1040.8
+        ],
+        [
+          220.299,
+          1040.981
+        ],
+        [
+          235.509,
+          1041.161
+        ],
+        [
+          250.942,
+          1041.348
+        ],
+        [
+          266.277,
+          1041.541
+        ],
+        [
+          281.709,
+          1041.717
+        ],
+        [
+          297.055,
+          1041.821
+        ],
+        [
+          312.488,
+          1041.842
+        ],
+        [
+          327.547,
+          1041.827
+        ],
+        [
+          343.156,
+          1041.813
+        ],
+        [
+          358.909,
+          1041.804
+        ],
+        [
+          374.661,
+          1041.813
+        ],
+        [
+          390.271,
+          1041.827
+        ],
+        [
+          405.329,
+          1041.842
+        ],
+        [
+          420.763,
+          1041.821
+        ],
+        [
+          436.108,
+          1041.717
+        ],
+        [
+          451.541,
+          1041.541
+        ],
+        [
+          466.876,
+          1041.348
+        ],
+        [
+          482.308,
+          1041.161
+        ],
+        [
+          497.518,
+          1040.981
+        ],
+        [
+          512.951,
+          1040.8
+        ],
+        [
+          528.139,
+          1040.624
+        ],
+        [
+          543.572,
+          1040.448
+        ],
+        [
+          558.842,
+          1040.276
+        ],
+        [
+          573.949,
+          1040.109
+        ],
+        [
+          578.557,
+          1040.058
+        ],
+        [
+          578.557,
+          1040.058
+        ],
+        [
+          582.326,
+          1040.068
+        ],
+        [
+          585.046,
+          1040.32
+        ],
+        [
+          587.677,
+          1040.824
+        ],
+        [
+          590.069,
+          1041.546
+        ],
+        [
+          592.167,
+          1042.45
+        ],
+        [
+          593.944,
+          1043.497
+        ],
+        [
+          595.398,
+          1044.644
+        ],
+        [
+          596.574,
+          1045.889
+        ],
+        [
+          597.625,
+          1047.392
+        ],
+        [
+          598.566,
+          1049.195
+        ],
+        [
+          599.45,
+          1051.457
+        ],
+        [
+          600.399,
+          1054.675
+        ],
+        [
+          602.537,
+          1063.251
+        ],
+        [
+          600.708,
+          1063.619
+        ],
+        [
+          588.714,
+          1065.896
+        ],
+        [
+          578.261,
+          1067.626
+        ],
+        [
+          567.662,
+          1069.112
+        ],
+        [
+          556.868,
+          1070.357
+        ],
+        [
+          545.583,
+          1071.384
+        ],
+        [
+          533.65,
+          1072.205
+        ],
+        [
+          520.214,
+          1072.857
+        ],
+        [
+          504.839,
+          1073.325
+        ],
+        [
+          489.159,
+          1073.575
+        ],
+        [
+          473.509,
+          1073.621
+        ],
+        [
+          473.509,
+          1073.621
+        ],
+        [
+          466.097,
+          1073.651
+        ],
+        [
+          450.874,
+          1073.704
+        ],
+        [
+          435.555,
+          1073.743
+        ],
+        [
+          420.061,
+          1073.773
+        ],
+        [
+          404.742,
+          1073.797
+        ],
+        [
+          389.612,
+          1073.81
+        ],
+        [
+          374.534,
+          1073.812
+        ],
+        [
+          358.909,
+          1073.804
+        ]
+      ],
+      "edges": [
+        {
+          "id": "collar_stand.collar_stand_top.01",
+          "start_index": 20,
+          "end_index": 78,
+          "polyline": [
+            [
+              115.281,
+              1063.251
+            ],
+            [
+              117.419,
+              1054.675
+            ],
+            [
+              118.368,
+              1051.457
+            ],
+            [
+              119.252,
+              1049.195
+            ],
+            [
+              120.193,
+              1047.392
+            ],
+            [
+              121.244,
+              1045.889
+            ],
+            [
+              122.42,
+              1044.644
+            ],
+            [
+              123.874,
+              1043.497
+            ],
+            [
+              125.651,
+              1042.45
+            ],
+            [
+              127.749,
+              1041.546
+            ],
+            [
+              130.141,
+              1040.824
+            ],
+            [
+              132.772,
+              1040.32
+            ],
+            [
+              135.492,
+              1040.068
+            ],
+            [
+              139.261,
+              1040.058
+            ],
+            [
+              139.261,
+              1040.058
+            ],
+            [
+              143.869,
+              1040.109
+            ],
+            [
+              158.976,
+              1040.276
+            ],
+            [
+              174.246,
+              1040.448
+            ],
+            [
+              189.679,
+              1040.624
+            ],
+            [
+              204.867,
+              1040.8
+            ],
+            [
+              220.299,
+              1040.981
+            ],
+            [
+              235.509,
+              1041.161
+            ],
+            [
+              250.942,
+              1041.348
+            ],
+            [
+              266.277,
+              1041.541
+            ],
+            [
+              281.709,
+              1041.717
+            ],
+            [
+              297.055,
+              1041.821
+            ],
+            [
+              312.488,
+              1041.842
+            ],
+            [
+              327.547,
+              1041.827
+            ],
+            [
+              343.156,
+              1041.813
+            ],
+            [
+              358.909,
+              1041.804
+            ],
+            [
+              374.661,
+              1041.813
+            ],
+            [
+              390.271,
+              1041.827
+            ],
+            [
+              405.329,
+              1041.842
+            ],
+            [
+              420.763,
+              1041.821
+            ],
+            [
+              436.108,
+              1041.717
+            ],
+            [
+              451.541,
+              1041.541
+            ],
+            [
+              466.876,
+              1041.348
+            ],
+            [
+              482.308,
+              1041.161
+            ],
+            [
+              497.518,
+              1040.981
+            ],
+            [
+              512.951,
+              1040.8
+            ],
+            [
+              528.139,
+              1040.624
+            ],
+            [
+              543.572,
+              1040.448
+            ],
+            [
+              558.842,
+              1040.276
+            ],
+            [
+              573.949,
+              1040.109
+            ],
+            [
+              578.557,
+              1040.058
+            ],
+            [
+              578.557,
+              1040.058
+            ],
+            [
+              582.326,
+              1040.068
+            ],
+            [
+              585.046,
+              1040.32
+            ],
+            [
+              587.677,
+              1040.824
+            ],
+            [
+              590.069,
+              1041.546
+            ],
+            [
+              592.167,
+              1042.45
+            ],
+            [
+              593.944,
+              1043.497
+            ],
+            [
+              595.398,
+              1044.644
+            ],
+            [
+              596.574,
+              1045.889
+            ],
+            [
+              597.625,
+              1047.392
+            ],
+            [
+              598.566,
+              1049.195
+            ],
+            [
+              599.45,
+              1051.457
+            ],
+            [
+              600.399,
+              1054.675
+            ],
+            [
+              602.537,
+              1063.251
+            ]
+          ],
+          "length": 515.4751667687448,
+          "source_edge_id": "e0",
+          "source_semantic_label": "stand_top",
+          "semantic_role": "collar_stand_top",
+          "geometry_type": "boundary_curve",
+          "start": "left_end",
+          "end": "right_end"
+        },
+        {
+          "id": "collar_stand.collar_stand_bottom.02",
+          "start_index": 78,
+          "end_index": 20,
+          "polyline": [
+            [
+              602.537,
+              1063.251
+            ],
+            [
+              600.708,
+              1063.619
+            ],
+            [
+              588.714,
+              1065.896
+            ],
+            [
+              578.261,
+              1067.626
+            ],
+            [
+              567.662,
+              1069.112
+            ],
+            [
+              556.868,
+              1070.357
+            ],
+            [
+              545.583,
+              1071.384
+            ],
+            [
+              533.65,
+              1072.205
+            ],
+            [
+              520.214,
+              1072.857
+            ],
+            [
+              504.839,
+              1073.325
+            ],
+            [
+              489.159,
+              1073.575
+            ],
+            [
+              473.509,
+              1073.621
+            ],
+            [
+              473.509,
+              1073.621
+            ],
+            [
+              466.097,
+              1073.651
+            ],
+            [
+              450.874,
+              1073.704
+            ],
+            [
+              435.555,
+              1073.743
+            ],
+            [
+              420.061,
+              1073.773
+            ],
+            [
+              404.742,
+              1073.797
+            ],
+            [
+              389.612,
+              1073.81
+            ],
+            [
+              374.534,
+              1073.812
+            ],
+            [
+              358.909,
+              1073.804
+            ],
+            [
+              358.909,
+              1073.804
+            ],
+            [
+              343.284,
+              1073.812
+            ],
+            [
+              328.206,
+              1073.81
+            ],
+            [
+              313.076,
+              1073.797
+            ],
+            [
+              297.756,
+              1073.773
+            ],
+            [
+              282.263,
+              1073.743
+            ],
+            [
+              266.943,
+              1073.704
+            ],
+            [
+              251.72,
+              1073.651
+            ],
+            [
+              244.309,
+              1073.621
+            ],
+            [
+              244.309,
+              1073.621
+            ],
+            [
+              228.659,
+              1073.575
+            ],
+            [
+              212.979,
+              1073.325
+            ],
+            [
+              197.604,
+              1072.857
+            ],
+            [
+              184.168,
+              1072.205
+            ],
+            [
+              172.235,
+              1071.384
+            ],
+            [
+              160.95,
+              1070.357
+            ],
+            [
+              150.156,
+              1069.112
+            ],
+            [
+              139.557,
+              1067.626
+            ],
+            [
+              129.104,
+              1065.896
+            ],
+            [
+              117.11,
+              1063.619
+            ],
+            [
+              115.281,
+              1063.251
+            ]
+          ],
+          "length": 488.5927855532475,
+          "source_edge_id": "e1",
+          "source_semantic_label": "stand_bottom",
+          "semantic_role": "collar_stand_bottom",
+          "geometry_type": "boundary_curve",
+          "start": "right_end",
+          "end": "left_end"
+        }
+      ],
+      "semantic_edges": {
+        "collar_stand_top": [
+          "collar_stand.collar_stand_top.01"
+        ],
+        "collar_stand_bottom": [
+          "collar_stand.collar_stand_bottom.02"
+        ]
+      },
+      "control_points": {
+        "left_end": [
+          115.281,
+          1063.251
+        ],
+        "right_end": [
+          602.537,
+          1063.251
+        ],
+        "stand_top_peak_left": [
+          139.261,
+          1040.058
+        ],
+        "stand_top_peak_right": [
+          578.557,
+          1040.058
+        ],
+        "collar_stand_top_center": [
+          358.909,
+          1040.058
+        ],
+        "collar_stand_bottom_center": [
+          358.909,
+          1073.804
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "left_end": {
+          "point_type": "boundary",
+          "source": "stand left endpoint",
+          "semantic_role": "left_end",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "right_end": {
+          "point_type": "boundary",
+          "source": "stand right endpoint",
+          "semantic_role": "right_end",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "stand_top_peak_left": {
+          "point_type": "boundary",
+          "source": "left stand top peak",
+          "semantic_role": "stand_top_peak_left",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "stand_top_peak_right": {
+          "point_type": "boundary",
+          "source": "right stand top peak",
+          "semantic_role": "stand_top_peak_right",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_stand_top_center": {
+          "point_type": "internal",
+          "source": "midpoint of stand_top_peak_left/right",
+          "semantic_role": "collar_stand_top_center",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_stand_bottom_center": {
+          "point_type": "internal",
+          "source": "stand_bottom internal center",
+          "semantic_role": "collar_stand_bottom_center",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "collar_lower_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "collar_fall",
+      "source_name": "上领-XXXL",
+      "role": "collar_fall",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "self",
+      "derived_from": null,
+      "boundary": [
+        [
+          371.791,
+          728.061
+        ],
+        [
+          355.852,
+          728.204
+        ],
+        [
+          340.759,
+          728.473
+        ],
+        [
+          325.161,
+          728.942
+        ],
+        [
+          309.918,
+          729.629
+        ],
+        [
+          295.323,
+          730.524
+        ],
+        [
+          280.946,
+          731.655
+        ],
+        [
+          267.023,
+          732.999
+        ],
+        [
+          253.127,
+          734.588
+        ],
+        [
+          239.038,
+          736.458
+        ],
+        [
+          225.208,
+          738.547
+        ],
+        [
+          211.416,
+          740.877
+        ],
+        [
+          196.997,
+          743.572
+        ],
+        [
+          182.049,
+          746.626
+        ],
+        [
+          167.071,
+          749.912
+        ],
+        [
+          154.578,
+          752.774
+        ],
+        [
+          149.237,
+          738.307
+        ],
+        [
+          143.999,
+          724.117
+        ],
+        [
+          138.789,
+          710.006
+        ],
+        [
+          133.516,
+          695.721
+        ],
+        [
+          132.067,
+          691.797
+        ],
+        [
+          147.787,
+          691.259
+        ],
+        [
+          163.466,
+          690.66
+        ],
+        [
+          179.009,
+          689.986
+        ],
+        [
+          194.413,
+          689.23
+        ],
+        [
+          209.56,
+          688.411
+        ],
+        [
+          224.957,
+          687.529
+        ],
+        [
+          240.506,
+          686.633
+        ],
+        [
+          255.905,
+          685.784
+        ],
+        [
+          271.458,
+          685.013
+        ],
+        [
+          286.867,
+          684.368
+        ],
+        [
+          302.451,
+          683.85
+        ],
+        [
+          317.869,
+          683.477
+        ],
+        [
+          333.29,
+          683.232
+        ],
+        [
+          348.585,
+          683.098
+        ],
+        [
+          363.51,
+          683.042
+        ],
+        [
+          371.79,
+          683.04
+        ],
+        [
+          380.071,
+          683.042
+        ],
+        [
+          394.996,
+          683.098
+        ],
+        [
+          410.291,
+          683.232
+        ],
+        [
+          425.712,
+          683.477
+        ],
+        [
+          441.13,
+          683.85
+        ],
+        [
+          456.714,
+          684.368
+        ],
+        [
+          472.123,
+          685.013
+        ],
+        [
+          487.675,
+          685.784
+        ],
+        [
+          503.074,
+          686.633
+        ],
+        [
+          518.624,
+          687.529
+        ],
+        [
+          534.021,
+          688.411
+        ],
+        [
+          549.168,
+          689.23
+        ],
+        [
+          564.572,
+          689.986
+        ],
+        [
+          580.115,
+          690.66
+        ],
+        [
+          595.794,
+          691.259
+        ],
+        [
+          611.514,
+          691.797
+        ],
+        [
+          610.065,
+          695.721
+        ],
+        [
+          604.792,
+          710.006
+        ],
+        [
+          599.582,
+          724.117
+        ],
+        [
+          594.344,
+          738.307
+        ],
+        [
+          589.003,
+          752.774
+        ],
+        [
+          576.51,
+          749.912
+        ],
+        [
+          561.532,
+          746.626
+        ],
+        [
+          546.584,
+          743.572
+        ],
+        [
+          532.164,
+          740.877
+        ],
+        [
+          518.373,
+          738.547
+        ],
+        [
+          504.543,
+          736.458
+        ],
+        [
+          490.454,
+          734.588
+        ],
+        [
+          476.557,
+          732.999
+        ],
+        [
+          462.635,
+          731.655
+        ],
+        [
+          448.258,
+          730.524
+        ],
+        [
+          433.663,
+          729.629
+        ],
+        [
+          418.42,
+          728.942
+        ],
+        [
+          402.821,
+          728.473
+        ],
+        [
+          387.729,
+          728.204
+        ],
+        [
+          371.791,
+          728.061
+        ]
+      ],
+      "edges": [
+        {
+          "id": "collar_fall.collar_fall_top.01",
+          "start_index": 20,
+          "end_index": 52,
+          "polyline": [
+            [
+              132.067,
+              691.797
+            ],
+            [
+              147.787,
+              691.259
+            ],
+            [
+              163.466,
+              690.66
+            ],
+            [
+              179.009,
+              689.986
+            ],
+            [
+              194.413,
+              689.23
+            ],
+            [
+              209.56,
+              688.411
+            ],
+            [
+              224.957,
+              687.529
+            ],
+            [
+              240.506,
+              686.633
+            ],
+            [
+              255.905,
+              685.784
+            ],
+            [
+              271.458,
+              685.013
+            ],
+            [
+              286.867,
+              684.368
+            ],
+            [
+              302.451,
+              683.85
+            ],
+            [
+              317.869,
+              683.477
+            ],
+            [
+              333.29,
+              683.232
+            ],
+            [
+              348.585,
+              683.098
+            ],
+            [
+              363.51,
+              683.042
+            ],
+            [
+              371.79,
+              683.04
+            ],
+            [
+              380.071,
+              683.042
+            ],
+            [
+              394.996,
+              683.098
+            ],
+            [
+              410.291,
+              683.232
+            ],
+            [
+              425.712,
+              683.477
+            ],
+            [
+              441.13,
+              683.85
+            ],
+            [
+              456.714,
+              684.368
+            ],
+            [
+              472.123,
+              685.013
+            ],
+            [
+              487.675,
+              685.784
+            ],
+            [
+              503.074,
+              686.633
+            ],
+            [
+              518.624,
+              687.529
+            ],
+            [
+              534.021,
+              688.411
+            ],
+            [
+              549.168,
+              689.23
+            ],
+            [
+              564.572,
+              689.986
+            ],
+            [
+              580.115,
+              690.66
+            ],
+            [
+              595.794,
+              691.259
+            ],
+            [
+              611.514,
+              691.797
+            ]
+          ],
+          "length": 479.8443683222538,
+          "source_edge_id": "e0",
+          "source_semantic_label": "collar_fall_top",
+          "semantic_role": "collar_fall_top",
+          "geometry_type": "boundary_curve",
+          "start": "left_end",
+          "end": "right_end"
+        },
+        {
+          "id": "collar_fall.collar_fall_right.02",
+          "start_index": 52,
+          "end_index": 57,
+          "polyline": [
+            [
+              611.514,
+              691.797
+            ],
+            [
+              610.065,
+              695.721
+            ],
+            [
+              604.792,
+              710.006
+            ],
+            [
+              599.582,
+              724.117
+            ],
+            [
+              594.344,
+              738.307
+            ],
+            [
+              589.003,
+              752.774
+            ]
+          ],
+          "length": 64.9995358139454,
+          "source_edge_id": "e1",
+          "source_semantic_label": "collar_fall_right",
+          "semantic_role": "collar_fall_right",
+          "geometry_type": "boundary_curve",
+          "start": "right_end",
+          "end": "collar_tip_right"
+        },
+        {
+          "id": "collar_fall.collar_fall_bottom.03",
+          "start_index": 15,
+          "end_index": 57,
+          "polyline": [
+            [
+              154.578,
+              752.774
+            ],
+            [
+              167.071,
+              749.912
+            ],
+            [
+              182.049,
+              746.626
+            ],
+            [
+              196.997,
+              743.572
+            ],
+            [
+              211.416,
+              740.877
+            ],
+            [
+              225.208,
+              738.547
+            ],
+            [
+              239.038,
+              736.458
+            ],
+            [
+              253.127,
+              734.588
+            ],
+            [
+              267.023,
+              732.999
+            ],
+            [
+              280.946,
+              731.655
+            ],
+            [
+              295.323,
+              730.524
+            ],
+            [
+              309.918,
+              729.629
+            ],
+            [
+              325.161,
+              728.942
+            ],
+            [
+              340.759,
+              728.473
+            ],
+            [
+              355.852,
+              728.204
+            ],
+            [
+              371.791,
+              728.061
+            ],
+            [
+              371.791,
+              728.061
+            ],
+            [
+              387.729,
+              728.204
+            ],
+            [
+              402.821,
+              728.473
+            ],
+            [
+              418.42,
+              728.942
+            ],
+            [
+              433.663,
+              729.629
+            ],
+            [
+              448.258,
+              730.524
+            ],
+            [
+              462.635,
+              731.655
+            ],
+            [
+              476.557,
+              732.999
+            ],
+            [
+              490.454,
+              734.588
+            ],
+            [
+              504.543,
+              736.458
+            ],
+            [
+              518.373,
+              738.547
+            ],
+            [
+              532.164,
+              740.877
+            ],
+            [
+              546.584,
+              743.572
+            ],
+            [
+              561.532,
+              746.626
+            ],
+            [
+              576.51,
+              749.912
+            ],
+            [
+              589.003,
+              752.774
+            ]
+          ],
+          "length": 438.3587406442773,
+          "source_edge_id": "e2",
+          "source_semantic_label": "collar_fall_bottom",
+          "semantic_role": "collar_fall_bottom",
+          "geometry_type": "boundary_curve",
+          "start": "collar_tip_left",
+          "end": "collar_tip_right"
+        },
+        {
+          "id": "collar_fall.collar_fall_left.04",
+          "start_index": 20,
+          "end_index": 15,
+          "polyline": [
+            [
+              132.067,
+              691.797
+            ],
+            [
+              133.516,
+              695.721
+            ],
+            [
+              138.789,
+              710.006
+            ],
+            [
+              143.999,
+              724.117
+            ],
+            [
+              149.237,
+              738.307
+            ],
+            [
+              154.578,
+              752.774
+            ]
+          ],
+          "length": 64.99953581394541,
+          "source_edge_id": "e3",
+          "source_semantic_label": "collar_fall_left",
+          "semantic_role": "collar_fall_left",
+          "geometry_type": "boundary_curve",
+          "start": "left_end",
+          "end": "collar_tip_left"
+        }
+      ],
+      "semantic_edges": {
+        "collar_fall_top": [
+          "collar_fall.collar_fall_top.01"
+        ],
+        "collar_fall_right": [
+          "collar_fall.collar_fall_right.02"
+        ],
+        "collar_fall_bottom": [
+          "collar_fall.collar_fall_bottom.03"
+        ],
+        "collar_fall_left": [
+          "collar_fall.collar_fall_left.04"
+        ]
+      },
+      "control_points": {
+        "left_end": [
+          132.067,
+          691.797
+        ],
+        "right_end": [
+          611.514,
+          691.797
+        ],
+        "collar_tip_left": [
+          154.578,
+          752.774
+        ],
+        "collar_tip_right": [
+          589.003,
+          752.774
+        ],
+        "collar_fall_top_center": [
+          371.79,
+          683.04
+        ],
+        "collar_fall_bottom_center": [
+          371.791,
+          728.061
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "left_end": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG20",
+          "semantic_role": "left_end",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "right_end": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG52",
+          "semantic_role": "right_end",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_tip_left": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG15",
+          "semantic_role": "collar_tip_left",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_tip_right": {
+          "point_type": "boundary",
+          "source": "next_step.md SVG57",
+          "semantic_role": "collar_tip_right",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_fall_top_center": {
+          "point_type": "internal",
+          "source": "next_step.md midpoint on collar_fall_top",
+          "semantic_role": "collar_fall_top_center",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "collar_fall_bottom_center": {
+          "point_type": "internal",
+          "source": "next_step.md midpoint on collar_fall_bottom",
+          "semantic_role": "collar_fall_bottom_center",
+          "confidence_level": "manual_reviewed",
+          "recommended_usage": "secondary_measurement",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "collar_upper_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    },
+    {
+      "id": "short_sleeve",
+      "source_name": "袖子-XXXL",
+      "role": "short_sleeve",
+      "is_main": true,
+      "is_derived": false,
+      "symmetry": "self",
+      "derived_from": null,
+      "boundary": [
+        [
+          1723.973,
+          280.019
+        ],
+        [
+          1722.598,
+          274.472
+        ],
+        [
+          1719.063,
+          260.212
+        ],
+        [
+          1715.43,
+          245.558
+        ],
+        [
+          1711.693,
+          230.484
+        ],
+        [
+          1707.921,
+          215.268
+        ],
+        [
+          1703.957,
+          199.278
+        ],
+        [
+          1710.823,
+          197.558
+        ],
+        [
+          1716.489,
+          195.88
+        ],
+        [
+          1721.373,
+          194.172
+        ],
+        [
+          1726.317,
+          192.182
+        ],
+        [
+          1730.495,
+          190.244
+        ],
+        [
+          1734.435,
+          188.141
+        ],
+        [
+          1738.215,
+          185.842
+        ],
+        [
+          1742.19,
+          183.119
+        ],
+        [
+          1746.217,
+          180.046
+        ],
+        [
+          1750.34,
+          176.573
+        ],
+        [
+          1754.595,
+          172.649
+        ],
+        [
+          1759.04,
+          168.203
+        ],
+        [
+          1763.841,
+          163.036
+        ],
+        [
+          1769.506,
+          156.541
+        ],
+        [
+          1775.96,
+          148.738
+        ],
+        [
+          1784.039,
+          138.525
+        ],
+        [
+          1793.295,
+          126.546
+        ],
+        [
+          1802.536,
+          114.719
+        ],
+        [
+          1809.614,
+          106.003
+        ],
+        [
+          1815.718,
+          98.848
+        ],
+        [
+          1821.301,
+          92.657
+        ],
+        [
+          1826.561,
+          87.177
+        ],
+        [
+          1831.641,
+          82.237
+        ],
+        [
+          1836.474,
+          77.873
+        ],
+        [
+          1841.156,
+          73.967
+        ],
+        [
+          1845.75,
+          70.447
+        ],
+        [
+          1850.232,
+          67.312
+        ],
+        [
+          1854.68,
+          64.493
+        ],
+        [
+          1859.1,
+          61.979
+        ],
+        [
+          1863.505,
+          59.755
+        ],
+        [
+          1867.87,
+          57.825
+        ],
+        [
+          1872.315,
+          56.129
+        ],
+        [
+          1877.043,
+          54.596
+        ],
+        [
+          1881.933,
+          53.276
+        ],
+        [
+          1887.023,
+          52.161
+        ],
+        [
+          1892.373,
+          51.251
+        ],
+        [
+          1897.726,
+          50.595
+        ],
+        [
+          1903.137,
+          50.178
+        ],
+        [
+          1908.742,
+          50.0
+        ],
+        [
+          1914.838,
+          50.073
+        ],
+        [
+          1922.171,
+          50.428
+        ],
+        [
+          1922.171,
+          50.428
+        ],
+        [
+          1922.171,
+          50.428
+        ],
+        [
+          1928.658,
+          50.841
+        ],
+        [
+          1933.545,
+          51.41
+        ],
+        [
+          1938.265,
+          52.197
+        ],
+        [
+          1942.765,
+          53.2
+        ],
+        [
+          1946.957,
+          54.385
+        ],
+        [
+          1951.101,
+          55.815
+        ],
+        [
+          1955.151,
+          57.474
+        ],
+        [
+          1959.141,
+          59.375
+        ],
+        [
+          1963.03,
+          61.501
+        ],
+        [
+          1966.795,
+          63.844
+        ],
+        [
+          1970.417,
+          66.394
+        ],
+        [
+          1973.765,
+          69.049
+        ],
+        [
+          1976.94,
+          71.877
+        ],
+        [
+          1980.095,
+          75.025
+        ],
+        [
+          1983.102,
+          78.372
+        ],
+        [
+          1986.251,
+          82.264
+        ],
+        [
+          1990.017,
+          87.352
+        ],
+        [
+          1994.499,
+          93.862
+        ],
+        [
+          2001.308,
+          104.335
+        ],
+        [
+          2009.387,
+          116.993
+        ],
+        [
+          2017.414,
+          129.677
+        ],
+        [
+          2024.827,
+          141.198
+        ],
+        [
+          2029.775,
+          148.511
+        ],
+        [
+          2033.576,
+          153.728
+        ],
+        [
+          2037.064,
+          158.112
+        ],
+        [
+          2040.781,
+          162.388
+        ],
+        [
+          2044.758,
+          166.592
+        ],
+        [
+          2049.195,
+          170.912
+        ],
+        [
+          2053.949,
+          175.193
+        ],
+        [
+          2056.117,
+          177.02
+        ],
+        [
+          2057.969,
+          178.508
+        ],
+        [
+          2062.144,
+          181.627
+        ],
+        [
+          2066.187,
+          184.351
+        ],
+        [
+          2070.172,
+          186.75
+        ],
+        [
+          2074.135,
+          188.856
+        ],
+        [
+          2078.16,
+          190.716
+        ],
+        [
+          2082.485,
+          192.431
+        ],
+        [
+          2087.104,
+          193.989
+        ],
+        [
+          2091.877,
+          195.337
+        ],
+        [
+          2097.011,
+          196.528
+        ],
+        [
+          2102.581,
+          197.562
+        ],
+        [
+          2108.52,
+          198.413
+        ],
+        [
+          2114.288,
+          198.995
+        ],
+        [
+          2119.983,
+          199.328
+        ],
+        [
+          2125.78,
+          199.423
+        ],
+        [
+          2131.957,
+          199.278
+        ],
+        [
+          2111.941,
+          280.024
+        ],
+        [
+          2093.43,
+          278.304
+        ],
+        [
+          2076.503,
+          276.898
+        ],
+        [
+          2058.52,
+          275.543
+        ],
+        [
+          2041.441,
+          274.383
+        ],
+        [
+          2022.75,
+          273.254
+        ],
+        [
+          2006.817,
+          272.412
+        ],
+        [
+          1990.164,
+          271.654
+        ],
+        [
+          1972.929,
+          271.01
+        ],
+        [
+          1955.252,
+          270.508
+        ],
+        [
+          1937.271,
+          270.176
+        ],
+        [
+          1919.124,
+          270.045
+        ],
+        [
+          1901.976,
+          270.125
+        ],
+        [
+          1883.91,
+          270.415
+        ],
+        [
+          1866.099,
+          270.887
+        ],
+        [
+          1848.688,
+          271.511
+        ],
+        [
+          1831.824,
+          272.258
+        ],
+        [
+          1815.65,
+          273.096
+        ],
+        [
+          1800.314,
+          273.998
+        ],
+        [
+          1782.543,
+          275.167
+        ],
+        [
+          1766.592,
+          276.33
+        ],
+        [
+          1750.252,
+          277.635
+        ],
+        [
+          1735.674,
+          278.905
+        ],
+        [
+          1723.973,
+          280.019
+        ]
+      ],
+      "edges": [
+        {
+          "id": "short_sleeve.underarm_front.01",
+          "start_index": 0,
+          "end_index": 6,
+          "polyline": [
+            [
+              1723.973,
+              280.019
+            ],
+            [
+              1722.598,
+              274.472
+            ],
+            [
+              1719.063,
+              260.212
+            ],
+            [
+              1715.43,
+              245.558
+            ],
+            [
+              1711.693,
+              230.484
+            ],
+            [
+              1707.921,
+              215.268
+            ],
+            [
+              1703.957,
+              199.278
+            ]
+          ],
+          "length": 83.18503073040432,
+          "source_edge_id": "e0",
+          "source_semantic_label": "underarm_front",
+          "semantic_role": "underarm_front",
+          "geometry_type": "boundary_curve",
+          "start": "cuff_front",
+          "end": "front_underarm"
+        },
+        {
+          "id": "short_sleeve.sleeve_cap.02",
+          "start_index": 6,
+          "end_index": 95,
+          "polyline": [
+            [
+              1703.957,
+              199.278
+            ],
+            [
+              1710.823,
+              197.558
+            ],
+            [
+              1716.489,
+              195.88
+            ],
+            [
+              1721.373,
+              194.172
+            ],
+            [
+              1726.317,
+              192.182
+            ],
+            [
+              1730.495,
+              190.244
+            ],
+            [
+              1734.435,
+              188.141
+            ],
+            [
+              1738.215,
+              185.842
+            ],
+            [
+              1742.19,
+              183.119
+            ],
+            [
+              1746.217,
+              180.046
+            ],
+            [
+              1750.34,
+              176.573
+            ],
+            [
+              1754.595,
+              172.649
+            ],
+            [
+              1759.04,
+              168.203
+            ],
+            [
+              1763.841,
+              163.036
+            ],
+            [
+              1769.506,
+              156.541
+            ],
+            [
+              1775.96,
+              148.738
+            ],
+            [
+              1784.039,
+              138.525
+            ],
+            [
+              1793.295,
+              126.546
+            ],
+            [
+              1802.536,
+              114.719
+            ],
+            [
+              1809.614,
+              106.003
+            ],
+            [
+              1815.718,
+              98.848
+            ],
+            [
+              1821.301,
+              92.657
+            ],
+            [
+              1826.561,
+              87.177
+            ],
+            [
+              1831.641,
+              82.237
+            ],
+            [
+              1836.474,
+              77.873
+            ],
+            [
+              1841.156,
+              73.967
+            ],
+            [
+              1845.75,
+              70.447
+            ],
+            [
+              1850.232,
+              67.312
+            ],
+            [
+              1854.68,
+              64.493
+            ],
+            [
+              1859.1,
+              61.979
+            ],
+            [
+              1863.505,
+              59.755
+            ],
+            [
+              1867.87,
+              57.825
+            ],
+            [
+              1872.315,
+              56.129
+            ],
+            [
+              1877.043,
+              54.596
+            ],
+            [
+              1881.933,
+              53.276
+            ],
+            [
+              1887.023,
+              52.161
+            ],
+            [
+              1892.373,
+              51.251
+            ],
+            [
+              1897.726,
+              50.595
+            ],
+            [
+              1903.137,
+              50.178
+            ],
+            [
+              1908.742,
+              50.0
+            ],
+            [
+              1914.838,
+              50.073
+            ],
+            [
+              1922.171,
+              50.428
+            ],
+            [
+              1922.171,
+              50.428
+            ],
+            [
+              1922.171,
+              50.428
+            ],
+            [
+              1928.658,
+              50.841
+            ],
+            [
+              1933.545,
+              51.41
+            ],
+            [
+              1938.265,
+              52.197
+            ],
+            [
+              1942.765,
+              53.2
+            ],
+            [
+              1946.957,
+              54.385
+            ],
+            [
+              1951.101,
+              55.815
+            ],
+            [
+              1955.151,
+              57.474
+            ],
+            [
+              1959.141,
+              59.375
+            ],
+            [
+              1963.03,
+              61.501
+            ],
+            [
+              1966.795,
+              63.844
+            ],
+            [
+              1970.417,
+              66.394
+            ],
+            [
+              1973.765,
+              69.049
+            ],
+            [
+              1976.94,
+              71.877
+            ],
+            [
+              1980.095,
+              75.025
+            ],
+            [
+              1983.102,
+              78.372
+            ],
+            [
+              1986.251,
+              82.264
+            ],
+            [
+              1990.017,
+              87.352
+            ],
+            [
+              1994.499,
+              93.862
+            ],
+            [
+              2001.308,
+              104.335
+            ],
+            [
+              2009.387,
+              116.993
+            ],
+            [
+              2017.414,
+              129.677
+            ],
+            [
+              2024.827,
+              141.198
+            ],
+            [
+              2029.775,
+              148.511
+            ],
+            [
+              2033.576,
+              153.728
+            ],
+            [
+              2037.064,
+              158.112
+            ],
+            [
+              2040.781,
+              162.388
+            ],
+            [
+              2044.758,
+              166.592
+            ],
+            [
+              2049.195,
+              170.912
+            ],
+            [
+              2053.949,
+              175.193
+            ],
+            [
+              2056.117,
+              177.02
+            ],
+            [
+              2057.969,
+              178.508
+            ],
+            [
+              2062.144,
+              181.627
+            ],
+            [
+              2066.187,
+              184.351
+            ],
+            [
+              2070.172,
+              186.75
+            ],
+            [
+              2074.135,
+              188.856
+            ],
+            [
+              2078.16,
+              190.716
+            ],
+            [
+              2082.485,
+              192.431
+            ],
+            [
+              2087.104,
+              193.989
+            ],
+            [
+              2091.877,
+              195.337
+            ],
+            [
+              2097.011,
+              196.528
+            ],
+            [
+              2102.581,
+              197.562
+            ],
+            [
+              2108.52,
+              198.413
+            ],
+            [
+              2114.288,
+              198.995
+            ],
+            [
+              2119.983,
+              199.328
+            ],
+            [
+              2125.78,
+              199.423
+            ],
+            [
+              2131.957,
+              199.278
+            ]
+          ],
+          "length": 549.4654227294939,
+          "source_edge_id": "e1",
+          "source_semantic_label": "sleeve_cap",
+          "semantic_role": "sleeve_cap",
+          "geometry_type": "boundary_curve",
+          "start": "front_underarm",
+          "end": "back_underarm"
+        },
+        {
+          "id": "short_sleeve.underarm_back.03",
+          "start_index": 95,
+          "end_index": 96,
+          "polyline": [
+            [
+              2131.957,
+              199.278
+            ],
+            [
+              2111.941,
+              280.024
+            ]
+          ],
+          "length": 83.18988383211028,
+          "source_edge_id": "e2",
+          "source_semantic_label": "underarm_back",
+          "semantic_role": "underarm_back",
+          "geometry_type": "line",
+          "start": "back_underarm",
+          "end": "cuff_back"
+        },
+        {
+          "id": "short_sleeve.cuff.04",
+          "start_index": 96,
+          "end_index": 0,
+          "polyline": [
+            [
+              2111.941,
+              280.024
+            ],
+            [
+              2093.43,
+              278.304
+            ],
+            [
+              2076.503,
+              276.898
+            ],
+            [
+              2058.52,
+              275.543
+            ],
+            [
+              2041.441,
+              274.383
+            ],
+            [
+              2022.75,
+              273.254
+            ],
+            [
+              2006.817,
+              272.412
+            ],
+            [
+              1990.164,
+              271.654
+            ],
+            [
+              1972.929,
+              271.01
+            ],
+            [
+              1955.252,
+              270.508
+            ],
+            [
+              1937.271,
+              270.176
+            ],
+            [
+              1919.124,
+              270.045
+            ],
+            [
+              1901.976,
+              270.125
+            ],
+            [
+              1883.91,
+              270.415
+            ],
+            [
+              1866.099,
+              270.887
+            ],
+            [
+              1848.688,
+              271.511
+            ],
+            [
+              1831.824,
+              272.258
+            ],
+            [
+              1815.65,
+              273.096
+            ],
+            [
+              1800.314,
+              273.998
+            ],
+            [
+              1782.543,
+              275.167
+            ],
+            [
+              1766.592,
+              276.33
+            ],
+            [
+              1750.252,
+              277.635
+            ],
+            [
+              1735.674,
+              278.905
+            ],
+            [
+              1723.973,
+              280.019
+            ],
+            [
+              1723.973,
+              280.019
+            ]
+          ],
+          "length": 388.6181707579746,
+          "source_edge_id": "e3",
+          "source_semantic_label": "cuff",
+          "semantic_role": "cuff",
+          "geometry_type": "boundary_curve",
+          "start": "cuff_back",
+          "end": "cuff_front"
+        }
+      ],
+      "semantic_edges": {
+        "underarm_front": [
+          "short_sleeve.underarm_front.01"
+        ],
+        "sleeve_cap": [
+          "short_sleeve.sleeve_cap.02"
+        ],
+        "underarm_back": [
+          "short_sleeve.underarm_back.03"
+        ],
+        "cuff": [
+          "short_sleeve.cuff.04"
+        ]
+      },
+      "control_points": {
+        "front_underarm": [
+          1703.957,
+          199.278
+        ],
+        "bicep_front": [
+          1703.957,
+          199.278
+        ],
+        "sleeve_cap_top": [
+          1894.441234338869,
+          50.997541803419
+        ],
+        "back_underarm": [
+          2131.957,
+          199.278
+        ],
+        "bicep_back": [
+          2131.957,
+          199.278
+        ],
+        "cuff_front": [
+          1723.973,
+          280.019
+        ],
+        "cuff_back": [
+          2111.941,
+          280.024
+        ],
+        "sleeve_axis_bottom": [
+          1894.441234338869,
+          270.245949963563
+        ],
+        "front_sleeve_cap_mid": [
+          1800.752200318166,
+          117.001977906834
+        ],
+        "back_sleeve_cap_mid": [
+          2009.036596789894,
+          116.443995935943
+        ]
+      },
+      "measurement_refs": {},
+      "control_point_meta": {
+        "front_underarm": {
+          "point_type": "boundary",
+          "source": "front underarm turn point",
+          "semantic_role": "front_underarm",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1",
+          "also_semantic_roles": [
+            "bicep_front"
+          ]
+        },
+        "bicep_front": {
+          "point_type": "boundary",
+          "source": "front underarm / bicep front",
+          "semantic_role": "bicep_front",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "sleeve_cap_top": {
+          "point_type": "boundary_interpolated",
+          "source": "arc-length match from front_underarm using front armhole length",
+          "semantic_role": "sleeve_cap_top",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_underarm": {
+          "point_type": "boundary",
+          "source": "back underarm turn point",
+          "semantic_role": "back_underarm",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1",
+          "also_semantic_roles": [
+            "bicep_back"
+          ]
+        },
+        "bicep_back": {
+          "point_type": "boundary",
+          "source": "back underarm / bicep back",
+          "semantic_role": "bicep_back",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cuff_front": {
+          "point_type": "boundary",
+          "source": "cuff front endpoint",
+          "semantic_role": "cuff_front",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "cuff_back": {
+          "point_type": "boundary",
+          "source": "cuff back endpoint",
+          "semantic_role": "cuff_back",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "sleeve_axis_bottom": {
+          "point_type": "boundary_interpolated",
+          "source": "sleeve axis intersects cuff",
+          "semantic_role": "sleeve_axis_bottom",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "primary_control",
+          "anchor_role": "primary_structure_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "front_sleeve_cap_mid": {
+          "point_type": "internal",
+          "source": "next_step.md keep sleeve cap mid control point",
+          "semantic_role": "front_sleeve_cap_mid",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "shape_driver",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        },
+        "back_sleeve_cap_mid": {
+          "point_type": "internal",
+          "source": "next_step.md keep sleeve cap mid control point",
+          "semantic_role": "back_sleeve_cap_mid",
+          "confidence_level": "synced_from_latest_M_schema",
+          "recommended_usage": "shape_driver",
+          "anchor_role": "measurement_derived_anchor",
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "reference_lines": {},
+      "display_annotations": {
+        "point_ids": {},
+        "ref_ids": {},
+        "line_ids": {},
+        "label_positions": {},
+        "overlap_warnings": []
+      },
+      "semantic_validation": {
+        "sleeve_latest_sync": {
+          "front_armhole_length_used": 248.393869669982,
+          "sleeve_cap_top": [
+            1894.4412343388694,
+            50.99754180341896
+          ],
+          "front_underarm_index": 6,
+          "back_underarm_index": 95,
+          "note": "synced_multisize_semantics_from_latest_M_v1"
+        }
+      },
+      "evaluated_measurements": {},
+      "source_svg": "pattern/pattern_XXXL.svg",
+      "source_svg_path_id": "sleeve_XXXL",
+      "candidate_point_source": "original_pattern_svg_path_points"
+    }
+  ],
+  "constraints": [
+    {
+      "type": "shoulder_seam_length_match",
+      "value": -0.014855878289182556
+    },
+    {
+      "type": "side_seam_length_match",
+      "value": -21.03835399581851
+    },
+    {
+      "type": "yoke_join_match",
+      "value": 0.05494759866940058
+    },
+    {
+      "type": "approximate_neckline_collar_stand_match",
+      "value": 360.7941464807159,
+      "approximate": true
+    },
+    {
+      "type": "approximate_armhole_sleeve_cap_match",
+      "value": -138.86859057816758,
+      "approximate": true
+    },
+    {
+      "type": "symmetry_consistency",
+      "value": 249.19908190608567
+    },
+    {
+      "type": "curve_smoothness",
+      "value": 5015.483000000009
+    },
+    {
+      "type": "self_intersection_count",
+      "value": 3
+    }
+  ],
+  "body_measurements": {
+    "height": 1870.0,
+    "chest": 1080.0,
+    "waist": 940.0,
+    "shoulder": 470.0,
+    "body_length": 490.0,
+    "sleeve_length": 600.0
+  },
+  "target_measurements": {
+    "chest_circumference": 995.6846418936865,
+    "waist_circumference": 1124.5326838827973,
+    "hem_circumference": 835.493887843525,
+    "shoulder_width": 296.2481863595169,
+    "body_length": 712.6904999999998,
+    "neck_circumference": 488.5927855532475,
+    "sleeve_length": 207.22661254323154,
+    "bicep_circumference": 426.4924073528016,
+    "cuff_circumference": 399.370988742387,
+    "back_garment_hem": null,
+    "garment_waist": 1124.5326838827973,
+    "garment_hem": 835.493887843525,
+    "sleeve_total_length": 207.22661254323154,
+    "wrist_width": 399.370988742387,
+    "cuff_join_length": 399.370988742387,
+    "cuff_height": 0.0,
+    "front_garment_hem": null,
+    "front_garment_waist": 288.1321829490198,
+    "front_garment_chest": null,
+    "body_upper_length": 0.0,
+    "garment_length": 712.6904999999998,
+    "front_neckline_center_to_waist": 425.0,
+    "front_neckline_center_to_waist_share": 0.22727272727272727,
+    "front_left_garment_waist": 288.13234217264744,
+    "front_right_garment_waist": 288.1320237253922,
+    "back_garment_waist": 548.2683179847576
+  },
+  "ease_parameters": {
+    "chest": -84.31535810631351,
+    "waist": 178.4313502586865,
+    "body_length": 222.69049999999982,
+    "sleeve_length": -392.77338745676843
+  },
+  "engineering_mapping": {
+    "front_body_right": {
+      "cut_subpath_index": 18,
+      "cut_bbox": [
+        786.833,
+        50.0,
+        1050.833,
+        729.949
+      ],
+      "source_name": "path_0_18",
+      "score": 0.22004790724913972
+    },
+    "front_body_left": {
+      "cut_subpath_index": 17,
+      "cut_bbox": [
+        462.834,
+        50.0,
+        726.833,
+        729.949
+      ],
+      "source_name": "path_0_17",
+      "score": 0.2199894846420107
+    },
+    "back_body": {
+      "cut_subpath_index": 0,
+      "cut_bbox": [
+        50.0,
+        1362.234,
+        300.001,
+        1947.236
+      ],
+      "source_name": "path_0_0",
+      "score": 1.3493132529498835
+    },
+    "back_yoke": {
+      "cut_subpath_index": 10,
+      "cut_bbox": [
+        778.628,
+        982.403,
+        1158.628,
+        1172.494
+      ],
+      "source_name": "path_0_10",
+      "score": 1.4619057895016343
+    },
+    "collar_stand": {
+      "cut_subpath_index": 4,
+      "cut_bbox": [
+        50.0,
+        1268.489,
+        507.257,
+        1302.234
+      ],
+      "source_name": "path_0_4",
+      "score": 0.9541357996873261
+    },
+    "collar_fall": {
+      "cut_subpath_index": 7,
+      "cut_bbox": [
+        1161.978,
+        1232.494,
+        1611.426,
+        1302.234
+      ],
+      "source_name": "path_0_7",
+      "score": 0.47710223939301966
+    },
+    "short_sleeve": {
+      "cut_subpath_index": 9,
+      "cut_bbox": [
+        338.628,
+        982.403,
+        718.628,
+        1172.494
+      ],
+      "source_name": "path_0_9",
+      "score": 0.49168050467161073
+    }
+  },
+  "intermediate_measurements": {},
+  "measurement_logic": {
+    "front": "胸线/腰线/下摆线沿 body_length_axis 的标准化高度定义，再与 center_front 和 side_seam/hem 求交",
+    "back": "后下保持整片表示，但在测量解释中区分 piece scope 与 mirrored_pair/full garment 合成逻辑",
+    "yoke": "育克主要提供 back_neck、shoulder、yoke_join 曲线，不强制拆左右两片",
+    "sleeve": "袖山高、袖肥、袖口、袖长 proxy 依照袖山顶-袖底-袖口的结构关系定义",
+    "collar": "领座底边优先 curve，翻领折线与领座 chord 仅作 proxy 或辅助解释"
+  },
+  "curve_ready_meta": {
+    "multisize_semantic_sync_latest_M_v1": {
+      "state": "synced",
+      "source_schema": "short_sleeve_shirt_template_curve_ready_v1.json",
+      "note": "Only latest semantic control point names and semantic edge labels retained for review."
+    },
+    "multisize_semantic_confirmation_cleanup_v1": {
+      "description": "Cleared old measurement/reference-only markup so this size template carries only current semantic control points and semantic edges for review.",
+      "scope": "measurement_refs/evaluated_measurements cleared for multisize semantic confirmation",
+      "top_level_measurements_cleared": true
+    },
+    "svg_candidate_source_sync_v1": {
+      "candidate_point_source": "original pattern SVG path points",
+      "svg_pattern": "pattern/pattern_XXXL.svg",
+      "note": "Semantic review candidates are selected from SVG path points and then mapped to template semantic edges/control points."
+    },
+    "semantic_edge_direction_sync_v1": {
+      "description": "Directional side/shoulder/armhole labels normalized to latest semantic edge names.",
+      "front_labels": [
+        "front_left_neckline",
+        "front_right_neckline",
+        "left_shoulder",
+        "right_shoulder",
+        "left_armhole",
+        "right_armhole"
+      ],
+      "back_labels": [
+        "left_side_seam",
+        "right_side_seam",
+        "left_armhole",
+        "right_armhole",
+        "left_shoulder",
+        "right_shoulder"
+      ]
+    },
+    "next_step_semantic_point_sync_v1": {
+      "source": "next_step.md",
+      "description": "Updated multisize semantic control points and semantic edge labels from original SVG point indices where specified."
+    },
+    "next_step_semantic_point_sync_v2": {
+      "source": "next_step.md",
+      "description": "Back chest width points moved to nearest original-SVG armhole part points to center-back axis; front center-front and hem control points updated by specified SVG indices."
+    },
+    "next_step_front_right_side_bottom_sync_v1": {
+      "source": "next_step.md",
+      "description": "For sizes with explicit front_body_right center_front SVG pair, side_hem_right uses symmetric side_bottom SVG0 and cf_right_hem aligns to that y."
+    },
+    "next_step_2026_05_20_semantic_update": "applied front semantic point/edge corrections and removed sleeve front/back cap turn controls"
+  },
+  "evaluated_measurements": {},
+  "template_version": "short_sleeve_v4_ready_v1",
+  "style_features": {
+    "sleeve": "short_sleeve",
+    "cuff": "integrated_short_sleeve_cuff_edge",
+    "placket": "none",
+    "collar": "stand_plus_fall"
+  },
+  "grading_parameters": [
+    "chest",
+    "waist",
+    "hem",
+    "shoulder",
+    "body_length",
+    "neck",
+    "sleeve_length",
+    "bicep",
+    "cuff"
+  ]
+}

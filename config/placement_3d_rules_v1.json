@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "coordinate_system": {
+    "units": "pattern_units_mm",
+    "x": "left_right",
+    "y": "up_down",
+    "z": "front_back"
+  },
+  "pieces": {
+    "front_body_left": {
+      "plane": "front_torso",
+      "label": "body",
+      "normal": [0, 0, 1],
+      "center": [135, 1100, 300]
+    },
+    "front_body_right": {
+      "plane": "front_torso",
+      "label": "body",
+      "normal": [0, 0, 1],
+      "center": [-135, 1100, 300]
+    },
+    "back_body": {
+      "plane": "back_torso",
+      "label": "body",
+      "normal": [0, 0, -1],
+      "center": [0, 1100, -300]
+    },
+    "back_yoke": {
+      "plane": "back_torso",
+      "label": "body",
+      "normal": [0, 0, -1],
+      "center": [0, 1485, -305]
+    },
+    "long_sleeve": {
+      "plane": "right_arm",
+      "label": "left_arm",
+      "normal": [1, 0, 0],
+      "rotation": [0, 90, 45.35],
+      "center": [550, 1130, -200]
+    },
+    "long_sleeve_front": {
+      "plane": "front_arm",
+      "label": "left_arm",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 45.35],
+      "center": [396.4, 1127.1, 300]
+    },
+    "long_sleeve_back": {
+      "plane": "back_arm",
+      "label": "left_arm",
+      "normal": [0, 0, -1],
+      "rotation": [0, 180, 45.35],
+      "center": [385.2, 1206.3, -302.1]
+    },
+    "long_sleeve_front_right": {
+      "plane": "front_arm",
+      "label": "right_arm",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, -45.35],
+      "center": [-396.4, 1127.1, 300]
+    },
+    "long_sleeve_back_right": {
+      "plane": "back_arm",
+      "label": "right_arm",
+      "normal": [0, 0, -1],
+      "rotation": [0, 180, -45.35],
+      "center": [-385.2, 1206.3, -302.1]
+    },
+    "long_sleeve_right": {
+      "plane": "left_arm",
+      "label": "right_arm",
+      "normal": [-1, 0, 0],
+      "rotation": [0, -90, -45.35],
+      "center": [-550, 1130, -200]
+    },
+    "short_sleeve": {
+      "plane": "right_arm",
+      "normal": [1, 0, 0],
+      "center": [385, 80, 0]
+    },
+    "short_sleeve_front": {
+      "plane": "front_arm",
+      "label": "left_arm",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 45.35],
+      "center": [396.4, 1127.1, 300]
+    },
+    "short_sleeve_back": {
+      "plane": "back_arm",
+      "label": "left_arm",
+      "normal": [0, 0, -1],
+      "rotation": [0, 180, 45.35],
+      "center": [385.2, 1206.3, -302.1]
+    },
+    "short_sleeve_right": {
+      "plane": "left_arm",
+      "normal": [-1, 0, 0],
+      "center": [-385, 80, 0]
+    },
+    "short_sleeve_front_right": {
+      "plane": "front_arm",
+      "label": "right_arm",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, -45.35],
+      "center": [-396.4, 1127.1, 300]
+    },
+    "short_sleeve_back_right": {
+      "plane": "back_arm",
+      "label": "right_arm",
+      "normal": [0, 0, -1],
+      "rotation": [0, 180, -45.35],
+      "center": [-385.2, 1206.3, -302.1]
+    },
+    "collar_stand": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "center": [0, 275, 105]
+    },
+    "collar_stand_left": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [78.2, 1485.6, 300]
+    },
+    "collar_stand_back": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [0, 1615.7, -305]
+    },
+    "collar_stand_right": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [-78.2, 1485.6, 300]
+    },
+    "collar_fall_left": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [118.2, 1575.6, 300]
+    },
+    "collar_fall_back": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [0, 1705.7, -305]
+    },
+    "collar_fall_right": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "rotation": [0, 0, 180],
+      "center": [-118.2, 1575.6, 300]
+    },
+    "collar_fall": {
+      "plane": "neck",
+      "normal": [0, 0, 1],
+      "center": [0, 345, 112]
+    },
+    "cuff": {
+      "plane": "right_wrist",
+      "normal": [1, 0, 0],
+      "center": [510, -420, 0]
+    },
+    "cuff_right": {
+      "plane": "left_wrist",
+      "normal": [-1, 0, 0],
+      "center": [-510, -420, 0]
+    },
+    "cuff_front": {
+      "plane": "right_wrist",
+      "normal": [1, 0, 0],
+      "rotation": [0, 0, 45.35],
+      "center": [681.9, 838.9, 300]
+    },
+    "cuff_back": {
+      "plane": "right_wrist",
+      "normal": [1, 0, 0],
+      "rotation": [0, 180, 45.35],
+      "center": [671.1, 917.7, -302.1]
+    },
+    "cuff_front_right": {
+      "plane": "left_wrist",
+      "normal": [-1, 0, 0],
+      "rotation": [0, 0, -45.35],
+      "center": [-681.9, 838.9, 300]
+    },
+    "cuff_back_right": {
+      "plane": "left_wrist",
+      "normal": [-1, 0, 0],
+      "rotation": [0, 180, -45.35],
+      "center": [-671.1, 917.7, -302.1]
+    },
+    "front_placket_left": {
+      "plane": "center_front",
+      "normal": [0, 0, 1],
+      "center": [14, -120, 188]
+    },
+    "front_placket_right": {
+      "plane": "center_front",
+      "normal": [0, 0, 1],
+      "center": [-14, -120, 192]
+    },
+    "placket_strip": {
+      "plane": "right_wrist",
+      "normal": [1, 0, 0],
+      "center": [510, -305, 12]
+    },
+    "placket_strip_right": {
+      "plane": "left_wrist",
+      "normal": [-1, 0, 0],
+      "center": [-510, -305, 12]
+    },
+    "placket_tip": {
+      "plane": "right_wrist",
+      "normal": [1, 0, 0],
+      "center": [510, -410, 18]
+    },
+    "placket_tip_right": {
+      "plane": "left_wrist",
+      "normal": [-1, 0, 0],
+      "center": [-510, -410, 18]
+    }
+  }
+}

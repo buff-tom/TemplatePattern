@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "templatepattern-final"
+version = "1.0.0"
+description = "Portable two-stage body-to-sewing-pattern and GarmentCode simulation pipeline"
+readme = "README.md"
+requires-python = ">=3.9,<3.11"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+  "PyYAML==6.0.2",
+  "svgwrite==1.4.3",
+]
+
+[project.scripts]
+templatepattern = "TemplatePattern_final.cli:main"
+
+[tool.setuptools]
+packages = [
+  "TemplatePattern_final",
+  "TemplatePattern_final.long_sleeve",
+  "TemplatePattern_final.short_sleeve",
+  "TemplatePattern_final.pattern2d",
+  "TemplatePattern_final.shared",
+  "TemplatePattern_final.sim",
+]
+package-dir = {TemplatePattern_final = "."}
+include-package-data = true
+
+[tool.setuptools.package-data]
+TemplatePattern_final = [
+  "config/*.json",
+  "templates/**/*.json",
+  "assets/**/*.json",
+  "assets/**/*.yaml",
+]

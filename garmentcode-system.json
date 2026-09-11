@@ -1,0 +1,8 @@
+{
+  "output": "/tmp/templatepattern-garmentcode-logs",
+  "datasets_path": "",
+  "datasets_sim": "",
+  "sim_configs_path": "/opt/GarmentCode/assets/Sim_props",
+  "bodies_default_path": "/opt/GarmentCode/assets/bodies",
+  "body_samples_path": ""
+}
