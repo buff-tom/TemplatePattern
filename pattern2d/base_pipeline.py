@@ -8,6 +8,7 @@ from TemplatePattern_final.shared.body_config import BodyConfig
 from TemplatePattern_final.shared.geometry import bbox, scale_points
 from TemplatePattern_final.shared.io import ROOT, read_json, relative_to_root
 from TemplatePattern_final.shared.pattern_result import write_pattern_outputs
+from TemplatePattern_final.shared.template_selection import select_template
 
 from .schema import BOUNDARY_ORDERS, LONG_SEAMS, PIECE_ORDER, PLACEMENT_RULES, SHORT_SEAMS, SIZE_ORDER
 
@@ -20,7 +21,9 @@ class TemplatePatternPipeline:
     def __init__(self, body_config: str | Path, output_dir: str | Path | None = None) -> None:
         self.body = BodyConfig.load(body_config)
         self.output_dir = Path(output_dir) if output_dir else ROOT / "outputs" / self.style / "stage1"
-        self.size_refs = read_json("config/size_body_reference_v4.json")["sizes"]
+        self.references = read_json("config/size_body_reference_v4.json")
+        self.size_refs = self.references['sizes']
+        self.selection = select_template(self.body.body_input, self.references)
 
     def run(self) -> dict[str, str]:
         size = self.select_size()
@@ -33,12 +36,12 @@ class TemplatePatternPipeline:
             "sample_name": self.body.sample_name,
             "unit": "mm",
             "body_input": self.body.body_input,
-            "nearest_template_selection": {"nearest_size": size, "selection_source": "config/size_body_reference_v4.json"},
+            "nearest_template_selection": {**self.selection, "selection_source": "config/size_body_reference_v4.json"},
         }
         return write_pattern_outputs(self.output_dir, pattern, manifest)
 
     def select_size(self) -> str:
-        return min(SIZE_ORDER, key=lambda size: self.body.size_distance(self.size_refs[size]))
+        return self.selection['nearest_size']
 
     def template_path(self, size: str) -> Path:
         raise NotImplementedError
@@ -117,4 +120,4 @@ class TemplatePatternPipeline:
         return [role for role in preferred if role in set(roles)] + [role for role in roles if role not in preferred]
 
     def fit_summary(self, size: str) -> dict[str, Any]:
-        return {"mode": "nearest_template_scaled", "nearest_size": size, "body_input": self.body.body_input}
+        return {"mode": "capacity_template_scaled", "nearest_size": size, "body_input": self.body.body_input, "selection": self.selection}

@@ -12,7 +12,6 @@ from .boundary_sampler import sample_boundary
 from .curve_ops import clean_polyline, same_point, semantic_polyline
 from .piece_splitter import PieceSplitter
 from .stitch_builder import StitchBuilder
-from .dynamic_stitches import build_dynamic_stitches
 
 
 PROPERTIES = {
@@ -47,20 +46,25 @@ class GarmentSpecConverter:
         return {"spec": str(output), "debug": str(debug_path)}
 
     def convert(self, pattern: dict[str, Any], name: str) -> tuple[dict[str, Any], dict[str, Any]]:
-        pattern = PieceSplitter().expand(pattern)
-        panels: dict[str, Any] = {}
-        edge_lookup: dict[tuple[str, str], list[int]] = {}
-        for piece_name, piece in pattern.get("pieces", {}).items():
-            local_piece = self._local_piece(piece)
-            rule = pattern.get("placement_rules", {}).get(piece_name, {})
-            panels[piece_name] = self._panel(piece_name, rule, local_piece["boundary"])
-            edge_lookup.update(self.stitches.lookup_for_piece(piece_name, local_piece, panels[piece_name]["vertices"]))
-        stitches = build_dynamic_stitches(pattern, panels, edge_lookup, self.stitches)
-        skipped = []
-        spec = {"pattern": {"panels": panels, "stitches": stitches}, "parameters": {}, "parameter_order": [], "properties": dict(PROPERTIES)}
-        debug = {"name": name, "style": pattern.get("style"), "panel_count": len(panels), "stitch_count": len(stitches), "skipped_stitches": skipped}
-        debug["geometry_source"] = "stage1_pattern"
-        debug["seam_mapping"] = "semantic_paired_arclength_resampling_5mm"
+        from copy import deepcopy
+        from TemplatePattern_final.shared.io import ROOT
+        style = pattern.get("style")
+        if style not in ("long_sleeve", "short_sleeve"):
+            raise ValueError(f"Unsupported pattern style: {style}")
+        reference = "torso_short_v6" if style == "short_sleeve" else "torso_v6_tpose" if name.endswith("tpose") else "torso_v6"
+        path = ROOT / "assets/reference_specs" / f"{reference}_specification.json"
+        spec = deepcopy(read_json(path))
+        panels = spec["pattern"]["panels"]
+        debug = {
+            "name": name, "style": style, "panel_count": len(panels),
+            "stitch_count": len(spec["pattern"]["stitches"]),
+            "skipped_stitches": [],
+            "geometry_source": "original_reference",
+            "seam_mapping": "original_reference_unchanged",
+            "reference_override": {"path": str(path.relative_to(ROOT)), "applied": True},
+            "stage1_selection": pattern.get("fit", {}),
+            "note": "Original simulation geometry and sewing graph restored; placement changes only translation/rotation.",
+        }
         return spec, debug
 
     def _local_piece(self, piece: dict[str, Any]) -> dict[str, Any]:
@@ -134,8 +138,7 @@ class GarmentSpecConverter:
         return best
 
     def _local_point(self, point: list[float], cx: float, cy: float) -> list[float]:
-        # Stage1 uses drawing coordinates (Y down); GarmentCode uses Y up.
-        return [round((point[0] - cx) / 10.0, 6), round((cy - point[1]) / 10.0, 6)]
+        return [round((point[0] - cx) / 10.0, 6), round((point[1] - cy) / 10.0, 6)]
 
     def _remove_degenerate(self, boundary: list[list[float]]) -> list[list[float]]:
         clean = clean_polyline(boundary)

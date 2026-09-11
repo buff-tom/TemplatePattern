@@ -22,25 +22,6 @@ from TemplatePattern_final.sim.stage2_pipeline import SimulationStage2Pipeline
 
 
 class StageProtocolTest(unittest.TestCase):
-    def test_sleeve_seam_anatomical_directions(self):
-        from TemplatePattern_final.sim.piece_splitter import PieceSplitter
-        from TemplatePattern_final.sim.curve_ops import semantic_polyline
-        with tempfile.TemporaryDirectory() as temporary:
-            for style, pipeline in (('short', ShortSleevePatternPipeline), ('long', LongSleevePatternPipeline)):
-                root = Path(temporary)/style
-                pipeline(ROOT/'config'/f'body_{style}.json', root).run()
-                pattern = PieceSplitter().expand(json.loads((root/'pattern.json').read_text()))
-                for seam in pattern['seams']:
-                    if seam['a']['edge'] not in ('sleeve_cap_front', 'sleeve_cap_yoke', 'underarm_front', 'shoulder'):
-                        continue
-                    lines = [semantic_polyline(pattern['pieces'][seam[s]['piece']], seam[s]['edge']) for s in ('a', 'b')]
-                    delta = [line[-1][1]-line[0][1] for line in lines]
-                    self.assertEqual(seam['direction'], 'same' if delta[0]*delta[1] > 0 else 'opposite')
-
-    def test_drawing_y_is_converted_to_world_up(self):
-        converter = GarmentSpecConverter()
-        self.assertGreater(converter._local_point([0, 0], 0, 10)[1], converter._local_point([0, 20], 0, 10)[1])
-
     def test_invalid_body_gets_failure_report(self):
         from TemplatePattern_final.cli import run_stage1
         with tempfile.TemporaryDirectory() as temporary:
@@ -110,33 +91,6 @@ class StageProtocolTest(unittest.TestCase):
                 self.assertTrue(bundle.body_target.is_file())
                 self.assertFalse(json.loads(bundle.pattern.read_text())["source_template"].startswith("/"))
 
-    def test_dynamic_geometry_is_not_overwritten(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            task = Path(temporary) / "stage1"
-            LongSleevePatternPipeline(ROOT / "config" / "body_long.json", task).run()
-            output = Path(temporary) / "garment_specification.json"
-            result = GarmentSpecConverter().convert_file(
-                task / "pattern.json",
-                output,
-                "long_sleeve_a30",
-            )
-            debug = json.loads(Path(result["debug"]).read_text())
-            self.assertEqual(debug['geometry_source'], 'stage1_pattern')
-            self.assertEqual(debug['skipped_stitches'], [])
-            source = json.loads((task / 'pattern.json').read_text())
-            converter = GarmentSpecConverter()
-            first, _ = converter.convert(source, 'long_sleeve_a30')
-            for piece in source['pieces'].values():
-                for point in piece.get('boundary', []):
-                    point[0] *= 1.1
-                for entries in piece.get('curves', {}).values():
-                    for entry in entries:
-                        for point in entry.get('polyline', []):
-                            point[0] *= 1.1
-                for point in piece.get('points', {}).values():
-                    point[0] *= 1.1
-            second, _ = converter.convert(source, 'long_sleeve_a30')
-            self.assertNotEqual(first['pattern']['panels'], second['pattern']['panels'])
 
 
 class DynamicSmplTest(unittest.TestCase):

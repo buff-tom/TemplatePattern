@@ -37,7 +37,7 @@ sim:
       global_damping_effective_velocity: 0.0
       global_max_velocity: 25.0
 
-      enable_attachment_constraint: false
+      enable_attachment_constraint: true
       attachment_stiffness:
       - 1000.0
       - 1000.0

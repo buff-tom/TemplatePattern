@@ -63,49 +63,11 @@ class StitchBuilder:
             assignments[edge_name].append(local_index)
         lookup: dict[EdgeRef, list[int]] = {}
         for edge_name, polylines in edge_polylines.items():
-            polyline = semantic_polyline(piece, edge_name)
-            if len(polyline) < 2:
+            indices = self._include_polyline_endpoints(assignments.get(edge_name, []), vertices, polylines)
+            if len(indices) < 2:
                 continue
-            nearest = lambda point: min(range(len(vertices)), key=lambda i: hypot(vertices[i][0]-point[0], vertices[i][1]-point[1]))
-            start, end = nearest(polyline[0]), nearest(polyline[-1])
-            if start == end:
-                continue
-            paths = []
-            for direction in (1, -1):
-                ids = [start]
-                while ids[-1] != end:
-                    ids.append((ids[-1] + direction) % len(vertices))
-                paths.append(ids)
-            # Boundary order, not nearest-point progress, defines topology.
-            # Progress sorting folds back around curved corners for small sizes.
-            def score(ids):
-                return sum(self._distance_to_polylines(
-                    [(vertices[a][j]+vertices[b][j])/2 for j in range(2)], polylines
-                ) * hypot(vertices[b][0]-vertices[a][0], vertices[b][1]-vertices[a][1]) for a, b in zip(ids, ids[1:]))
-            ordered = min(paths, key=score)
-            # Keep source curve direction: PieceSplitter determines the pair
-            # direction from these endpoints, not historical alias landmarks.
-            lookup[(piece_name, edge_name)] = ordered
-        # Some source templates have semantic endpoints offset from the outline.
-        # Assign overlapping boundary edges to their closest semantic curve,
-        # retaining boundary order rather than sewing the same edge twice.
-        candidates = defaultdict(list)
-        for key, ids in lookup.items():
-            for a, b in zip(ids, ids[1:]):
-                edge = a if (a+1) % len(vertices) == b else b
-                candidates[edge].append(key)
-        owners = {}
-        for edge, keys in candidates.items():
-            following = (edge+1) % len(vertices)
-            midpoint = [(vertices[edge][j]+vertices[following][j])/2 for j in range(2)]
-            owners[edge] = min(keys, key=lambda key: self._distance_to_polylines(midpoint, edge_polylines[key[1]]))
-        for key, ids in list(lookup.items()):
-            kept = [(a, b) for a, b in zip(ids, ids[1:]) if owners[a if (a+1) % len(vertices) == b else b] == key]
-            if not kept:
-                raise ValueError(f'No boundary interval for semantic edge: {key}')
-            if any(a[1] != b[0] for a, b in zip(kept, kept[1:])):
-                raise ValueError(f'Disconnected semantic boundary assignment: {key}')
-            lookup[key] = [kept[0][0]] + [b for _, b in kept]
+            ordered = sorted(set(indices), key=lambda index: self._progress_along_polylines(vertices[index], polylines))
+            lookup[(piece_name, edge_name)] = self._orient_edge_vertices(piece_name, edge_name, ordered, vertices, piece.get("points", {}))
         return lookup
 
     def _edge_lengths(self, pattern: dict[str, Any]) -> dict[EdgeRef, float]:

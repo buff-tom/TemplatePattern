@@ -35,5 +35,6 @@ TemplatePattern_final = [
   "config/*.json",
   "templates/**/*.json",
   "assets/**/*.json",
+  "assets/*.json",
   "assets/**/*.yaml",
 ]

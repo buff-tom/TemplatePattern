@@ -69,25 +69,6 @@ class PieceSplitter:
             pieces.update(self._split_collar_fall(pieces["collar_fall"], pieces))
         pattern["pieces"] = {k: v for k, v in pieces.items() if k in PANEL_FILTERS[style]}
         pattern["seams"] = self._expanded_seams(pattern.get("seams", []), style)
-        for seam in pattern['seams']:
-            roles = [seam[s]['edge'] for s in ('a', 'b')]
-            if roles == ['yoke_join', 'yoke_join']:
-                axis = 0
-            elif 'collar_stand_bottom' in roles and any('neckline' in role for role in roles):
-                axis = 0
-            elif roles == ['collar_stand_top', 'collar_fall_bottom']:
-                axis = 0
-            elif all(any(token in role for token in ('shoulder', 'side_seam', 'underarm', 'split_cut', 'sleeve_cap', 'armhole')) for role in roles):
-                axis = 1
-            else:
-                continue
-            lines = [semantic_polyline(pattern['pieces'][seam[s]['piece']], seam[s]['edge']) for s in ('a', 'b')]
-            delta = [line[-1][axis]-line[0][axis] for line in lines]
-            # Templates do not share traversal directions across styles/sizes.
-            # Match upper endpoints to upper endpoints (or left to left for
-            # the back join), independent of how the source curve was stored.
-            if abs(delta[0]) > 1e-6 and abs(delta[1]) > 1e-6:
-                seam['direction'] = 'same' if delta[0]*delta[1] > 0 else 'opposite'
         return pattern
 
     def _split_sleeve(self, piece: dict[str, Any], pieces: dict[str, Any], prefix: str) -> dict[str, dict[str, Any]]:
@@ -152,7 +133,6 @@ class PieceSplitter:
     def _split_collar_stand(self, piece: dict[str, Any], pieces: dict[str, Any]) -> dict[str, dict[str, Any]]:
         bottom = semantic_polyline(piece, "collar_stand_bottom")
         top = semantic_polyline(piece, "collar_stand_top")
-        top = self._align_strip(bottom, top)
         left, back, right = self._three_way(bottom, pieces)
         top_left, top_back, top_right = self._three_way(top, pieces)
         return {
@@ -164,7 +144,6 @@ class PieceSplitter:
     def _split_collar_fall(self, piece: dict[str, Any], pieces: dict[str, Any]) -> dict[str, dict[str, Any]]:
         bottom = semantic_polyline(piece, "collar_fall_bottom")
         top = semantic_polyline(piece, "collar_fall_top")
-        top = self._align_strip(bottom, top)
         left, back, right = self._three_way(bottom, pieces)
         top_left, top_back, top_right = self._three_way(top, pieces)
         return {
@@ -179,15 +158,6 @@ class PieceSplitter:
         left, rest = split_at_length(polyline, polyline_length(polyline) * lengths[0] / total)
         back, right = split_at_length(rest, polyline_length(rest) * lengths[1] / max(total - lengths[0], 1.0e-9))
         return left, back, right
-
-    @staticmethod
-    def _align_strip(bottom, top):
-        # Source boundary loops traverse top and bottom in opposite directions.
-        # Split both in the same spatial direction, otherwise cut edges cross.
-        from math import dist
-        same = dist(bottom[0], top[0]) + dist(bottom[-1], top[-1])
-        reverse = dist(bottom[0], top[-1]) + dist(bottom[-1], top[0])
-        return list(reversed(top)) if reverse < same else top
 
     def _collar_piece(self, source: dict[str, Any], name: str, bottom: list[list[float]], top: list[list[float]], prefix: str) -> dict[str, Any]:
         return build_piece(source, name, [f"{prefix}_bottom", "cut_right", f"{prefix}_top", "cut_left"], {f"{prefix}_bottom": bottom, "cut_right": [bottom[-1], top[-1]], f"{prefix}_top": list(reversed(top)), "cut_left": [top[0], bottom[0]]}, f"{name} split from {prefix}")
@@ -225,12 +195,7 @@ class PieceSplitter:
 
     def _sleeve_seams(self, style: str) -> list[dict[str, Any]]:
         prefix = "short_sleeve" if style == "short_sleeve" else "long_sleeve"
-        seams = [self._seam(f"{prefix}_front", "sleeve_cap_front", "front_body_left", "armhole"), self._seam(f"{prefix}_back", "sleeve_cap_yoke", "back_yoke", "armhole_left_part"), self._seam(f"{prefix}_back", "sleeve_cap_back_body", "back_body", "armhole_left_part"), self._seam(f"{prefix}_front", "split_cut", f"{prefix}_back", "split_cut"), self._seam(f"{prefix}_front", "underarm_front", f"{prefix}_back", "underarm_back")]
-        # Front cap and front armhole both run underarm -> shoulder;
-        # back cap/yoke both run shoulder -> lower armhole. Reversing either
-        # pair twists the sleeve by sewing shoulder to underarm.
-        seams[0]['direction'] = 'same'
-        seams[1]['direction'] = 'same'
+        seams = [self._seam(f"{prefix}_front", "sleeve_cap_front", "front_body_left", "armhole"), self._seam(f"{prefix}_back", "sleeve_cap_yoke", "back_yoke", "armhole_left_part"), self._seam(f"{prefix}_back", "sleeve_cap_back_body", "back_body", "armhole_left_part"), self._seam(f"{prefix}_front", "split_cut", f"{prefix}_back", "split_cut")]
         seams += [self._mirror_seam(s) for s in seams]
         if style == "long_sleeve":
             seams += [self._seam("long_sleeve_front", "sleeve_cuff_join", "cuff_front", "cuff_top_join"), self._seam("long_sleeve_back", "sleeve_cuff_join", "cuff_back", "cuff_top_join"), self._seam("cuff_front", "split_cut", "cuff_back", "split_cut")]
@@ -241,7 +206,7 @@ class PieceSplitter:
         seam = deepcopy(seam)
         for side in ("a", "b"):
             seam[side]["piece"] = RIGHT_MAP.get(seam[side]["piece"], seam[side]["piece"])
-            seam[side]["edge"] = seam[side]["edge"].replace("_left", "_SIDE_SWAP").replace("_right", "_left").replace("_SIDE_SWAP", "_right")
+            seam[side]["edge"] = seam[side]["edge"].replace("_left", "_right").replace("_right", "_left")
         return seam
 
     def _seam(self, a_piece: str, a_edge: str, b_piece: str, b_edge: str) -> dict[str, Any]:

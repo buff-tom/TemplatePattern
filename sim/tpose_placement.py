@@ -73,40 +73,9 @@ class BodyPosePlacement:
             "piece_placement": {},
             "body_landmarks_cm": landmarks,
         }
-        self._place_torso(spec, landmarks, relation, x_clearance)
-        if style == "long_sleeve":
-            self._place_long_sleeves(spec, landmarks, relation, x_clearance)
-            self._place_cuffs(spec, landmarks, relation, x_clearance)
-        else:
-            self._place_short_sleeves(spec, landmarks, relation, x_clearance)
+        from .body_relative_placement import place_relative_to_body
+        place_relative_to_body(spec, landmarks, style, pose, relation)
         return relation
-
-    def _place_torso(self, spec, landmarks, relation, clearance):
-        """Anchor panel tops at shoulders/neck, retaining generated 2D sizes."""
-        updates = {}
-        shoulder_y = sum(landmarks['segments'][side]['shoulder'][1] for side in ('left', 'right')) / 2
-        neck = landmarks['torso']['neck_center']
-        bounds = landmarks['torso'].get('bounds_cm', [-20, 0, -15, 20, shoulder_y, 15])
-        for name, panel in spec['pattern']['panels'].items():
-            if 'sleeve' in name or 'cuff' in name:
-                continue
-            xs, ys = zip(*panel['vertices'])
-            back = 'back' in name or 'yoke' in name
-            z = bounds[2]-clearance if back else bounds[5]+clearance
-            if 'collar' in name:
-                side = 1 if name.endswith('left') else -1 if name.endswith('right') else 0
-                x = neck[0] + side * (max(xs)-min(xs)) / 2
-                y = neck[1] - (max(ys)+min(ys))/2
-            else:
-                x = -min(xs) if name.endswith('left') else -max(xs) if name.endswith('right') else 0
-                top = shoulder_y
-                if name == 'back_body' and 'back_yoke' in spec['pattern']['panels']:
-                    yoke = spec['pattern']['panels']['back_yoke']['vertices']
-                    top -= max(p[1] for p in yoke)-min(p[1] for p in yoke)
-                y = top-max(ys)
-            updates[name] = ([x, y, z], [0., 180. if back else 0., 0.])
-        self._apply(spec, updates, relation)
-        relation['torso_strategy'] = 'body_bounds_and_shoulder_panel_top'
 
     def _compute_landmarks(self, body_assets_dir: Path, body_name: str) -> dict[str, Any]:
         vertices = self._load_obj_vertices(body_assets_dir / f"{body_name}.obj")
@@ -123,6 +92,10 @@ class BodyPosePlacement:
             points = [vertices[index] for index in segmentation[f"{side}Hand"] if index < len(vertices)]
             root = min(points, key=lambda point: self._dist3(point, forearm))
             return [round(value, 6) for value in root]
+
+        def bounds(names):
+            points = [vertices[i] for name in names for i in segmentation.get(name, [])]
+            return [min(p[a] for p in points) for a in range(3)] + [max(p[a] for p in points) for a in range(3)]
 
         segments: dict[str, Any] = {}
         for side in ("left", "right"):
@@ -141,14 +114,16 @@ class BodyPosePlacement:
                 "short_sleeve_center": self._lerp(shoulder, forearm, 0.32),
                 "cuff_center": self._lerp(forearm, root, 0.68),
                 "arm_rotation_z_deg": self._rotation_for_axis(shoulder, root),
+                "bounds_cm": bounds((f'{side}Arm', f'{side}ForeArm')),
             }
         torso = {
             "chest_center": self._midpoint(center("leftShoulder"), center("rightShoulder")),
             "neck_center": self._safe_center(segmentation, vertices, ("neck", "head")),
+            "neck_bounds_cm": bounds(('neck',)),
         }
         torso_points = [vertices[i] for name in ('hips', 'spine', 'spine1', 'spine2') for i in segmentation.get(name, [])]
         torso['bounds_cm'] = [min(p[a] for p in torso_points) for a in range(3)] + [max(p[a] for p in torso_points) for a in range(3)]
-        return {"segments": segments, "torso": torso}
+        return {"segments": segments, "torso": torso, "height_cm": max(v[1] for v in vertices)-min(v[1] for v in vertices)}
 
     def _place_short_sleeves(
         self,
@@ -236,27 +211,6 @@ class BodyPosePlacement:
         panels = spec["pattern"]["panels"]
         sleeve_mid = self._edge_world_midpoint(panels, sleeve_ref)
         cuff_local_mid = self._edge_local_midpoint(panels[cuff_panel], cuff_ref)
-        # A semantic join now consists of many edges; use the entire join,
-        # not its first small segment, to align sleeve and cuff centers.
-        joins = []
-        for stitch in spec['pattern']['stitches']:
-            a, b = stitch[:2]
-            if a['panel'] == cuff_panel and b['panel'] == sleeve_panel:
-                a, b = b, a
-            if a['panel'] == sleeve_panel and b['panel'] == cuff_panel:
-                joins.append((a, b))
-        if joins:
-            def mean(side, world):
-                total, accum = 0., [0., 0., 0.] if world else [0., 0.]
-                for pair in joins:
-                    ref = pair[side]; panel = panels[ref['panel']]
-                    ends = panel['edges'][ref['edge']]['endpoints']
-                    weight = math.dist(panel['vertices'][ends[0]], panel['vertices'][ends[1]])
-                    point = self._edge_world_midpoint(panels, ref) if world else self._edge_local_midpoint(panel, ref)
-                    total += weight
-                    accum = [v + weight*p for v, p in zip(accum, point)]
-                return [v/total for v in accum]
-            sleeve_mid, cuff_local_mid = mean(0, True), mean(1, False)
         if sleeve_mid is None or cuff_local_mid is None:
             raise ValueError(f"failed to resolve cuff seam midpoint for {sleeve_panel} -> {cuff_panel}")
         rotated = self._rotate_local_xy(cuff_local_mid, cuff_rotation)
