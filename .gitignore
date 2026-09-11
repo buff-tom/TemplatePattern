@@ -1,6 +1,13 @@
 # Generated results, including accidentally nested output directories
 outputs/
 
+# Local-only verification scripts and reports
+/tests/
+/check_final.py
+/修复与验证_*.md
+/恢复原缝合与*步验证.md
+/运行问题与动态SMPL审查_*.md
+
 # Local environments and Python caches
 .venv/
 venv/
