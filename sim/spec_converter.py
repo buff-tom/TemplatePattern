@@ -54,16 +54,19 @@ class GarmentSpecConverter:
         reference = "torso_short_v6" if style == "short_sleeve" else "torso_v6_tpose" if name.endswith("tpose") else "torso_v6"
         path = ROOT / "assets/reference_specs" / f"{reference}_specification.json"
         spec = deepcopy(read_json(path))
+        from .reference_geometry import transfer_sizes
+        geometry_transfer = transfer_sizes(spec, pattern)
         panels = spec["pattern"]["panels"]
         debug = {
             "name": name, "style": style, "panel_count": len(panels),
             "stitch_count": len(spec["pattern"]["stitches"]),
             "skipped_stitches": [],
-            "geometry_source": "original_reference",
+            "geometry_source": "stage1_semantic_parent_dimensions",
             "seam_mapping": "original_reference_unchanged",
-            "reference_override": {"path": str(path.relative_to(ROOT)), "applied": True},
+            "reference_override": {"path": str(path.relative_to(ROOT)), "applied": False, "usage": "sewing_topology_and_split_geometry_anchor"},
+            "geometry_transfer": geometry_transfer,
             "stage1_selection": pattern.get("fit", {}),
-            "note": "Original simulation geometry and sewing graph restored; placement changes only translation/rotation.",
+            "note": "Stage1 parent dimensions transferred to reference child panels; sewing indices/directions unchanged. Body-relative placement follows conversion.",
         }
         return spec, debug
 

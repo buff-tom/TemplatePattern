@@ -55,7 +55,7 @@ sim:
       - left_collar
       - strapless_top
 
-      enable_cloth_reference_drag: false
+      enable_cloth_reference_drag: true
       cloth_reference_margin: 0.1
       body_collision_thickness: 0.25
       body_friction: 0.5

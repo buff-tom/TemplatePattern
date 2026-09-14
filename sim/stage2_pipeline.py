@@ -110,6 +110,10 @@ class SimulationStage2Pipeline:
             body_target=self.body_target,
             pattern_json=self.pattern_json,
         )
+        import yaml
+        sim_settings = yaml.safe_load(self.runner.sim_config.read_text())['sim']['config']
+        wrist_clearance = (float(sim_settings['options'].get('body_collision_thickness', 0.25))
+                           + float(sim_settings['material'].get('fabric_thickness', 0.1)) + 0.1)
         placement = BodyPosePlacement().apply_file(
             spec_path,
             self.style,
@@ -117,6 +121,7 @@ class SimulationStage2Pipeline:
             body_name="body",
             pose=self.pose,
             arm_angle_deg=self.arm_angle_deg,
+            wrist_clearance_cm=wrist_clearance,
         )
         write_spec_preview(spec_path, simulation_dir / "pattern.svg")
         engine = self.runner.run(

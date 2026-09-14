@@ -38,10 +38,21 @@ class BodyPosePlacement:
         pose: str = "a45",
         arm_angle_deg: float = 45.0,
         x_clearance: float = 2.0,
+        wrist_clearance_cm: float = 0.45,
     ) -> dict[str, str]:
         spec = read_json(spec_path)
         landmarks = self._compute_landmarks(Path(body_assets_dir), body_name)
         relation = self.apply(spec, style, landmarks, pose, arm_angle_deg, x_clearance)
+        if style == 'long_sleeve':
+            from .wrist_placement import place_wrists
+            body_vertices = self._load_obj_vertices(Path(body_assets_dir) / f'{body_name}.obj')
+            try:
+                place_wrists(spec, landmarks['wrists'], relation, wrist_clearance_cm, body_vertices)
+            except ValueError as exc:
+                relation['placement_error'] = str(exc)
+                write_json(Path(spec_path).parent / 'body_pose_relation.json', relation)
+                write_json(Path(body_assets_dir) / 'placement_landmarks.json', landmarks)
+                raise
         relation["placement_debug"] = self._debug_summary(spec)
         write_json(spec_path, spec)
 
@@ -123,7 +134,13 @@ class BodyPosePlacement:
         }
         torso_points = [vertices[i] for name in ('hips', 'spine', 'spine1', 'spine2') for i in segmentation.get(name, [])]
         torso['bounds_cm'] = [min(p[a] for p in torso_points) for a in range(3)] + [max(p[a] for p in torso_points) for a in range(3)]
-        return {"segments": segments, "torso": torso, "height_cm": max(v[1] for v in vertices)-min(v[1] for v in vertices)}
+        from .wrist_placement import read_obj, wrist_frames
+        _, faces = read_obj(body_assets_dir / f"{body_name}.obj")
+        wrists = wrist_frames(vertices, faces, segmentation, segments)
+        # Keep legacy shoulder transforms calibrated to their original landmarks;
+        # the new cuff placement uses boundary centres, never the nearest vertex.
+        return {"segments": segments, "torso": torso, "wrists": wrists,
+                "height_cm": max(v[1] for v in vertices)-min(v[1] for v in vertices)}
 
     def _place_short_sleeves(
         self,
