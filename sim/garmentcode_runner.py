@@ -8,6 +8,10 @@ from typing import Any
 from TemplatePattern_final.shared.io import ROOT, write_json
 
 
+class SimulationQualityError(RuntimeError):
+    """Simulation finished and saved geometry, but failed quality acceptance."""
+
+
 class GarmentCodeRunner:
     def __init__(
         self,
@@ -122,7 +126,7 @@ class GarmentCodeRunner:
                         'failures': failures, 'stats': stats, 'pipeline_error': render_error,
                     })
                 if failures:
-                    raise RuntimeError(f"Simulation quality failed: {', '.join(failures)}; see simulation/simulation_report.json")
+                    raise SimulationQualityError(f"Simulation quality failed: {', '.join(failures)}; see simulation/simulation_report.json")
                 required = [paths.g_sim, paths.render_path('front'), paths.render_path('back')]
                 missing = [str(p) for p in required if not p.is_file() or not p.stat().st_size]
                 if missing:

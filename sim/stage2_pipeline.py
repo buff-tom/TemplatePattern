@@ -53,7 +53,8 @@ class SimulationStage2Pipeline:
         self.body_manager = BodyAssetManager(model_dir)
         self.runner = GarmentCodeRunner(garmentcode_root, warp_root, sim_config)
 
-    def run(self, *, convert_only: bool = False, boxmesh_only: bool = False, max_sim_steps: int | None = None, archive: bool = False, draco: bool = False) -> dict[str, Any]:
+    def run(self, *, convert_only: bool = False, boxmesh_only: bool = False, max_sim_steps: int | None = None, archive: bool = False, draco: bool | None = None) -> dict[str, Any]:
+        draco = (not convert_only and not boxmesh_only) if draco is None else draco
         try:
             if draco:
                 if convert_only or boxmesh_only:
@@ -79,6 +80,14 @@ class SimulationStage2Pipeline:
             return result
         except BaseException as exc:
             self.run_dir.mkdir(parents=True, exist_ok=True)
+            from .garmentcode_runner import SimulationQualityError
+            export_error = None
+            if draco and isinstance(exc, SimulationQualityError):
+                try:
+                    from .draco_export import export_glb
+                    export_glb(self.run_dir/'simulation/sim.obj', self.run_dir/'simulation/scene_draco.glb', self.run_dir/'body/body.obj')
+                except Exception as export_exc:
+                    export_error = str(export_exc)
             manifest = {
                 'schema_version': 1, 'stage': 'stage2', 'status': 'failed',
                 'style': self.style, 'pose': self.pose,
@@ -86,6 +95,11 @@ class SimulationStage2Pipeline:
                 'outputs': {str(p.relative_to(self.run_dir)): str(p.relative_to(self.run_dir))
                             for p in self.run_dir.rglob('*') if p.is_file() and p.name not in ('stage2_manifest.json', 'stage2_results.zip')},
             }
+            if export_error:
+                manifest['draco_export_error'] = export_error
+            if draco and isinstance(exc, SimulationQualityError) and not export_error:
+                manifest['outputs']['draco_glb'] = 'simulation/scene_draco.glb'
+                manifest['draco_quality'] = 'simulation_failed_quality_checks'
             write_json(self.run_dir / 'stage2_manifest.json', manifest)
             if archive:
                 self.create_archive()

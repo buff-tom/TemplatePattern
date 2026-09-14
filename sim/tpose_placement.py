@@ -53,6 +53,10 @@ class BodyPosePlacement:
                 write_json(Path(spec_path).parent / 'body_pose_relation.json', relation)
                 write_json(Path(body_assets_dir) / 'placement_landmarks.json', landmarks)
                 raise
+        # Trim AFTER placement: preserve the tested transforms and attachment
+        # world position rather than moving the shortened cuff back to the wrist.
+        from .reference_geometry import trim_cuffs
+        relation['cuff_trim'] = trim_cuffs(spec)
         relation["placement_debug"] = self._debug_summary(spec)
         write_json(spec_path, spec)
 

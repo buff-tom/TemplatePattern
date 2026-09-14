@@ -73,7 +73,7 @@ def _engine_arguments(parser: argparse.ArgumentParser) -> None:
     modes.add_argument("--boxmesh-only", action="store_true")
     parser.add_argument("--max-sim-steps", type=int, default=None)
     parser.add_argument("--archive", action="store_true", help="Write stage2_results.zip inside the output directory.")
-    parser.add_argument('--draco', action='store_true', help='Export meter-unit geometry-only scene_draco.glb; decoder path /draco/.')
+    parser.add_argument('--draco', action=argparse.BooleanOptionalAction, default=None, help='Full simulation exports scene_draco.glb by default; --no-draco disables it. Decoder path /draco/.')
 
 
 def run_stage1(style: str, body_config: Path, output_dir: Path) -> dict[str, Any]:

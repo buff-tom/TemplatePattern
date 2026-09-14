@@ -64,3 +64,31 @@ def transfer_sizes(spec, pattern):
             'anchor': str(template_path.relative_to(ROOT)),
             'scope': 'parent width/height ratios; reference splitting and local curves retained',
             'panels': changes}
+
+
+def trim_cuffs(spec, amount_cm=2.):
+    """Shorten free end, fixing the existing sleeve attachment in local space."""
+    report = {}
+    for name, panel in spec['pattern']['panels'].items():
+        if not name.startswith('cuff_'):
+            continue
+        refs = [a for seam in spec['pattern']['stitches']
+                for a,b in (seam[:2], seam[:2][::-1])
+                if a['panel'] == name and 'sleeve' in b['panel']]
+        if len(refs) != 1:
+            raise ValueError(f'{name}: expected exactly one sleeve attachment')
+        vertices = np.asarray(panel['vertices'], dtype=float)
+        edge = panel['edges'][refs[0]['edge']]['endpoints']
+        anchor = vertices[edge].mean(0)
+        tangent = vertices[edge[1]] - vertices[edge[0]]
+        tangent /= np.linalg.norm(tangent)
+        axis = np.array([-tangent[1], tangent[0]])
+        if np.dot(vertices.mean(0)-anchor, axis) < 0: axis = -axis
+        distances = (vertices-anchor)@axis
+        length = float(distances.max())
+        if length <= amount_cm:
+            raise ValueError(f'{name}: cuff length {length:.3f} cm cannot be trimmed by {amount_cm} cm')
+        panel['vertices'] = (vertices - np.outer(distances, axis)*(amount_cm/length)).tolist()
+        report[name] = {'trim_cm': amount_cm, 'before_cm': length,
+                        'after_cm': length-amount_cm, 'fixed_attachment_edge': refs[0]['edge']}
+    return report
