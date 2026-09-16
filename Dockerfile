@@ -10,6 +10,8 @@ FROM nvidia/cuda:12.8.1-devel-ubuntu22.04 AS builder
 ARG DEBIAN_FRONTEND=noninteractive
 ARG GARMENTCODE_COMMIT=d449629979028123a5c4dc9e732a2ec19b7fce31
 ARG WARP_COMMIT=63baf6855efdd89b2834b74640f84b3bb0d86b50
+ARG MHR_RELEASE=v1.0.1
+ARG MHR_MODEL_SHA256=352e271a6c42729c68554ceaea0c955e866970160c31e35506d782dc0f7377bc
 
 ENV DEBIAN_FRONTEND=noninteractive \
     CUDA_HOME=/usr/local/cuda \
@@ -28,15 +30,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       git \
       git-lfs \
+      unzip \
+      wget \
       pkg-config \
     && rm -rf /var/lib/apt/lists/* \
     && git lfs install --system
 
-RUN uv python install 3.9.21 && \
-    uv venv --python 3.9.21 /opt/venv
+RUN uv python install 3.12.3 && \
+    uv venv --python 3.12.3 /opt/venv
 
 COPY requirements-runtime.txt /tmp/requirements-runtime.txt
 RUN uv pip install --python /opt/venv/bin/python \
+      --index https://download.pytorch.org/whl/cpu \
+      torch==2.8.0 && \
+    uv pip install --python /opt/venv/bin/python \
       -r /tmp/requirements-runtime.txt
 
 RUN git clone --recurse-submodules \
@@ -51,6 +58,15 @@ RUN git clone --recurse-submodules \
 
 COPY . /opt/TemplatePattern_final
 COPY garmentcode-system.json /opt/GarmentCode/system.json
+
+# MHR release assets are public.  Only the LOD1 TorchScript model is extracted;
+# the multi-gigabyte FBX/corrective assets are not needed by this pipeline.
+RUN wget -q -O /tmp/mhr-assets.zip \
+      "https://github.com/facebookresearch/MHR/releases/download/${MHR_RELEASE}/assets.zip" && \
+    mkdir -p /opt/TemplatePattern_final/models/mhr && \
+    unzip -j /tmp/mhr-assets.zip assets/mhr_model.pt -d /opt/TemplatePattern_final/models/mhr && \
+    echo "${MHR_MODEL_SHA256}  /opt/TemplatePattern_final/models/mhr/mhr_model.pt" | sha256sum -c - && \
+    rm /tmp/mhr-assets.zip
 
 # build_lib.py resolves the Packman executable as ./tools/packman/packman.
 # Keep the Warp repository as CWD instead of Docker's default /.  The separate
@@ -75,6 +91,7 @@ ENV VIRTUAL_ENV=/opt/venv \
     TEMPLATEPATTERN_GARMENTCODE_ROOT=/opt/GarmentCode \
     TEMPLATEPATTERN_WARP_ROOT=/opt/NvidiaWarp-GarmentCode \
     TEMPLATEPATTERN_SMPL_MODEL_DIR=/models/smpl \
+    TEMPLATEPATTERN_MHR_MODEL_DIR=/opt/TemplatePattern_final/models/mhr \
     PYOPENGL_PLATFORM=egl \
     XDG_CACHE_HOME=/tmp/templatepattern-cache \
     MPLCONFIGDIR=/tmp/templatepattern-matplotlib \

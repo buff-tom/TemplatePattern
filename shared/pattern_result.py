@@ -32,7 +32,13 @@ def write_pattern_outputs(out_dir: Path, pattern: dict[str, Any], manifest: dict
         "sample_name": manifest["sample_name"],
         "gender": "male",
         "unit": "mm",
+        # body_input is deliberately the resolved Stage2 target.  Preserve the
+        # user's original request separately when fallback selected a bounded
+        # reference capacity.
         "body_input": manifest["body_input"],
+        "effective_body_input": manifest.get("effective_body_input", manifest["body_input"]),
+        "requested_body_input": manifest.get("requested_body_input", manifest["body_input"]),
+        "input_resolution": manifest.get("input_resolution", {"mode": "requested_input", "adjusted": False}),
         "fit_tolerances_cm": FIT_TOLERANCES_CM,
     }
     request = {
@@ -41,12 +47,19 @@ def write_pattern_outputs(out_dir: Path, pattern: dict[str, Any], manifest: dict
         "pattern": "pattern.json",
         "body_target": "body_target.json",
         "default_pose": "a30",
+        "supported_poses": ["a30", "a45", "a60", "tpose"],
+        "body_model": "mhr",
         "sim_config": "default_sim_props.yaml",
     }
     write_json(body_target_path, body_target)
     write_json(request_path, request)
     payload = dict(manifest)
     payload.update({"schema_version": SCHEMA_VERSION, "status": "completed", "stage": "stage1"})
+    payload.update({
+        "body_model": request["body_model"],
+        "default_pose": request["default_pose"],
+        "supported_poses": request["supported_poses"],
+    })
     payload["outputs"] = {
         "pattern": "pattern.json",
         "svg": "pattern.svg",

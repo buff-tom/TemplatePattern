@@ -18,6 +18,8 @@ def main() -> None:
     parser.add_argument("--body-config", default=None)
     parser.add_argument("--body-params", default=None)
     parser.add_argument("--body-target", default=None)
+    parser.add_argument("--body-model", choices=("mhr", "smpl"), default="mhr")
+    parser.add_argument("--mhr-model-dir", default=None)
     parser.add_argument("--smpl-model-dir", default=None)
     parser.add_argument("--pose", choices=("a30", "a60", "a45", "tpose"), default="a30")
     parser.add_argument("--preserve-old-output", action="store_true")
@@ -34,6 +36,8 @@ def main() -> None:
         args.sim_config,
         stage1_dir=args.stage1_dir,
         model_dir=args.smpl_model_dir,
+        mhr_model_dir=args.mhr_model_dir,
+        body_model=args.body_model,
         arm_angle_deg=args.arm_angle_deg,
         body_config=args.body_config,
         body_params=args.body_params,

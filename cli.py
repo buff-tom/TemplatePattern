@@ -59,10 +59,18 @@ def _stage2_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--stage1-dir", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--pose", choices=POSES, default=None)
+    parser.add_argument("--mhr-params", type=Path, default=None, help="Use an existing MHR parameter JSON instead of fitting the six measurements.")
     _engine_arguments(parser)
 
 
 def _engine_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--body-model",
+        choices=("mhr", "smpl"),
+        default=None,
+        help="Override the Stage1 request body model (new bundles default to MHR).",
+    )
+    parser.add_argument("--mhr-model-dir", type=Path, default=None)
     parser.add_argument("--smpl-model-dir", type=Path, default=None)
     parser.add_argument("--garmentcode-root", type=Path, default=None)
     parser.add_argument("--warp-root", type=Path, default=None)
@@ -100,6 +108,15 @@ def run_stage2(args: argparse.Namespace, stage1_dir: Path | None = None, output_
     if target.exists() and any(target.iterdir()):
         raise FileExistsError(f"Stage2 output directory is not empty: {target}")
     pose = args.pose or str(bundle.request.get("default_pose") or "a30")
+    supported_poses = tuple(bundle.request.get("supported_poses") or POSES)
+    if pose not in POSES or pose not in supported_poses:
+        raise ValueError(
+            f"pose {pose!r} is not supported by this Stage1 bundle; "
+            f"supported poses: {', '.join(supported_poses)}"
+        )
+    body_model = args.body_model or str(bundle.request.get("body_model") or "mhr")
+    if body_model not in ("mhr", "smpl"):
+        raise ValueError(f"unsupported body model {body_model!r} in Stage1 request")
     _require_gpu_if_needed(args.convert_only, args.boxmesh_only)
     return SimulationStage2Pipeline(
         stage1_dir=bundle.root,
@@ -108,6 +125,9 @@ def run_stage2(args: argparse.Namespace, stage1_dir: Path | None = None, output_
         warp_root=args.warp_root,
         sim_config=args.sim_config,
         model_dir=args.smpl_model_dir,
+        mhr_model_dir=args.mhr_model_dir,
+        body_model=body_model,
+        body_params=getattr(args, "mhr_params", None),
         arm_angle_deg=args.arm_angle_deg,
         pose=pose,
     ).run(convert_only=args.convert_only, boxmesh_only=args.boxmesh_only, max_sim_steps=args.max_sim_steps, archive=args.archive, draco=args.draco)

@@ -24,6 +24,28 @@ class TemplatePatternPipeline:
         self.references = read_json("config/size_body_reference_v4.json")
         self.size_refs = self.references['sizes']
         self.selection = select_template(self.body.body_input, self.references)
+        self.requested_body_input = dict(self.body.body_input)
+        fallback = self.selection["selection_strategy"] == "covering_fallback"
+        self.effective_body_input = (
+            {key: float(value) for key, value in self.selection["selected_capacity_mm"].items()}
+            if fallback
+            else dict(self.requested_body_input)
+        )
+        changed = {
+            key: {
+                "requested_mm": self.requested_body_input[key],
+                "effective_mm": self.effective_body_input[key],
+            }
+            for key in self.requested_body_input
+            if abs(self.requested_body_input[key] - self.effective_body_input[key]) > 1.0e-9
+        }
+        self.input_resolution = {
+            "mode": "selected_capacity_fallback" if fallback else "requested_input",
+            "adjusted": bool(changed),
+            "selected_anchor": self.selection["nearest_anchor"],
+            "selected_size": self.selection["nearest_size"],
+            "changed_measurements": changed,
+        }
 
     def run(self) -> dict[str, str]:
         size = self.select_size()
@@ -35,7 +57,12 @@ class TemplatePatternPipeline:
             "variant": f"final_{self.style}",
             "sample_name": self.body.sample_name,
             "unit": "mm",
-            "body_input": self.body.body_input,
+            # body_input is the Stage2 contract and therefore always contains
+            # the measurements actually used to generate both pattern/body.
+            "body_input": self.effective_body_input,
+            "effective_body_input": self.effective_body_input,
+            "requested_body_input": self.requested_body_input,
+            "input_resolution": self.input_resolution,
             "nearest_template_selection": {**self.selection, "selection_source": "config/size_body_reference_v4.json"},
         }
         return write_pattern_outputs(self.output_dir, pattern, manifest)
@@ -99,7 +126,7 @@ class TemplatePatternPipeline:
         return {"boundary": boundary, "points": points, "curves": curves}
 
     def piece_scale(self, piece_id: str) -> tuple[float, float]:
-        body = self.body.body_input
+        body = self.effective_body_input
         ref = self.size_refs[self.select_size()]
         width = body["chest"] / float(ref["chest"])
         height = body["height"] / float(ref["height"])
@@ -120,4 +147,12 @@ class TemplatePatternPipeline:
         return [role for role in preferred if role in set(roles)] + [role for role in roles if role not in preferred]
 
     def fit_summary(self, size: str) -> dict[str, Any]:
-        return {"mode": "capacity_template_scaled", "nearest_size": size, "body_input": self.body.body_input, "selection": self.selection}
+        return {
+            "mode": "capacity_template_scaled",
+            "nearest_size": size,
+            "body_input": self.effective_body_input,
+            "effective_body_input": self.effective_body_input,
+            "requested_body_input": self.requested_body_input,
+            "input_resolution": self.input_resolution,
+            "selection": self.selection,
+        }

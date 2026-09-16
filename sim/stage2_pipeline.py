@@ -4,7 +4,7 @@ from pathlib import Path
 import zipfile
 from typing import Any
 
-from TemplatePattern_final.shared.io import ROOT, write_json
+from TemplatePattern_final.shared.io import ROOT, read_json, write_json
 from TemplatePattern_final.shared.task_bundle import Stage1Bundle
 
 from .body_assets import BodyAssetManager
@@ -30,6 +30,8 @@ class SimulationStage2Pipeline:
         *,
         stage1_dir: str | Path | None = None,
         model_dir: str | Path | None = None,
+        mhr_model_dir: str | Path | None = None,
+        body_model: str = "mhr",
         arm_angle_deg: float | None = None,
         body_config: str | Path | None = None,
         body_params: str | Path | None = None,
@@ -45,12 +47,12 @@ class SimulationStage2Pipeline:
         self.pose = pose
         self.arm_angle_deg = float(DEFAULT_ARM_ANGLES[pose] if arm_angle_deg is None else arm_angle_deg)
         self.body_config = Path(body_config) if body_config else None
-        self.body_params = Path(body_params) if body_params else None
+        self.body_params = Path(body_params).resolve() if body_params else None
         self.body_target = self.bundle.body_target if self.bundle else Path(body_target) if body_target else None
         self.name = RUN_NAMES[(self.style, pose)]
         self.pattern_json = self.bundle.pattern if self.bundle else Path(pattern_json) if pattern_json else self._default_pattern_json()
         self.run_dir = (Path(output_dir) if output_dir else ROOT / "outputs" / self.style / "stage2").resolve()
-        self.body_manager = BodyAssetManager(model_dir)
+        self.body_manager = BodyAssetManager(model_dir, body_model=body_model, mhr_model_dir=mhr_model_dir)
         self.runner = GarmentCodeRunner(garmentcode_root, warp_root, sim_config)
 
     def run(self, *, convert_only: bool = False, boxmesh_only: bool = False, max_sim_steps: int | None = None, archive: bool = False, draco: bool | None = None) -> dict[str, Any]:
@@ -70,7 +72,6 @@ class SimulationStage2Pipeline:
                 if convert_only or boxmesh_only:
                     raise ValueError('--draco requires a complete simulation')
                 from .draco_export import export_glb
-                from TemplatePattern_final.shared.io import read_json
                 result['draco'] = export_glb(self.run_dir / 'simulation/sim.obj', self.run_dir / 'simulation/scene_draco.glb', self.run_dir / 'body/body.obj')
                 manifest = read_json(self.run_dir / 'stage2_manifest.json')
                 manifest['outputs']['draco_glb'] = 'simulation/scene_draco.glb'
@@ -91,6 +92,8 @@ class SimulationStage2Pipeline:
             manifest = {
                 'schema_version': 1, 'stage': 'stage2', 'status': 'failed',
                 'style': self.style, 'pose': self.pose,
+                'body_model': self.body_manager.body_model,
+                **self._body_target_manifest_fields(),
                 'error': f'{type(exc).__name__}: {exc}',
                 'outputs': {str(p.relative_to(self.run_dir)): str(p.relative_to(self.run_dir))
                             for p in self.run_dir.rglob('*') if p.is_file() and p.name not in ('stage2_manifest.json', 'stage2_results.zip')},
@@ -187,6 +190,7 @@ class SimulationStage2Pipeline:
             "body_obj": "body/body.obj",
             "body_yaml": "body/body.yaml",
             "smpl_params": "body/smpl_params.json",
+            "mhr_params": self._existing_relative("body/mhr_params.json"),
             "body_correction": "body/body_correction.json",
             "body_measurement_report": "body/body_measurement_report.json",
             "placement_landmarks": "body/placement_landmarks.json",
@@ -203,9 +207,13 @@ class SimulationStage2Pipeline:
             "style": self.style,
             "pose": self.pose,
             "arm_angle_deg": self.arm_angle_deg,
+            "body_model": assets.get("body_model"),
             "stage1_digest": self.bundle.digest() if self.bundle else None,
             "body_source": assets.get("body_source"),
             "body_input_mm": assets.get("body_input_mm"),
+            "effective_body_input_mm": assets.get("effective_body_input_mm", assets.get("body_input_mm")),
+            "requested_body_input_mm": assets.get("requested_body_input_mm", assets.get("body_input_mm")),
+            "input_resolution": assets.get("input_resolution"),
             "measurement_accepted": bool((assets.get("fit_report") or {}).get("accepted", True)),
             "outputs": outputs,
             "engine": {"pipeline": engine.get("pipeline"), "sim_config": Path(engine["sim_config"]).name},
@@ -219,3 +227,21 @@ class SimulationStage2Pipeline:
 
     def _absolute(self, value: str | None) -> str | None:
         return str((self.run_dir / value).resolve()) if value else None
+
+    def _body_target_manifest_fields(self) -> dict[str, Any]:
+        if not self.body_target or not self.body_target.is_file():
+            return {}
+        try:
+            target = read_json(self.body_target)
+            if not isinstance(target, dict):
+                return {}
+            effective = target.get("effective_body_input", target.get("body_input"))
+            requested = target.get("requested_body_input", effective)
+            return {
+                "body_input_mm": effective,
+                "effective_body_input_mm": effective,
+                "requested_body_input_mm": requested,
+                "input_resolution": target.get("input_resolution"),
+            }
+        except (OSError, ValueError, TypeError):
+            return {}

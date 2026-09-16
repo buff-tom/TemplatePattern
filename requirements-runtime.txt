@@ -2,6 +2,7 @@ numpy==1.26.4
 scipy==1.13.1
 PyYAML==6.0.2
 svgwrite==1.4.3
+torch>=2.8
 svgpathtools
 psutil
 matplotlib

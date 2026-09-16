@@ -6,3 +6,4 @@ outputs
 .pytest_cache
 .git
 .gitignore
+models
